@@ -1,0 +1,1 @@
+# Communities Global Namespace

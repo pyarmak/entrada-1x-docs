@@ -1,0 +1,17 @@
+site_name: Entrada Documentation
+theme: readthedocs
+pages:
+- 'Home': 'index.md'
+- 'Administrator Documentation':
+    - 'Server Requirements': 'administrator/server-requirements.md'
+    - 'Application Server': 'administrator/application-server.md'
+    - 'Database Server': 'administrator/database-server.md'
+- 'Developer Documentation':
+    - 'Getting Started': 'developer/getting-started.md'
+    - 'Overview': 'developer/overview.md'
+    - 'Coding Standards': 'developer/standards.md'
+    - 'Database': 'developer/database.md'
+    - 'Global Namespace': 'developer/namespace.md'
+    - 'Entrada ACL': 'developer/entrada-acl.md'
+    - 'Quickstart Guide': 'developer/quickstart.md'
+    - 'Developer FAQ': 'developer/faq.md'

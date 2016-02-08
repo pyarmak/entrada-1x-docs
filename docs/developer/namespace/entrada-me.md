@@ -1,0 +1,1 @@
+# Entrada ME Global Namespace
