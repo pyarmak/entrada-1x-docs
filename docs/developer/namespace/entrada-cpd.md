@@ -1,1 +1,0 @@
-# Entrada CPD Global Namespace

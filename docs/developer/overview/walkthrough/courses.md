@@ -1,1 +1,0 @@
-# Admin > Manage Courses

@@ -2,17 +2,16 @@
 
 ## System Requirements
 
-Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean interdum commodo lacus a commodo. Proin quam sapien, venenatis quis molestie eget, pretium et tortor. Aliquam sed risus dapibus, tempor diam nec, facilisis ante. Cras feugiat ornare neque quis sollicitudin. Nam tellus mauris, iaculis eu fermentum et, pretium quis orci. Maecenas vitae mauris porttitor, eleifend risus elementum, imperdiet ipsum. Suspendisse non ante tempus, sodales lorem quis, consequat mauris. Aenean at malesuada massa. Fusce sed lobortis lectus. Aenean nec fermentum massa. Nullam justo mi, porta a maximus et, eleifend non tellus. Proin erat mi, porta vitae laoreet at, mollis ut tellus. Ut eget erat eget lectus tristique volutpat. Curabitur mattis euismod mi quis rhoncus. Maecenas et felis vel ex tempus semper. 
-
 ## Becoming a Contributor
 
-Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean interdum commodo lacus a commodo. Proin quam sapien, venenatis quis molestie eget, pretium et tortor. Aliquam sed risus dapibus, tempor diam nec, facilisis ante. Cras feugiat ornare neque quis sollicitudin. Nam tellus mauris, iaculis eu fermentum et, pretium quis orci. Maecenas vitae mauris porttitor, eleifend risus elementum, imperdiet ipsum. Suspendisse non ante tempus, sodales lorem quis, consequat mauris. Aenean at malesuada massa. Fusce sed lobortis lectus. Aenean nec fermentum massa. Nullam justo mi, porta a maximus et, eleifend non tellus. Proin erat mi, porta vitae laoreet at, mollis ut tellus. Ut eget erat eget lectus tristique volutpat. Curabitur mattis euismod mi quis rhoncus. Maecenas et felis vel ex tempus semper. 
+To contribute any changes to Entrada you must first complete and submit a [Contributors License Agreement](http://www.entrada-project.org/wp-content/uploads/Entrada-CLA.pdf), which provides legal protection for the rest of the Entrada community. You must also register an account at [GitHub](https://github.com) that we can give access to the EntradaProject GitHub organization.
+
+Please submit your CLA and GitHub username via e-mail to [cla@entrada-project.org](mailto:cla@entrada-project.org) for approval. Once your contributor request has been approved, you will be sent a confirmation.
+
+Once you have permission to contribute to the Entrada repository, you can commit new features or fixes to a local  `feature` or `hotfix` Git branch, and then push the branch that to the our `entrada-1x-me` repository on GitHub when you are ready to share. Once your completed feature branch is in the `entrada-1x-me` repository create a Pull Request to our `develop` branch, and we will initiate a code review.
+
+## Workstation Setup
 
 ## Obtaining Entrada
 
-Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean interdum commodo lacus a commodo. Proin quam sapien, venenatis quis molestie eget, pretium et tortor. Aliquam sed risus dapibus, tempor diam nec, facilisis ante. Cras feugiat ornare neque quis sollicitudin. Nam tellus mauris, iaculis eu fermentum et, pretium quis orci. Maecenas vitae mauris porttitor, eleifend risus elementum, imperdiet ipsum. Suspendisse non ante tempus, sodales lorem quis, consequat mauris. Aenean at malesuada massa. Fusce sed lobortis lectus. Aenean nec fermentum massa. Nullam justo mi, porta a maximus et, eleifend non tellus. Proin erat mi, porta vitae laoreet at, mollis ut tellus. Ut eget erat eget lectus tristique volutpat. Curabitur mattis euismod mi quis rhoncus. Maecenas et felis vel ex tempus semper. 
-
 ## Installing Entrada
-
-Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean interdum commodo lacus a commodo. Proin quam sapien, venenatis quis molestie eget, pretium et tortor. Aliquam sed risus dapibus, tempor diam nec, facilisis ante. Cras feugiat ornare neque quis sollicitudin. Nam tellus mauris, iaculis eu fermentum et, pretium quis orci. Maecenas vitae mauris porttitor, eleifend risus elementum, imperdiet ipsum. Suspendisse non ante tempus, sodales lorem quis, consequat mauris. Aenean at malesuada massa. Fusce sed lobortis lectus. Aenean nec fermentum massa. Nullam justo mi, porta a maximus et, eleifend non tellus. Proin erat mi, porta vitae laoreet at, mollis ut tellus. Ut eget erat eget lectus tristique volutpat. Curabitur mattis euismod mi quis rhoncus. Maecenas et felis vel ex tempus semper. 
-

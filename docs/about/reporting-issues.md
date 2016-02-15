@@ -1,3 +1,13 @@
 # Reporting Issues
 
-Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean interdum commodo lacus a commodo. Proin quam sapien, venenatis quis molestie eget, pretium et tortor. Aliquam sed risus dapibus, tempor diam nec, facilisis ante. Cras feugiat ornare neque quis sollicitudin. Nam tellus mauris, iaculis eu fermentum et, pretium quis orci. Maecenas vitae mauris porttitor, eleifend risus elementum, imperdiet ipsum. Suspendisse non ante tempus, sodales lorem quis, consequat mauris. Aenean at malesuada massa. Fusce sed lobortis lectus. Aenean nec fermentum massa. Nullam justo mi, porta a maximus et, eleifend non tellus. Proin erat mi, porta vitae laoreet at, mollis ut tellus. Ut eget erat eget lectus tristique volutpat. Curabitur mattis euismod mi quis rhoncus. Maecenas et felis vel ex tempus semper.
+If you discover a bug or issue with Entrada we would strongly encourage you to report the problem as Bug using our
+GitHub Issue tracker: [https://github.com/EntradaProject/entrada-1x-me/Issues](https://github.com/EntradaProject/entrada-1x-me/Issues)
+
+If the issue you have discovered is a security vulnerability connect with a contact below right away:
+
+| Name              | E-Mail Address     | Telephone Number      |
+| ----------------- | ------------------ | --------------------- |
+| Matt Simpson      | simpson@queensu.ca | 1-613-533-6000 x78146 |
+| Andrew Dos-Santos | ad29@queensu.ca    | 1-613-533-6000 x74904 |
+
+By reporting issues to the Entrada development team you are helping us create a stable and reliable product, we appreciate it. 

@@ -1,4 +1,14 @@
-# Entrada Platform Documentation
+# Entrada Documentation
 
-Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean interdum commodo lacus a commodo. Proin quam sapien, venenatis quis molestie eget, pretium et tortor. Aliquam sed risus dapibus, tempor diam nec, facilisis ante. Cras feugiat ornare neque quis sollicitudin. Nam tellus mauris, iaculis eu fermentum et, pretium quis orci. Maecenas vitae mauris porttitor, eleifend risus elementum, imperdiet ipsum. Suspendisse non ante tempus, sodales lorem quis, consequat mauris. Aenean at malesuada massa. Fusce sed lobortis lectus. Aenean nec fermentum massa. Nullam justo mi, porta a maximus et, eleifend non tellus. Proin erat mi, porta vitae laoreet at, mollis ut tellus. Ut eget erat eget lectus tristique volutpat. Curabitur mattis euismod mi quis rhoncus. Maecenas et felis vel ex tempus semper.
+Entrada ME is an open source web-based Integrated Teaching and Learning System created to allow teachers, learners and
+curriculum managers a simple way of accessing, interacting, and managing curriculum within an educational environment.
+
+Entrada ME is ideally suited for the health sciences because of its tightly integrated curriculum management and clinical
+scheduling support; however, it can easily be modified and adapted to almost any professional program. The Entrada
+Project is built upon the philosophies of open access and collaboration, and we welcome new interest in the project.
+
+This documentation is intended to assist Entrada system administrators and developers with understanding the requirements 
+for running, maintaining, developing, and contributing to the Entrada ecosystem.
+
+For more information please visit our website: [http://www.entrada-project.org](http://www.entrada-project.org)
 
