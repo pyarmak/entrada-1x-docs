@@ -42,9 +42,9 @@ screen
 yum install https://dl.fedoraproject.org/pub/epel/epel-release-latest-7.noarch.rpm
 ```
 
-7. Install Apache, OpenSSL, PHP, Git, HTMLDoc, wkhtmltopdf, and mariadb (client) packages:
+7. Install Apache, OpenSSL, PHP, Git, HTMLDoc, wkhtmltopdf, mariadb (client), and ClamAV packages:
 ```bash
-yum install openssl httpd mod_ssl php-mysql php php-gd php-imap php-ldap php-mbstring php-mcrypt php-pdo php-pspell php-soap php-xml php-xmlrpc htmldoc wkhtmltopdf git php-pecl-zendopcache mariadb
+yum install openssl httpd mod_ssl php-mysql php php-gd php-imap php-ldap php-mbstring php-mcrypt php-pdo php-pspell php-soap php-xml php-xmlrpc htmldoc wkhtmltopdf git php-pecl-zendopcache mariadb clamav
 ```
 
 8. Start Apache, and set to start on system startup:
@@ -196,8 +196,6 @@ cp /root/certificates/2016/staging.med.university.edu.key /var/www/vhosts/stagin
 
 23. Create the Apache VirtualHosts by creating a file named `entrada.conf` and placing it `/etc/httpd/conf.d/`. This file should contain the following:
 ```bash
-NameVirtualHost *:80
-NameVirtualHost *:443
 <VirtualHost *:80>
     ServerName entrada.med.university.edu
     ServerAdmin sysadmin@med.university.edu
