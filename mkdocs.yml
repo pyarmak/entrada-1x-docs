@@ -1,4 +1,5 @@
 site_name: Entrada Documentation
+repo_url: https://github.com/EntradaProject
 theme: readthedocs
 pages:
 - 'Home': 'index.md'
