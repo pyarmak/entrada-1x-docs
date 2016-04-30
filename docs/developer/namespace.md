@@ -269,4 +269,72 @@ Would render:
 
 ## Communities
 
-@todo
+Entrada has many moving parts, and understanding what's available to you as a developer will go a long way to learning Entrada. This page covers the Global Namespace for the Community system.
+
+**Variables**
+
+- [$COMMUNITY_ID](#community-id-variable)
+- [$COMMUNITY_URL](#community-url-variable)
+- [$COMMUNITY_TEMPLATE](#community-template-variable)
+- [$COMMUNITY_THEME](#community-theme-variable)
+- [$LOGGED_IN](#logged-in-variable)
+- [$COMMUNITY_MEMBER_SINCE](#member-since-variable)
+- [$COMMUNITY_MEMBER](#community-member-variable)
+- [$COMMUNITY_ADMIN](#community-admin-variable)
+
+*****
+
+### $COMMUNITY_ID (Variable)
+
+Available: All Entrada Versions
+
+The `$COMMUNITY_ID` variable will return the `communities.community_id` of the community that is currently being accessed by the user.
+
+Example Usage:
+```php
+echo "You are visiting community ID " . $COMMUNITY_ID . "!";
+```
+
+*****
+
+### $COMMUNITY_URL (Variable)
+
+Available: All Entrada Versions
+
+The `$COMMUNITY_URL` variable will return the full URL to this community.
+
+*****
+
+### $COMMUNITY_TEMPLATE (Variable)
+
+Available: All Entrada Versions
+
+*****
+
+### $COMMUNITY_THEME (Variable)
+
+Available: All Entrada Versions
+
+*****
+
+### $LOGGED_IN (Variable)
+
+Available: All Entrada Versions
+
+*****
+
+### $COMMUNITY_MEMBER_SINCE (Variable)
+
+Available: All Entrada Versions
+
+*****
+
+### $COMMUNITY_MEMBER (Variable)
+
+Available: All Entrada Versions
+
+*****
+
+### $COMMUNITY_ADMIN (Variable)
+
+Available: All Entrada Versions
