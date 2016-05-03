@@ -2,8 +2,8 @@
 
 Entrada has a flexible and robust role based access system that extends Zend_Acl. It relies on two main files:
 
- * `www-root/core/librara/Entrada/authentication/aclfactory.inc.php`
- * `www-root/core/librara/Entrada/authentication/entrada_acl.inc.php`
+ * `www-root/core/library/Entrada/authentication/aclfactory.inc.php`
+ * `www-root/core/library/Entrada/authentication/entrada_acl.inc.php`
 
 The `$ENTRADA_ACL` object is available throughout Entrada for any logged in users, and it's as easy to use as this:
 
