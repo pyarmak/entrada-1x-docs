@@ -228,3 +228,8 @@ class Models_Example extends Models_Base {
 The table name is stored in the `$table_name` attribute and can be used in the insert and update methods. The `$default_sort_column` is used when a sort column is not found in a fetch method call. The constructor calls the base class constructor and the `getID()` method is our naming convention of getting the primary key of the record that is represented by an instance of the model class.
 
 An `$active` attribute is typically included as part of a database table in order to deactivate data instead of actually deleting it.
+
+## Database Tables
+ID fields that effectively contain foreign keys should use NULL as an "empty" value instead of 0, even if using MyISAM, as using "0" as an empty value can cause problems when implementing foreign keys in InnoDB.
+
+There has been a recommendation to use utf8_unicode_ci as the collation in new work going forward.
