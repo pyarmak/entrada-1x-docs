@@ -5,7 +5,7 @@ Software requirements for Entrada are relatively straight forward. Entrada can r
 | Requirement | Minimum | Recommended | Notes |
 | ----------- | ------- | ----------- | ----- |
 | Linux | RHEL 6 | RHEL 7 | Red Hat Enterprise Linux or CentOS would be our recommended distribution at this time; however, since Entrada will run on almost any distribution, your best bet would be to utilize the distribution most widely adopted and supported by your infrastructure group. |
-| Apache | 2.2+ | 2.2+ | | 
+| Apache | 2.2+ | 2.4+ | | 
 | MySQL | 5.1 | 5.5+ | MariaDB or MySQL are both fully supported. |
 | PHP | 5.3 | 5.6+ | PHP 7 is presently untested. | 
 
