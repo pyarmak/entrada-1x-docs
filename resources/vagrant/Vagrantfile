@@ -125,11 +125,11 @@ Vagrant.configure("2") do |config|
     echo "Installing an Apache configuration file..."
 
     # Download development Apache configuration file from entrada-1x-docs.
-    curl -s -o /etc/apache2/sites-available/entrada-me.conf https://raw.githubusercontent.com/EntradaProject/entrada-1x-docs/master/resources/apache/entrada-me-dev.conf
+    curl -s -o /etc/apache2/sites-available/entrada.conf https://raw.githubusercontent.com/EntradaProject/entrada-1x-docs/master/resources/apache/entrada.conf
 
     # Configure Apache
     a2dissite 000-default > /dev/null
-    a2ensite entrada-me > /dev/null
+    a2ensite entrada > /dev/null
     a2enmod rewrite > /dev/null
     a2enmod ssl > /dev/null
 
