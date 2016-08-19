@@ -18,4 +18,6 @@ pages:
     - 'Entrada ACL': 'developer/entrada-acl.md'
     - 'Quickstart Guide': 'developer/quickstart.md'
     - 'Developer FAQ': 'developer/faq.md'
+    - 'Entrada Modules': 'developer/modules.md'
+    - 'Absence Module': 'developer/absence.md'
 - 'License': 'about/license.md'
