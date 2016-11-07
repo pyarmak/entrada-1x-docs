@@ -22,7 +22,42 @@ Once you have permission to contribute to the Entrada repository, you can commit
 
 ## Workstation Setup
 
-@TODO
+There is no specific setup required for developing Entrada, but there are a number of tools that work well for Entrada consortium members and can be used as a starting point to finding your preferred way of working. Platform availabiity is noted for each of the packages.
+
+Recommended tools:
+
+- [Atlassian SourceTree](http://www.sourcetreeapp.com/) to visually manage local Git repositories (Mac, PC)
+- [PhpStorm](http://www.jetbrains.com/phpstorm/) is the Entrada Consortium recommended IDE (Mac, PC, Linux)
+- [Zend Server Developer Edition](http://www.zend.com/en/products/server/downloads) PHP/Apache/MySql stack (MAC, PC, Linux)
+
+Zend server configuration:
+
+- Request an OSS license for Zend Server from the [developer editions](http://www.zend.com/en/products/server/developer-editions-comparison) page.
+- Once you have installed Zend Server, visit http://localhost:10081 to set your password and access the administrative interface.
+    * Click Administration > License and enter the license detail
+    * Click PHP > Extensions, then search for and change the following PHP settings:
+```
+error_reporting | E_ALL & ~E_NOTICE & ~E_STRICT & ~E_DEPRECATED
+upload_max_filesize | 250M
+post_max_size | 250M
+```
+- Open up Terminal and edit the Apache configuration file:
+```
+sudo vi /usr/local/zend/apache2/conf/httpd.conf
+
+# Near the top of the file change the Apache Listen port from 10088 to 80:
+Listen 80
+
+# Near the bottom of the file change the NameVirtualHost and VirtualHost from 10088 to 80:
+
+NameVirtualHost *:80
+<VirtualHost *:80>
+
+# Restart Apache in Terminal by typing:
+sudo /usr/local/zend/bin/zendctl.sh restart-apache
+```
+- After cloning the Entrada source code, set up a virtual host in the Administration > Applications > Virtual Hosts section, so that Zend Server will host the Entrada website.
+
 
 ## Obtaining Entrada
 
