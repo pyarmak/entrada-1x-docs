@@ -12,7 +12,10 @@ Vagrant.configure("2") do |config|
 
   # Every Vagrant development environment requires a box. You can search for
   # boxes at https://atlas.hashicorp.com/search.
-  config.vm.box = "ubuntu/trusty64"
+  #config.vm.box = "centos/7"
+  config.vm.define "entrada" do |entrada|
+    entrada.vm.box = "centos/7"
+  end
 
   # Disable automatic box update checking. If you disable this, then
   # boxes will only be checked for updates when the user runs
@@ -69,7 +72,9 @@ Vagrant.configure("2") do |config|
   # Enable provisioning with a shell script. Additional provisioners such as
   # Puppet, Chef, Ansible, Salt, and Docker are also available. Please see the
   # documentation for more information about their specific syntax and use.
-  config.vm.provision "shell", inline: <<-SHELL
+
+  # Stage 1 - update CentOS
+  config.vm.provision "shell", inline: <<-SHELL1
     echo "Provisioning your Entrada development machine."
 
     echo "Setting the hostname to entrada.dev..."
@@ -78,67 +83,79 @@ Vagrant.configure("2") do |config|
 
     echo "Setting the virtual machine timezone..."
 
-    echo "America/Toronto" > /etc/timezone
-    dpkg-reconfigure -f noninteractive tzdata > /dev/null
+    mv /etc/localtime /etc/localtime.bak
+    ln -s /usr/share/zoneinfo/America/Toronto /etc/localtime
 
-    echo "Installing and updating all of the Ubuntu packages. This may take some time..."
+    echo "Set SELINUX configuration"
 
-    # Set the MySQL root password to 'password'
-    echo mysql-server mysql-server/root_password select password | debconf-set-selections
-    echo mysql-server mysql-server/root_password_again select password | debconf-set-selections
+    sed -i.bak -e 's/SELINUX=enforcing/SELINUX=permissive/g' /etc/selinux/config
+
+    echo "Installing and updating all of the Centos packages. This may take some time..."
 
     # Install the required packages on the VM.
-    apt-get -qy update
-    apt-get -qy install openssl \
-                apache2 \
-                php5 \
-                php5-cli \
-                php5-mysql \
-                php5-gd \
-                php5-imap \
-                php5-ldap \
-                libapache2-mod-php5 \
-                php5-mcrypt \
-                php-pear \
-                php5-pspell \
-                php-soap \
-                php5-xmlrpc \
-                php5-curl \
+    yum -y update
+  SHELL1
+
+  # Stage 2 - reboot
+  config.vm.provision :reload
+
+  # Stage 3 - Entrada requirements
+  config.vm.provision "shell", inline: <<-SHELL2
+    yum -y install https://centos7.iuscommunity.org/ius-release.rpm
+    yum -y install httpd \
+                openssl \
+                mod_ssl \
+                php56u \
+                php56u-opcache \
+                php56u-mcrypt \
+                php56u-gd \
+                php56u-devel \
+                php56u-mysql \
+                php56u-intl \
+                php56u-mbstring \
+                php56u-bcmath \
+                php56u-ldap \
+                php56u-imap \
+                php56u-pspell \
+                php56u-soap \
+                php56u-xmlrpc \
                 git \
                 htmldoc \
                 wkhtmltopdf \
-                mysql-server \
-                mysql-client \
+                mariadb \
+                mariadb-server \
                 curl \
                 capistrano
+
+    echo "Setting up MariaDB ..."
+
+    # Setup the MySQL database and set root password to 'password'
+    systemctl enable mariadb
+    systemctl start mariadb
+    mysqladmin -u root password password
 
     echo "Setting up the PHP configuration file..."
 
     # Change PHP values in Apache2 and CLI php.ini
-    #sed -n -i -e 's/error_reporting = E_ALL \& ~E_DEPRECATED \& ~E_STRICT/error_reporting = E_ALL \& ~E_NOTICE \& ~E_STRICT \& ~E_DEPRECATED/g' /etc/php5/apache2/php.ini
-    #sed -n -i -e 's/display_errors = Off/display_errors = On/g' /etc/php5/apache2/php.ini
-    #sed -n -i -e 's/upload_max_filesize = 2M/upload_max_filesize = 250M/g' /etc/php5/apache2/php.ini
-    #sed -n -i -e 's/post_max_size = 8M/post_max_size = 250M/g' /etc/php5/apache2/php.ini
-    #sed -n -i -e 's/error_reporting = E_ALL \& ~E_DEPRECATED \& ~E_STRICT/error_reporting = E_ALL \& ~E_NOTICE \& ~E_STRICT \& ~E_DEPRECATED/g' /etc/php5/cli/php.ini
-    #sed -n -i -e 's/display_errors = Off/display_errors = On/g' /etc/php5/cli/php.ini
+    sed -i.bak -e '/^error_reporting =/ c\
+	error_reporting = E_ALL \& ~E_NOTICE \& ~E_STRICT \& ~E_DEPRECATED' /etc/php.ini
+    sed -i     -e 's/display_errors = Off/display_errors = On/' /etc/php.ini
+    sed -i     -e 's/upload_max_filesize = 2M/upload_max_filesize = 512M/' /etc/php.ini
+    sed -i     -e 's/post_max_size = 8M/post_max_size = 512M/' /etc/php.ini
+    echo "Setting up the PHP configuration file..."
 
     echo "Installing an Apache configuration file..."
 
     # Download development Apache configuration file from entrada-1x-docs.
-    curl -s -o /etc/apache2/sites-available/entrada.conf https://raw.githubusercontent.com/EntradaProject/entrada-1x-docs/master/resources/apache/entrada.conf
-
-    # Configure Apache
-    a2dissite 000-default > /dev/null
-    a2ensite entrada > /dev/null
-    a2enmod rewrite > /dev/null
-    a2enmod ssl > /dev/null
+    curl -s -o /etc/httpd/conf.d/entrada.conf https://raw.githubusercontent.com/EntradaProject/entrada-1x-docs/master/resources/apache/entrada.conf
 
     # Restart Apache
-    service apache2 restart
+    systemctl enable httpd
+    systemctl restart httpd
 
     echo "Installing Composer for PHP dependency management..."
     curl -sS https://getcomposer.org/installer | sudo php -- --install-dir=/usr/local/bin --filename=composer
 
     echo "All finished. Happy Entrada-ing."
-  SHELL
+  SHELL2
 end
