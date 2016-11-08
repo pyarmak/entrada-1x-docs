@@ -34,17 +34,17 @@ yum update
 reboot
 ```
 
-6. SSH back into server, and install Extra Packages for Enterprise Linux (EPEL):
+6. SSH back into server, and install the Inline with Upstream Stable (IUS Community) package.
 ```
 ssh service@entrada.med.university.edu
 sudo -s
 screen
-yum install https://dl.fedoraproject.org/pub/epel/epel-release-latest-7.noarch.rpm
+yum install https://centos7.iuscommunity.org/ius-release.rpm
 ```
 
 7. Install Apache, OpenSSL, PHP, Git, HTMLDoc, wkhtmltopdf, mariadb (client), and ClamAV packages:
 ```bash
-yum install openssl httpd mod_ssl php-mysql php php-gd php-imap php-ldap php-mbstring php-mcrypt php-pdo php-pspell php-soap php-xml php-xmlrpc htmldoc wkhtmltopdf git php-pecl-zendopcache mariadb clamav
+yum install httpd openssl mod_ssl php56u php56u-opcache php56u-xml php56u-mcrypt php56u-gd php56u-devel php56u-mysql php56u-intl php56u-mbstring php56u-bcmath php56u-ldap php56u-imap php56u-pspell php56u-soap php56u-xmlrpc git htmldoc wkhtmltopdf mariadb clamav
 ```
 
 8. Start Apache, and set to start on system startup:
@@ -56,8 +56,9 @@ systemctl start httpd.service
 9. Find and change the following directives in the `/etc/php.ini` file:
 ```bash
 error_reporting = E_ALL & ~E_NOTICE & ~E_DEPRECATED & ~E_STRICT
-upload_max_filesize = 250M
-post_max_size = 250M
+upload_max_filesize = 512M
+post_max_size = 512M
+expose_php = Off
 ```
 
 10. Create an Entrada system user called `production`, which is used for production deployments:
@@ -108,32 +109,36 @@ mkdir -p /var/www/vhosts/entrada.med.university.edu/storage/
 chown -R production:production /var/www/vhosts/entrada.med.university.edu
 mkdir /var/www/vhosts/entrada.med.university.edu/storage/annualreports
 mkdir /var/www/vhosts/entrada.med.university.edu/storage/cache
+mkdir /var/www/vhosts/entrada.med.university.edu/storage/community-discussions
 mkdir /var/www/vhosts/entrada.med.university.edu/storage/community-galleries
 mkdir /var/www/vhosts/entrada.med.university.edu/storage/community-shares
 mkdir /var/www/vhosts/entrada.med.university.edu/storage/eportfolio
 mkdir /var/www/vhosts/entrada.med.university.edu/storage/event-files
 mkdir /var/www/vhosts/entrada.med.university.edu/storage/logs
+mkdir /var/www/vhosts/entrada.med.university.edu/storage/msprs
+mkdir /var/www/vhosts/entrada.med.university.edu/storage/resource-images
 mkdir /var/www/vhosts/entrada.med.university.edu/storage/lor
 mkdir /var/www/vhosts/entrada.med.university.edu/storage/user-photos
-chmod 755 /var/www/vhosts/entrada.med.university.edu/storage/*
-chown apache:apache /var/www/vhosts/entrada.med.university.edu/storage/*
+chmod 777 /var/www/vhosts/entrada.med.university.edu/storage/*
 ```
 
 17. Create and appropriately permission the Apache document root and Entrada storage directories for staging.
 ```bash
 mkdir -p /var/www/vhosts/staging.med.university.edu/storage/
-chown -R staging:staging /var/www/vhosts/staging.med.university.edu
+chown -R production:production /var/www/vhosts/staging.med.university.edu
 mkdir /var/www/vhosts/staging.med.university.edu/storage/annualreports
 mkdir /var/www/vhosts/staging.med.university.edu/storage/cache
+mkdir /var/www/vhosts/staging.med.university.edu/storage/community-discussions
 mkdir /var/www/vhosts/staging.med.university.edu/storage/community-galleries
 mkdir /var/www/vhosts/staging.med.university.edu/storage/community-shares
 mkdir /var/www/vhosts/staging.med.university.edu/storage/eportfolio
 mkdir /var/www/vhosts/staging.med.university.edu/storage/event-files
 mkdir /var/www/vhosts/staging.med.university.edu/storage/logs
+mkdir /var/www/vhosts/staging.med.university.edu/storage/msprs
+mkdir /var/www/vhosts/staging.med.university.edu/storage/resource-images
 mkdir /var/www/vhosts/staging.med.university.edu/storage/lor
 mkdir /var/www/vhosts/staging.med.university.edu/storage/user-photos
-chmod 755 /var/www/vhosts/staging.med.university.edu/storage/*
-chown apache:apache /var/www/vhosts/staging.med.university.edu/storage/*
+chmod 777 /var/www/vhosts/staging.med.university.edu/storage/*
 ```
 
 18. Generate the SSL private keys required for each of your hostnames:
@@ -196,6 +201,10 @@ cp /root/certificates/2016/staging.med.university.edu.key /var/www/vhosts/stagin
 
 23. Create the Apache VirtualHosts by creating a file named `entrada.conf` and placing it `/etc/httpd/conf.d/`. This file should contain the following:
 ```bash
+# This will limit what information Apache reveals about itself.
+ServerTokens Prod
+ServerSignature Off
+
 <VirtualHost *:80>
     ServerName entrada.med.university.edu
     ServerAdmin sysadmin@med.university.edu

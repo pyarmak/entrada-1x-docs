@@ -22,44 +22,51 @@ Once you have permission to contribute to the Entrada repository, you can commit
 
 ## Workstation Setup
 
-There is no specific setup required for developing Entrada, but there are a number of tools that work well for Entrada consortium members and can be used as a starting point to finding your preferred way of working. Platform availabiity is noted for each of the packages.
+There is no specific setup required for developing Entrada, but there are a number of tools that work well for Entrada consortium members and can be used as a starting point to finding your preferred way of working. Platform availability is noted for each of the packages.
 
-Recommended tools:
+### Recommended Software
 
-- [Apple Xcode](https://developer.apple.com/xcode) + command line tools (Mac)
-- [Araxis Merge Professional Edition](http://www.araxis.com/merge/) for comparing git repo's (Mac, PC)
+- [Apple Xcode](https://developer.apple.com/xcode) is Apple's development tools package (Mac)
+- [Araxis Merge Professional Edition](http://www.araxis.com/merge/) for doing diffs between multiple directories (Mac, PC)
 - [Atlassian SourceTree](http://www.sourcetreeapp.com/) to visually manage local Git repositories (Mac, PC)
 - [PhpStorm](http://www.jetbrains.com/phpstorm/) is the Entrada Consortium recommended IDE (Mac, PC, Linux)
-- [Zend Server Developer Edition](http://www.zend.com/en/products/server/downloads) PHP/Apache/MySql stack (MAC, PC, Linux)
+- [Zend Server Developer Edition](http://www.zend.com/en/products/server/downloads) is a commercially available PHP/Apache/MySQL stack (MAC, PC, Linux)
 
-Zend server configuration:
+#### Zend Server Configuration Notes 
 
 - Request an OSS license for Zend Server from the [developer editions](http://www.zend.com/en/products/server/developer-editions-comparison) page.
-- Once you have installed Zend Server, visit http://localhost:10081 to set your password and access the administrative interface.
+- Once you have installed Zend Server, visit [http://localhost:10081](http://localhost:10081) to set your password and access the administrative interface.
     * Click Administration > License and enter the license detail
     * Click PHP > Extensions, then search for and change the following PHP settings:
-```
-error_reporting | E_ALL & ~E_NOTICE & ~E_STRICT & ~E_DEPRECATED
-upload_max_filesize | 250M
-post_max_size | 250M
-expose_php | off
-```
+
+| Search...           | Change Value To                                 |
+| -----------------   | ----------------------------------------------- |
+| error_reporting     | `E_ALL & ~E_NOTICE & ~E_STRICT & ~E_DEPRECATED` |
+| upload_max_filesize | `250M`                                          |
+| post_max_size       | `250M`                                          |
+| fileinfo            | enable                                          |
+
+
 - Open up Terminal and edit the Apache configuration file:
 ```
 sudo vi /usr/local/zend/apache2/conf/httpd.conf
-
+```
+- Make the following changes:
+```
 # Near the top of the file change the Apache Listen port from 10088 to 80:
 Listen 80
 
 # Near the bottom of the file change the NameVirtualHost and VirtualHost from 10088 to 80:
-
 NameVirtualHost *:80
 <VirtualHost *:80>
-
+```
+- Now restart Apache so the changes take effect:
+```
 # Restart Apache in Terminal by typing:
 sudo /usr/local/zend/bin/zendctl.sh restart-apache
 ```
-- After cloning the Entrada source code, set up a virtual host in the Administration > Applications > Virtual Hosts section, so that Zend Server will host the Entrada website.
+- After cloning the Entrada source code (i.e. `~/Sites/entrada-1x-me.dev`), set up a virtual host in the Administration > Applications > Virtual Hosts section so that Zend Server will host the installation.
+- Add a line to your local `/etc/hosts` file for your new hostname (i.e. `127.0.0.1 entrada-1x-me.dev`).
 
 ## Installing Entrada
 
@@ -84,53 +91,48 @@ GRANT ALL ON entrada_clerkship.* TO 'entrada'@'localhost';
 To begin, clone the Entrada ME repository into a web-accessible directory or new virtual host on your computer:
 ```
 cd ~/Sites
-git clone git@github.com:EntradaProject/entrada-1x-me.git
+git clone git@github.com:EntradaProject/entrada-1x-me.git entrada-1x-me.dev
 ```
 
 ### Setting Up for Development
 
 Ensure that you have the develop branch checked out, and install Composer as well as our dependencies:
 ```
-cd entrada-1x-me
+cd entrada-1x-me.dev
 git checkout develop
 curl -sS https://getcomposer.org/installer | php
 php composer.phar update
 ```
 
-Now visit your Entrada installation in your web-browser to proceed: http://entrada-me.dev
+Now visit your Entrada installation in your web-browser to proceed: http://entrada-1x-me.dev
 
-### Deployment with Capistrano
+## Deploying Entrada
 
-If you are deploying Entrada to a production or staging server, capistrano can provide a reliable methodology that lets you push new releases and roll-back from the command line
+Capistrano provides a consistent and reliable methodology that lets you deploy and roll-back new releases to your staging and production servers from your command line.
 
 #### Prerequisites
-- Mac OS S 10.6+
 - Ruby 1.8 or higher
-```
-ruby -v
-```
 - Ruby Gems 1.3 or higher
-```
-gem -v
-```
+- Capistrano 2.15
 
-#### Installation & Recipe Setup
-Before deploying applications, install the Capistrano and GNM-Caplock gems:
+#### Installation
+Install the Capistrano and a few associated Ruby Gems:
 ```
 sudo gem install capistrano -v 2.15.9
 sudo gem install colorize
 sudo gem install sshkit
 sudo gem install gnm-caplock
 ```
-You must install the last release of version 2 of Capistrano (as indicated in the code block above) in order to run the recipes.
-The deployment recipe exists in your ~/Sites/entrada-1x-me/deployment directory.
 
-Edit the config/deploy.rb to put in the hostnames of the production and staging servers, and the associated git repository information for each.
+**Please Note:** You must install Capistrano 2 (as indicated in the code block above) in order to run the standard Entrada deployment recipes.
 
 #### Deployment
+
+This example assumes that your deployment directory is located at `~/Sites/entrada-1x-me.dev/deployment`. Your deployment recipe exists within the `config/deploy.rb` directory. Please make sure that this file accurately reflects your hostnames and Git repository location.
+
 To deploy a release, use the terminal and navigate to the deployment directory
 ```
-cd ~/Sites/entrada-1x-me/deployment
+cd ~/Sites/entrada-1x-me.dev/deployment
 # deploy to staging
 cap staging deploy
 # deploy to production
