@@ -115,9 +115,10 @@ mkdir /var/www/vhosts/entrada.med.university.edu/storage/community-shares
 mkdir /var/www/vhosts/entrada.med.university.edu/storage/eportfolio
 mkdir /var/www/vhosts/entrada.med.university.edu/storage/event-files
 mkdir /var/www/vhosts/entrada.med.university.edu/storage/logs
+mkdir /var/www/vhosts/entrada.med.university.edu/storage/lor
 mkdir /var/www/vhosts/entrada.med.university.edu/storage/msprs
 mkdir /var/www/vhosts/entrada.med.university.edu/storage/resource-images
-mkdir /var/www/vhosts/entrada.med.university.edu/storage/lor
+mkdir /var/www/vhosts/entrada.med.university.edu/storage/syllabi
 mkdir /var/www/vhosts/entrada.med.university.edu/storage/user-photos
 chmod 777 /var/www/vhosts/entrada.med.university.edu/storage/*
 ```
@@ -134,9 +135,10 @@ mkdir /var/www/vhosts/staging.med.university.edu/storage/community-shares
 mkdir /var/www/vhosts/staging.med.university.edu/storage/eportfolio
 mkdir /var/www/vhosts/staging.med.university.edu/storage/event-files
 mkdir /var/www/vhosts/staging.med.university.edu/storage/logs
+mkdir /var/www/vhosts/staging.med.university.edu/storage/lor
 mkdir /var/www/vhosts/staging.med.university.edu/storage/msprs
 mkdir /var/www/vhosts/staging.med.university.edu/storage/resource-images
-mkdir /var/www/vhosts/staging.med.university.edu/storage/lor
+mkdir /var/www/vhosts/staging.med.university.edu/storage/syllabi
 mkdir /var/www/vhosts/staging.med.university.edu/storage/user-photos
 chmod 777 /var/www/vhosts/staging.med.university.edu/storage/*
 ```
