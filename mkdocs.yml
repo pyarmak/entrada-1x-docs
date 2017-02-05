@@ -11,11 +11,12 @@ pages:
 - 'Developer Documentation':
     - 'Getting Started': 'developer/getting-started.md'
     - 'Overview': 'developer/overview.md'
+    - 'Quickstart Guide': 'developer/quickstart.md'
     - 'Entrada Walkthrough' : 'developer/walkthrough.md'
     - 'Coding Standards': 'developer/standards.md'
     - 'Database': 'developer/database.md'
     - 'Global Namespace': 'developer/namespace.md'
     - 'Entrada ACL': 'developer/entrada-acl.md'
-    - 'Quickstart Guide': 'developer/quickstart.md'
+    - 'Authentication Methods': 'developer/authentication-methods.md'
     - 'Developer FAQ': 'developer/faq.md'
 - 'License': 'about/license.md'

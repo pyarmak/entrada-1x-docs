@@ -25,13 +25,13 @@ This documention will walk you through step-by-step creating a new module that w
 Pay special attention to note of the bolded words above: migration, model, public module, admin module, and view helper. This terminology is frequently used by Entrada developers.
 
 ----
-All files that are references within the document can be [downloaded here](/resources/quickstart/Entrada-ME-1.8-Sandbox-Quickstart.tar.gz) for review.
+>All files that are references within the document can be [downloaded here](http://docs.entrada-project.org/resources/quickstart/Entrada-ME-1.8-Sandbox-Quickstart.tar.gz) for review.
 
 ----
 
 ### Let's Begin
 
-Open the `~/Sites/entrada-1x-me.dev` folder using PhpStorm or whatever IDE/Editor you have selected. Ensure that you set the tab size in your editor to 4 spaces as the tab character will not be accepted.
+Open the `~/Sites/entrada-1x-me.dev` folder using PhpStorm or whatever IDE/Editor you have selected. Ensure that you set the tab size in your editor to 4 spaces as the tab character will not be accepted. For more information on coding standards visit the [Coding Standards](standards/) section.
 
 #### 1. Create a New Database Migration
 
