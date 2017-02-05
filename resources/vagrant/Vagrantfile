@@ -46,6 +46,7 @@ Vagrant.configure("2") do |config|
   # argument is a set of non-required options.
   # config.vm.synced_folder "../data", "/vagrant_data"
   config.vm.synced_folder "../../Sites", "/var/www"
+  config.vm.synced_folder ".", "/vagrant", disabled: true
 
   # Provider-specific configuration so you can fine-tune various
   # backing providers for Vagrant. These expose provider-specific options.
@@ -125,7 +126,8 @@ Vagrant.configure("2") do |config|
                 mariadb \
                 mariadb-server \
                 curl \
-                capistrano
+                ruby \
+                rubygems
 
     echo "Setting up MariaDB ..."
 
@@ -137,25 +139,43 @@ Vagrant.configure("2") do |config|
     echo "Setting up the PHP configuration file..."
 
     # Change PHP values in Apache2 and CLI php.ini
-    sed -i.bak -e '/^error_reporting =/ c\
-	error_reporting = E_ALL \& ~E_NOTICE \& ~E_STRICT \& ~E_DEPRECATED' /etc/php.ini
-    sed -i     -e 's/display_errors = Off/display_errors = On/' /etc/php.ini
+    # Note this command does not work reliably. Change these setting manually via the documentation instructions
+    #sed -i.bak -e '/^error_reporting =/ c\
+    #    error_reporting = E_ALL \& ~E_NOTICE \& ~E_STRICT \& ~E_DEPRECATED' /etc/php.ini
+    sed -i.bak -e 's/display_errors = Off/display_errors = On/' /etc/php.ini
     sed -i     -e 's/upload_max_filesize = 2M/upload_max_filesize = 512M/' /etc/php.ini
     sed -i     -e 's/post_max_size = 8M/post_max_size = 512M/' /etc/php.ini
-    echo "Setting up the PHP configuration file..."
 
     echo "Installing an Apache configuration file..."
 
-    # Download development Apache configuration file from entrada-1x-docs.
+
+    # Download development Apache configuration file from entrada-1x-docs and customize the DocumentRoot
+    # NOTE change 'your-university-1x-me' to the name of your entrada git repository under ~/Sites
+    # NOTE you may also have to change the apache ports if you have changed the port settings for Vagrant
     curl -s -o /etc/httpd/conf.d/entrada.conf https://raw.githubusercontent.com/EntradaProject/entrada-1x-docs/master/resources/apache/entrada.conf
+    sed -i.bak -e 's/entrada-1x-me/your-university-1x-me/' /etc/httpd/conf.d/entrada.conf
 
     # Restart Apache
-    systemctl enable httpd
-    systemctl restart httpd
+    systemctl enable httpd.service
+    systemctl restart httpd.service
 
     echo "Installing Composer for PHP dependency management..."
     curl -sS https://getcomposer.org/installer | sudo php -- --install-dir=/usr/local/bin --filename=composer
 
+    echo "Installing capistrano for deployment recipies"
+    gem install capistrano -v 2.15.9
+    gem install colorize
+    gem install sshkit
+    gem install gnm-caplock
+
     echo "All finished. Happy Entrada-ing."
   SHELL2
+
+  # stage 4 - this runs on EVERY boot, to make sure httpd starts (because it depends on the folders being mapped)
+  config.vm.provision "shell", run: "always",  inline:  <<-SHELL3
+    if [ -f "/etc/httpd/conf.d/entrada.conf" ]
+    then
+      service httpd restart
+    fi
+  SHELL3
 end

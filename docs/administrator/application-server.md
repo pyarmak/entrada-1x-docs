@@ -59,6 +59,10 @@ error_reporting = E_ALL & ~E_NOTICE & ~E_DEPRECATED & ~E_STRICT
 upload_max_filesize = 512M
 post_max_size = 512M
 expose_php = Off
+
+; Defines the default timezone used by the date functions
+; http://php.net/date.timezone
+date.timezone = America/Toronto
 ```
 
 10. Create an Entrada system user called `production`, which is used for production deployments:
