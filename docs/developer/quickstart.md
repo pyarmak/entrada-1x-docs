@@ -1,14 +1,14 @@
-# QuickStart Guide
+# Quickstart Guide
 
-This quickstart guide is designed as a resource for PHP developers to learn how to structure and build new modules withinthe Entrada Platform using the latest development standards and best practices.
+This Quickstart guide is designed as a resource for PHP developers to learn how to structure and create new modules within the Entrada Platform using our latest development standards and best practices.
 
 ## History of Entrada
 
-The history of Entrada development goes back over a decade, and as time passed best practices in both the industry and our code base have significantly improved. This upward trajectory changes the way that we write our code over time; we get better. Even though the way that we write our code has improved we have not, in many cases, gone back and updated older modules within the application.
+The history of Entrada development goes back over a decade and as time has passed, best practices in both the industry and our codebase have improved. These improvements change the way that we write our code. Even though the way that we write our code has improved we have not, in many cases, gone back and updated older modules within the application.
 
-While this can cause some confusion and perhaps frustration for new Entrada developers, it is important to realize that updating older modules in the application would potentially cause significant merge conflicts for schools that have customized those modules to meet their specific needs. The time taken to resolve these merge conflicts would be time taken away from the development of new functionality to support the mission of the instituion.
+While this can cause some confusion and perhaps frustration for new Entrada developers, it is important to realize that updating older modules in the application would potentially cause significant merge conflicts for schools that have customized those modules to meet their specific needs. The time taken to resolve these conflicts would be time taken away from the development of new functionality to support the mission of the instituions.
 
-Instead of a massive overhaul / rewrite of the core codebase the Entrada Development Community in 2016 committed to moving ahead with a transition to Service Oriented Architecture using the Lumen micro framework. This transition will begin with Entrada ME 1.9, and this documentation will be updated accordingly as details become available.
+Instead of a large rewrite of the core codebase the Entrada Development Community in 2016 committed to moving ahead with a transition to Service Oriented Architecture using the Lumen micro framework. This transition will begin with Entrada ME 1.9 and this documentation will be updated accordingly to reflect these changes.
 
 ## Creating a New Module
 
@@ -22,23 +22,28 @@ This documention will walk you through step-by-step creating a new module that w
 4. A new **admin module** that will allow administrative users to add, edit, and delete the sandboxes.
 5. A new **view helper** that will render the form used on both the add and edit pages, and another that will render a simple sidebar item.
 
-Please make note of the bolded words above: migration, model, public module, admin module, and view helper. This terminology is frequently used by Entrada developers.
+Pay special attention to note of the bolded words above: migration, model, public module, admin module, and view helper. This terminology is frequently used by Entrada developers.
 
-All files that are references within the document can be [downloaded here](Entrada-ME-1.8-Sandbox-Quickstart.tar.gz)
+----
+All files that are references within the document can be [downloaded here](/resources/quickstart/Entrada-ME-1.8-Sandbox-Quickstart.tar.gz) for review.
+
+----
 
 ### Let's Begin
 
-#### Open the Project
-
-Open the `~/Sites/entrada-1x-me.dev` folder using PhpStorm or whatever IDE/Editor you have selected.
+Open the `~/Sites/entrada-1x-me.dev` folder using PhpStorm or whatever IDE/Editor you have selected. Ensure that you set the tab size in your editor to 4 spaces as the tab character will not be accepted.
 
 #### 1. Create a New Database Migration
 
-A migration is used to record and apply changes and data transformations within the Entrada databases. For more information on how to use migrations please see the [Database documentation](/developer/database) section. To create a new migration run the following command in terminal within the Entrada root folder:
+This new Sandbox module is going to need a new table in the `entrada` database. In order to systematically and consistently apply these types of changes you would create a migration. 
+
+A migration is used to record and apply changes and data transformations within the Entrada databases. For more information on how to use migrations please see the [Database documentation](/developer/database) section.
+
+To create a new migration run the following command in terminal within the Entrada root folder:
 
     php entrada migrate --create
 
-You will be asked to provide the corresponding GitHub Issue number, and then a new file will be generated within the `www-root/core/library/Migrate` folder that looks like `2017_01_11_150030_1477.php`. This file will have `up()`, `down()`, and `audit()` methods that you must fill out.
+You will be asked to provide the corresponding GitHub Issue number, and then a new file will be generated within the `www-root/core/library/Migrate` folder that looks like `2017_01_11_150030_1477.php`. This file will have `up()`, `down()`, and `audit()` methods that you must complete.
 
     <?php
     class Migrate_2017_01_11_150030_1477 extends Entrada_Cli_Migrate {
@@ -105,14 +110,13 @@ You will be asked to provide the corresponding GitHub Issue number, and then a n
         }
     }
 
-Once your new migration has been created, you can apply it by executing:
+Once your new migration file has been created, you can apply and test these changes by executing:
 
     php entrada migrate --up
 
+#### 2. Create the New Model
 
-#### 2. Create the new Model
-
-You will use the `Model_Sandbox` class exclusively to access the new `entrada.sandbox` table created by the migration. You can create the template for the new Model by running:
+You will use the `Model_Sandbox` class exclusively to access the new `entrada.sandbox` table created by the migration. You can create a template for the new Model by running:
 
     php entrada model --create
     
@@ -122,13 +126,13 @@ Here are a few examples of how you can use your new model:
 
 **Inserting data**
 
-    $row = [
+    $row = array(
         "title" => $title,
         "description" => $description,
         ...
         "created_date" => time(),
         "created_by" => $ENTRADA_USER->getId()
-    ];
+    );
     
     $sandbox = new Models_Sandbox($row);
     $record = $sandbox->insert();
@@ -147,13 +151,13 @@ Here are a few examples of how you can use your new model:
 
 **Updating data**
 
-    $row = [
+    $row = array(
         "title" => $PROCESSED["title"],
         "description" => $PROCESSED["description"],
         ...
         "updated_date" => time(),
         "updated_by" => $ENTRADA_USER->getId()
-    ];
+    );
     
     $sandbox = new Models_Sandbox($row);
     $record = $sandbox->update();
@@ -933,4 +937,4 @@ This will give anyone with _create_ access to the sandbox resource a menu item w
 
 ## Getting Help
 
-This QuickStart Guide is intended to give you an overview of how to create a new module within Entrada ME 1.8. It will also give you a glimpse into how Entrada operates. If you would like a more indepth one-on-one tutorial, please contact the Entrada Consortium team or reach out in our Slack channel.
+This Quickstart Guide is intended to give you an overview of how to create a new module within Entrada ME 1.8. It will also give you a glimpse into how Entrada operates. If you would like a more indepth one-on-one tutorial, please contact the Entrada Consortium team or reach out in our Slack channel.
