@@ -26,9 +26,7 @@ Vagrant.configure("2") do |config|
   # within the machine from a port on the host machine. In the example below,
   # accessing "localhost:8080" will access port 80 on the guest machine.
   # config.vm.network "forwarded_port", guest: 80, host: 8080
-  config.vm.network "forwarded_port", guest: 22, host: 22
   config.vm.network "forwarded_port", guest: 80, host: 80
-  config.vm.network "forwarded_port", guest: 443, host: 443
   config.vm.network "forwarded_port", guest: 3306, host: 3306
 
   # Create a private network, which allows host-only access to the machine
@@ -45,7 +43,7 @@ Vagrant.configure("2") do |config|
   # the path on the guest to mount the folder. And the optional third
   # argument is a set of non-required options.
   # config.vm.synced_folder "../data", "/vagrant_data"
-  config.vm.synced_folder "../../Sites", "/var/www"
+  config.vm.synced_folder "../../Sites", "/var/www/vhosts"
   config.vm.synced_folder ".", "/vagrant", disabled: true
 
   # Provider-specific configuration so you can fine-tune various
@@ -78,9 +76,10 @@ Vagrant.configure("2") do |config|
   config.vm.provision "shell", inline: <<-SHELL1
     echo "Provisioning your Entrada development machine."
 
-    echo "Setting the hostname to entrada.dev..."
+    echo "Adding default hostnames to /etc/hosts..."
 
     echo "127.0.0.1 entrada.dev" >> /etc/hosts
+    echo "127.0.0.1 entrada-1x-me.dev" >> /etc/hosts
 
     echo "Setting the virtual machine timezone..."
 
@@ -91,9 +90,9 @@ Vagrant.configure("2") do |config|
 
     sed -i.bak -e 's/SELINUX=enforcing/SELINUX=permissive/g' /etc/selinux/config
 
-    echo "Installing and updating all of the Centos packages. This may take some time..."
+    echo "Updating all of the CentOS packages. This may take some time..."
 
-    # Install the required packages on the VM.
+    # Updating the required packages on the VM.
     yum -y update
   SHELL1
 
@@ -120,6 +119,7 @@ Vagrant.configure("2") do |config|
                 php56u-pspell \
                 php56u-soap \
                 php56u-xmlrpc \
+                php56u-tidy \
                 git \
                 htmldoc \
                 wkhtmltopdf \
@@ -127,7 +127,10 @@ Vagrant.configure("2") do |config|
                 mariadb-server \
                 curl \
                 ruby \
-                rubygems
+                rubygems \
+                vim
+
+    yum -y install phpmyadmin
 
     echo "Setting up MariaDB ..."
 
@@ -136,24 +139,14 @@ Vagrant.configure("2") do |config|
     systemctl start mariadb
     mysqladmin -u root password password
 
-    echo "Setting up the PHP configuration file..."
-
-    # Change PHP values in Apache2 and CLI php.ini
-    # Note this command does not work reliably. Change these setting manually via the documentation instructions
-    #sed -i.bak -e '/^error_reporting =/ c\
-    #    error_reporting = E_ALL \& ~E_NOTICE \& ~E_STRICT \& ~E_DEPRECATED' /etc/php.ini
-    sed -i.bak -e 's/display_errors = Off/display_errors = On/' /etc/php.ini
-    sed -i     -e 's/upload_max_filesize = 2M/upload_max_filesize = 512M/' /etc/php.ini
-    sed -i     -e 's/post_max_size = 8M/post_max_size = 512M/' /etc/php.ini
-
     echo "Installing an Apache configuration file..."
-
 
     # Download development Apache configuration file from entrada-1x-docs and customize the DocumentRoot
     # NOTE change 'your-university-1x-me' to the name of your entrada git repository under ~/Sites
     # NOTE you may also have to change the apache ports if you have changed the port settings for Vagrant
-    curl -s -o /etc/httpd/conf.d/entrada.conf https://raw.githubusercontent.com/EntradaProject/entrada-1x-docs/master/resources/apache/entrada.conf
-    sed -i.bak -e 's/entrada-1x-me/your-university-1x-me/' /etc/httpd/conf.d/entrada.conf
+    curl -s -o /etc/httpd/conf.d/000-entrada.conf https://raw.githubusercontent.com/EntradaProject/entrada-1x-docs/master/resources/vagrant/apache/000-entrada.conf
+    curl -s -o /etc/httpd/conf.d/phpMyAdmin.conf https://raw.githubusercontent.com/EntradaProject/entrada-1x-docs/master/resources/vagrant/apache/phpMyAdmin.conf
+    # sed -i.bak -e 's/entrada-1x-me/nus-entrada-1x-me/' /etc/httpd/conf.d/entrada.conf
 
     # Restart Apache
     systemctl enable httpd.service
@@ -173,7 +166,7 @@ Vagrant.configure("2") do |config|
 
   # stage 4 - this runs on EVERY boot, to make sure httpd starts (because it depends on the folders being mapped)
   config.vm.provision "shell", run: "always",  inline:  <<-SHELL3
-    if [ -f "/etc/httpd/conf.d/entrada.conf" ]
+    if [ -f "/etc/httpd/conf.d/000-entrada.conf" ]
     then
       service httpd restart
     fi
