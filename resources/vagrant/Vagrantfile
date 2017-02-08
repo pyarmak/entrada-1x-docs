@@ -139,6 +139,9 @@ Vagrant.configure("2") do |config|
     systemctl start mariadb
     mysqladmin -u root password password
 
+    curl -s -o /tmp/entrada.sql https://raw.githubusercontent.com/EntradaProject/entrada-1x-docs/master/resources/vagrant/mysql/entrada.sql
+    mysql -uroot -ppassword < /tmp/entrada.sql
+
     echo "Installing an Apache configuration file..."
 
     # Download development Apache configuration file from entrada-1x-docs and customize the DocumentRoot
