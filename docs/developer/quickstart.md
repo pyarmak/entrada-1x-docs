@@ -25,7 +25,7 @@ This documention will walk you through step-by-step creating a new module that w
 Pay special attention to note of the bolded words above: migration, model, public module, admin module, and view helper. This terminology is frequently used by Entrada developers.
 
 ----
->All files that are references within the document can be [downloaded here](https://github.com/EntradaProject/entrada-1x-docs/blob/master/resources/quickstart/Entrada-ME-1.8-Sandbox-Quickstart.tar.gz) for review.
+>All files that are references within the document can be [downloaded here](https://github.com/EntradaProject/entrada-1x-docs/raw/master/resources/quickstart/Entrada-ME-1.8-Sandbox-Quickstart.tar.gz) for review.
 
 ----
 
