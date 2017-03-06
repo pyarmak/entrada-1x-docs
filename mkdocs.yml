@@ -19,4 +19,5 @@ pages:
     - 'Entrada ACL': 'developer/entrada-acl.md'
     - 'Authentication Methods': 'developer/authentication-methods.md'
     - 'Developer FAQ': 'developer/faq.md'
+    - 'Exam Posting with Safe Exam Browser': 'developer/exam-post-seb.md'
 - 'License': 'about/license.md'
