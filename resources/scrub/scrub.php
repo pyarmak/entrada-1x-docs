@@ -87,8 +87,7 @@ if ($users) {
                     `email` = '" . $username_prefix . "+" . $user->id . "@example.org',
                     `email_alt` = '',
                     `address` = '',
-                    `uuid` = UUID(),
-                    `pin` = NULL
+                    `uuid` = UUID()
                     WHERE `id` = " . $user->id;
         if (!$db->query($query)) {
             die("Error in SQL query.");
