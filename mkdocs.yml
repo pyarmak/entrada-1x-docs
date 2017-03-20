@@ -14,6 +14,8 @@ pages:
     - 'Quickstart Guide': 'developer/quickstart.md'
     - 'Entrada Walkthrough' : 'developer/walkthrough.md'
     - 'Coding Standards': 'developer/standards.md'
+    - 'QA Standards': 'developer/qa-standards.md'
+    - 'QA Tasks': 'developer/qa-tasks.md'
     - 'Database': 'developer/database.md'
     - 'Global Namespace': 'developer/namespace.md'
     - 'Entrada ACL': 'developer/entrada-acl.md'
