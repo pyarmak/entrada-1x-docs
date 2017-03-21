@@ -136,14 +136,18 @@ Below is an example of how to use the model base class. The base class itself is
 
 ```php
 class Models_Example extends Models_Base {
-    protected $id;
+    /**
+     * N.B.: Put the exact names of the columns as these are accessed literally
+     * in the base class's fetching code (e.g. fromArray()).
+     */
+    protected $example_id;
     protected $title;
     protected $active;
     
     protected $database_name = DATABASE_NAME;
 
     protected $table_name = "example";
-    protected $primary_key = "id";
+    protected $primary_key = "example_id";      // Name of primary key column in the database. The "closest thing to a standard" is to name primary key columns table_name_singular_id, e.g. "events.event_id".
     protected $default_sort_column = "title";
 
     public function __construct($arr = NULL) {
@@ -156,7 +160,7 @@ class Models_Example extends Models_Base {
      * @return The primary key of the record represented by this model.
      */
     public function getID() {
-        return $this->id;
+        return $this->example_id;
     }
 
     /**
@@ -187,14 +191,14 @@ class Models_Example extends Models_Base {
         return $this->title;
     }
 
-    public static function fetchRowByID($id, $active = 1) {
+    public static function fetchRowByID($example_id, $active = 1) {
         $self = new self();
         
         $constraints = array(
             array(
-                "key" => "id",
+                "key" => "example_id",
                 "method" => "=",
-                "value" => $id,
+                "value" => $example_id,
                 "mode" => "AND"
             ),
             array(
@@ -233,3 +237,7 @@ An `$active` attribute is typically included as part of a database table in orde
 ID fields that effectively contain foreign keys should use NULL as an "empty" value instead of 0, even if using MyISAM, as using "0" as an empty value can cause problems when implementing foreign keys in InnoDB.
 
 There has been a recommendation to use utf8_unicode_ci as the collation in new work going forward.
+
+### Column naming
+
+The closest thing to a standard is naming PRIMARY KEY columns as the singular of the table name, then `_id`. The first n - 1 words are abbreviated by their first letters. For example, if the table is `events`, it would be `event_id`. If it were `event_contacts` it would be `econtact_id`. If it were `event_contact_positions` it would be `ecposition_id`.
