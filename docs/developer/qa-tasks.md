@@ -1,7 +1,7 @@
 # QA Tasks
 
 This wiki documents a standard set of tests you may run for ensuring that deployed software has High enough Quality. In contrast with
-[our QA Standards](standards/qa), it is not a all-encompassing set of guidelines that we can use to cover as much QA needs as possible,
+[our QA Standards](qa-standards), it is not a all-encompassing set of guidelines that we can use to cover as much QA needs as possible,
 but rather a quick list of tasks that will get you 80% of the way there with regard to that document.
 
 Before pushing OR deploying any code to Entrada or UBC repositories, it is critical to ensure the following QA Tasks pass successfully.
@@ -56,4 +56,4 @@ In the future, it would be ideal to have jMeter smoke tests that must be run eve
 
 ## Load testing.
 
-jMeter load tests are present in the `developers/load-testing/`. See [Load Testing](jmeter load testing procedure) for the Jmeter load testing procedures.
+jMeter load tests are present in the `developers/load-testing/`.

@@ -306,7 +306,7 @@ You may also create automated system tests to compensate for any ommitted manual
 
 ### 10.1 jMeter load testing
 
-jMeter load tests are present in the `developers/load-testing/`. See [Load Testing](jmeter load testing procedure) for the Jmeter load testing procedures.
+jMeter load tests are present in the `developers/load-testing/`.
 
 ## 11. User Acceptance Testing (UAT)
 
