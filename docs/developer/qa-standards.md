@@ -63,6 +63,7 @@ Currently, Travis CI does the following:
 * Validate Composer JSON
 * Validate PHP syntax corrrectness
 * Validate code style checks
+* Validate javascript tests
 * Validate unit tests
 * Validate functional tests
 * Validate code coverage
