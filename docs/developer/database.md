@@ -2,7 +2,7 @@
 
 ## Database Migrations
 
-The process for recording changes to the Entrada database schema has changed as of Entrada 1.6.1. It is now significantly simpler to managing using the Entrada CLI utility.
+The process for recording changes to the Entrada database schema has changed as of Entrada 1.6.1. It is now significantly simpler to manage using the Entrada CLI utility.
 
 ### Creating New Migrations
 
