@@ -35,12 +35,12 @@ Entrada has many moving parts, and understanding what's available to you as a de
 
 ### $db (Object)
 
-Available: All Entrada Versions
+Available: All Entrada versions
 
 The `$db` object allows you to access the active Entrada
 database connection. Entrada uses the [ADOdb](http://adodb.sourceforge.net/docs-adodb.htm) library to accomplish this.
 
-While it is possible to use SQL directly in your code, it is considered best-practice *now* to access the database through the appropriate model (i.e. `Model_Events::get($id)`).
+While it is possible to use SQL directly in your code, it is currently considered best practice to access the database through the appropriate model (e.g. `Model_Events::get($id)`).
 
 Example Usage (Select):
 ```php
@@ -79,7 +79,7 @@ if ($db->AutoExecute("courses", $processed, "UPDATE", "course_id = " . (int) $id
 
 Available: Entrada 1.2+
 
-The `$ENTRADA_ACL` object allows you to check whether or not a user has access to do something. The [[Entrada ACL]] is fairly complex, so time should be taken to properly understand how it works.
+The `$ENTRADA_ACL` object allows you to check whether or not a user has access to do something. The [Entrada ACL] is fairly complex, so time should be taken to properly understand how it works.
 
 Example Usage:
 ```php
@@ -160,7 +160,7 @@ Entrada 1.6.1: `www-root/core/library/Models/users/User.class.php`
 
 Available: Entrada 1.3+
 
-When ever you need to output text on a page should do so like `$translate->_("Your String");`. Entrada uses Zend_Translate to support multiple front-end languages, and when you wrap your language strings with the magic `_()` method your text can be replaced with the correct language.
+Whenever you need to output text on a page you should do so like `$translate->_("Your String");`. Entrada uses Zend_Translate to support multiple front-end languages, and when you wrap your language strings with the magic `_()` method your text can be replaced with the correct language.
 
 Example Usage:
 ```php
@@ -174,7 +174,7 @@ Example Usage:
 
 ### $ONLOAD (Array)
 
-Available: All Entrada Versions
+Available: All Entrada versions
 
 The `$ONLOAD` array allows you to record JavaScript that you would like to run after the DOM load is complete. The elements added to this array during run-time are dynamically added to the bottom of your HTML document within a `document.observe('dom:loaded', function() { ... });` block.
 
@@ -187,9 +187,9 @@ $ONLOAD[] = "jQuery('#username').focus()";
 
 ### $JQUERY (Array)
 
-Available: All Entrada Versions
+Available: All Entrada versions
 
-The `$JQUERY` array allows you to manually include additional jQuery libraries in the correct location (i.e. after the main jQuery library, but before other dependencies) within the current pages' `<head></head>` tags. The elements added to this array during run-time replace the `%JQUERY%` placeholder from the active templates' `header.tpl.php` file.
+The `$JQUERY` array allows you to manually include additional jQuery libraries in the correct location (i.e. after the main jQuery library, but before other dependencies) between the current page's `<head></head>` tags. The elements added to this array during run-time replace the `%JQUERY%` placeholder from the active template's `header.tpl.php` file.
 
 Example Usage:
 ```php
@@ -200,9 +200,9 @@ $JQUERY[] = "<script src=\"".ENTRADA_RELATIVE."/javascript/jquery/jquery.moment.
 
 ### $HEAD (Array)
 
-Available: All Entrada Versions
+Available: All Entrada versions
 
-The `$HEAD` array allows you to include additional content within the current pages' `<head></head>` tags. The elements added to this array during run-time replace the `%HEAD%` placeholder from the active templates' `header.tpl.php` file.
+The `$HEAD` array allows you to include additional content between the current page's `<head></head>` tags. The elements added to this array during run-time replace the `%HEAD%` placeholder from the active template's `header.tpl.php` file.
 
 Example Usage:
 ```php
@@ -213,18 +213,18 @@ $HEAD[] = "<script src=\"" . ENTRADA_URL . "/javascript/AutoCompleteList.js?rele
 
 ### $BREADCRUMB (Array)
 
-Available: All Entrada Versions
+Available: All Entrada versions
 
-The `$BREADCRUMB` array is multidimensional array that is used to automatically generate a pages' breadcrumb trail. You simply add arrays to the `$BREADCRUMB` array that contain a `url` and `title` key.
+The `$BREADCRUMB` array is a multidimensional array that is used to automatically generate a page's breadcrumb trail. You simply add arrays to the `$BREADCRUMB` array that contain a `url` and `title` key.
 
 Example Usage:
 ```php
 $BREADCRUMB[] = array("url" => ENTRADA_RELATIVE . "/admin/example", "title" => $translate->_("Example Title"));
 $BREADCRUMB[] = array("url" => ENTRADA_RELATIVE . "/admin/example/add", "title" => $translate->_("Add"));
 ```
-Would render:
+Result:
 ```
-/ Example Title / Add
+/ [Example Title](/admin/example) / [Add](/admin/example/add)
 ```
 
 *****
@@ -269,7 +269,7 @@ Would render:
 
 ## Communities
 
-Entrada has many moving parts, and understanding what's available to you as a developer will go a long way to learning Entrada. This page covers the Global Namespace for the Community system.
+Entrada has many moving parts, and understanding what's available to you as a developer will go a long way to learning Entrada. This page covers the global namespace for the Community system.
 
 **Variables**
 
@@ -286,7 +286,7 @@ Entrada has many moving parts, and understanding what's available to you as a de
 
 ### $COMMUNITY_ID (Variable)
 
-Available: All Entrada Versions
+Available: All Entrada versions
 
 The `$COMMUNITY_ID` variable will return the `communities.community_id` of the community that is currently being accessed by the user.
 
@@ -299,42 +299,42 @@ echo "You are visiting community ID " . $COMMUNITY_ID . "!";
 
 ### $COMMUNITY_URL (Variable)
 
-Available: All Entrada Versions
+Available: All Entrada versions
 
-The `$COMMUNITY_URL` variable will return the full URL to this community.
+The `$COMMUNITY_URL` variable will return the full URL of this community.
 
 *****
 
 ### $COMMUNITY_TEMPLATE (Variable)
 
-Available: All Entrada Versions
+Available: All Entrada versions
 
 *****
 
 ### $COMMUNITY_THEME (Variable)
 
-Available: All Entrada Versions
+Available: All Entrada versions
 
 *****
 
 ### $LOGGED_IN (Variable)
 
-Available: All Entrada Versions
+Available: All Entrada versions
 
 *****
 
 ### $COMMUNITY_MEMBER_SINCE (Variable)
 
-Available: All Entrada Versions
+Available: All Entrada versions
 
 *****
 
 ### $COMMUNITY_MEMBER (Variable)
 
-Available: All Entrada Versions
+Available: All Entrada versions
 
 *****
 
 ### $COMMUNITY_ADMIN (Variable)
 
-Available: All Entrada Versions
+Available: All Entrada versions
