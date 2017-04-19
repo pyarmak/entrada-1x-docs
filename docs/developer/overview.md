@@ -78,7 +78,7 @@ In the root level Entrada directory there are two directories:
     * `config` Contains `config.inc.php` which defines the host environment, and `settings.inc.php`, which defines settings affecting Entrada's behaviour.
     * `includes` Contains high level PHP support code for the access control `(acl.inc.php)`, cache `(cache.inc.php)`, database connection, `(dbconnection.inc.php)`, site wide functions `(functions.inc.php)`, and initialization code `(init.inc.php)`.
     * `library` Contains code libraries used across the site. Libraries written for or included in Entrada reside in `Entrada`.
-    * `modules` Contains most Entrada modules (controllers and views) for the public and admin sections of Entrada. Each module has it's own controller, and folder which contains code for specific actions inside that module.
+    * `modules` Contains most Entrada modules (controllers and views) for the public and admin sections of Entrada. Each module has its own controller, and folder which contains code for specific actions inside that module.
     * `storage` Used by Entrada during everyday operation to store temporary files, logs, and uploads.
 
 Other files/folders in `www-root`:
@@ -100,23 +100,23 @@ The access control level system in Entrada is very flexible, so you can modify a
 
   * Student : 20XX
     
-    Students have basic read permissions to most public modules. They can also edit and in some cases remove information that they add themselves (i.e. discussion forum comments).
+    Students have basic read permissions to most public modules. They can also edit and in some cases remove information that they add themselves (e.g. discussion forum comments).
     
-    It is important to note that students cannot be granted access any administrative module within Entrada. There is a hard coded exit in case  all other security restrictions fail and they access /admin/*.
+    It is important to note that students cannot be granted access to any administrative module within Entrada. There is a hard-coded exit in case  all other security restrictions fail and they access /admin/*.
 
 ### Faculty
 
-  * Faculty : Faculty - Basic read only access as faculty members.
-  * Faculty : Lecturer - Teaching faculty can edit the content of any learning event that they are schedule to teach.
+  * Faculty : Faculty - Basic read-only access as faculty members.
+  * Faculty : Lecturer - Teaching faculty can edit the content of any learning event that they are scheduled to teach.
   * Faculty : Director - Course Directors can edit the content of any course pages / website or learning event that they are designated as a "Course Director" for on the Admin > Manage Courses page.
 
 ### Staff
 
-  * Staff : Staff - Basic read only access as a staff member.
-  * Staff : PCoordinator - Can add, edit, or delete learning events and manage any content within any of the courses they are designated as a "Program Coordinator" for on the Admin > Manage Courses page.
-  * Staff : Admin - Administrative users that can pretty much do anything in the system within their designated organisation.
+  * Staff : Staff - Staff members have basic read-only access.
+  * Staff : PCoordinator - Program Coordinators can add, edit, or delete learning events and manage any content within any of the courses they are designated as a "Program Coordinator" for on the Admin > Manage Courses page.
+  * Staff : Admin - Organizational administrators can pretty much do anything in the system within their designated organisation.
 
 ### System Administrators
 
-  * Medtech : Admin - Super administrative users that can pretty much do anything in the system regardless of any organizational restrictions.
+  * Medtech : Admin - System administrators can pretty much do anything in the system regardless of any organizational restrictions.
 
