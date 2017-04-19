@@ -16,7 +16,7 @@ As rotation schedules are inherently time based, you are required to set up curr
 
 ##### Setting up the required data points
 
-1. Log in as an administrator and navigate to "Admin -> System Settings". Create or select the organisation you want to add rotations to. 
+1. Log in as an administrator and navigate to "Admin > System Settings". Create or select the organisation you want to add rotations to. 
 
 2. Once you are managing the appropriate organisation, select "Curriculum Layout" from the sidebar. Select or create a curriculum layout for your organisation. 
 
@@ -30,8 +30,8 @@ A block schedule is a set of time "blocks" within the overall rotation schedule.
  
 ##### Creating the rotation schedules
 
-At this point you should be able to set up rotation schedules within the organisations and curriculum periods that you have set up block schedules for. To accomplish this, navigate to "Admin -> Rotation Schedule". You will need to begin by creating an unpublished draft and selecting a curriculum period that has block schedules. A draft is a set of rotation schedules belonging to a course for the curriculum period. After creating the draft, click the "Add Rotation" button. Upon saving the rotation, it will inherit blocks based on the block schedule templates that you have set up for that curriculum period. 
+At this point you should be able to set up rotation schedules within the organisations and curriculum periods that you have set up block schedules for. To accomplish this, navigate to "Admin > Rotation Schedule". You will need to begin by creating an unpublished draft and selecting a curriculum period that has block schedules. A draft is a set of rotation schedules belonging to a course for the curriculum period. After creating the draft, click the "Add Rotation" button. Upon saving the rotation, it will inherit blocks based on the block schedule templates that you have set up for that curriculum period. 
 
 ##### Scheduling learners
 
-To add a learner to a slot, navigate the "Learners" tab. You will see a visual representation of all of the blocks over the curriculum period. To schedule a learner, click on a corresponding block beside their name. From here you will be able to select any rotation that has blocks that fall into that time frame. 
+To add a learner to a slot, navigate to the "Learners" tab. You will see a visual representation of all of the blocks over the curriculum period. To schedule a learner, click on a corresponding block beside their name. From here you will be able to select any rotation that has blocks that fall into that time frame. 
