@@ -1,7 +1,7 @@
 # Reporting Issues
 
 If you discover a bug or issue with Entrada we would strongly encourage you to report the problem as Bug using our
-GitHub Issue tracker: [https://github.com/EntradaProject/entrada-1x-me/Issues](https://github.com/EntradaProject/entrada-1x-me/Issues)
+GitHub Issue tracker: [https://github.com/EntradaProject/entrada-1x/issues](https://github.com/EntradaProject/entrada-1x/issues)
 
 If the issue you have discovered is a security vulnerability connect with a contact below right away:
 
