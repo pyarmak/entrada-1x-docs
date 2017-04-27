@@ -176,7 +176,7 @@ Example Usage:
 
 Available: All Entrada Versions
 
-The `$ONLOAD` array allows you to record JavaScript that you would like to run after the DOM load is complete. The elements added to this array during run-time are dynamically added to the bottom of your HTML document within a `document.observe('dom:loaded', function() { ... });` block.
+The `$ONLOAD` array allows you to record JavaScript that you would like to run after the DOM load is complete. The elements added to this array during run-time are dynamically added to the bottom of your HTML document within a `jQuery(document).ready(function() { ... });` block.
 
 Example Usage:
 ```php
