@@ -33,3 +33,8 @@ test:
     - developers/unit-tests/phpunit.sh
   allow_failure: false
 ```
+
+On RHEL 6, you will need to install `gitlab-ci-multi-runner` and register it
+with your GitLab server so that the tests get run directly on your test server.
+This way, your tests run in an identical environment to production (or as
+identical as is practical).
