@@ -16,6 +16,7 @@ pages:
     - 'Coding Standards': 'developer/standards.md'
     - 'QA Standards': 'developer/qa-standards.md'
     - 'QA Tasks': 'developer/qa-tasks.md'
+    - 'GitLab CI': 'developer/gitlab-ci.md'
     - 'Database': 'developer/database.md'
     - 'Global Namespace': 'developer/namespace.md'
     - 'Entrada ACL': 'developer/entrada-acl.md'
