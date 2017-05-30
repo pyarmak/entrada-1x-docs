@@ -96,20 +96,29 @@ The hostnames that will be referenced throughout this document will be `entrada.
 
         mkdir -p /var/www/vhosts/entrada.med.university.edu/storage/
         mkdir /var/www/vhosts/entrada.med.university.edu/storage/annualreports
+        mkdir /var/www/vhosts/entrada.med.university.edu/storage/app
+        mkdir /var/www/vhosts/entrada.med.university.edu/storage/app/public
         mkdir /var/www/vhosts/entrada.med.university.edu/storage/cache
         mkdir /var/www/vhosts/entrada.med.university.edu/storage/community-discussions
         mkdir /var/www/vhosts/entrada.med.university.edu/storage/community-galleries
         mkdir /var/www/vhosts/entrada.med.university.edu/storage/community-shares
         mkdir /var/www/vhosts/entrada.med.university.edu/storage/eportfolio
         mkdir /var/www/vhosts/entrada.med.university.edu/storage/event-files
+        mkdir /var/www/vhosts/entrada.med.university.edu/storage/exam-files
+        mkdir /var/www/vhosts/entrada.med.university.edu/storage/framework
+        mkdir /var/www/vhosts/entrada.med.university.edu/storage/framework/cache
+        mkdir /var/www/vhosts/entrada.med.university.edu/storage/framework/cache/data
+        mkdir /var/www/vhosts/entrada.med.university.edu/storage/framework/sessions
+        mkdir /var/www/vhosts/entrada.med.university.edu/storage/framework/views
         mkdir /var/www/vhosts/entrada.med.university.edu/storage/logs
         mkdir /var/www/vhosts/entrada.med.university.edu/storage/lor
         mkdir /var/www/vhosts/entrada.med.university.edu/storage/msprs
         mkdir /var/www/vhosts/entrada.med.university.edu/storage/resource-images
+        mkdir /var/www/vhosts/entrada.med.university.edu/storage/secure-access
         mkdir /var/www/vhosts/entrada.med.university.edu/storage/syllabi
         mkdir /var/www/vhosts/entrada.med.university.edu/storage/user-photos
         chown -R production:production /var/www/vhosts/entrada.med.university.edu
-        chmod 777 /var/www/vhosts/entrada.med.university.edu/storage/*
+        chmod -R 777 /var/www/vhosts/entrada.med.university.edu/storage/*
 
 17. Create and appropriately permission the Apache document root and Entrada storage directories for staging.
 
