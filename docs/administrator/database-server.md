@@ -32,9 +32,9 @@ The hostnames that will be referenced throughout this document will be `db01.med
         sudo -s
         screen
 
-6. Install MariaDB Client and Server:
+6. Install MariaDB Client, Server, and NTP:
 
-        yum install mariadb mariadb-server
+        yum install mariadb mariadb-server ntp
 
 7. Add the following to the `mysqld` section of `/etc/my.cnf`, but **don't forget** to enter a unique 8 digit number (i.e. 12359380) in the `server-id` variable.
 
