@@ -202,7 +202,7 @@ The hostnames that will be referenced throughout this document will be `entrada.
         cp /root/certificates/2017/staging.med.university.edu.crt /var/www/vhosts/staging.med.university.edu/cert/
         cp /root/certificates/2017/staging.med.university.edu.key /var/www/vhosts/staging.med.university.edu/cert/
 
-23. Create the Apache VirtualHosts by creating a file named `entrada.conf` and placing it `/etc/httpd/conf.d/`. This file should contain the following:
+23. Create the Apache VirtualHosts by creating a file named `000-entrada.conf` and placing it `/etc/httpd/conf.d/`. This file should contain the following:
 
         # This will limit what information Apache reveals about itself.
         ServerTokens Prod
