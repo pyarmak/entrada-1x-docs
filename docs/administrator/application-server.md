@@ -1,6 +1,6 @@
 # Application Server
 
-This documentation can be used as a reference to create both your **Production Application Server** and **Staging Application Server** on a single **Red Hat Enterprise** or **CentOS 7.2** virtual machine. This is achieved by using SNI within Apache 2. A word of caution, this setup will cause Internet Explorer on Windows XP to produce SSL certificate warnings.
+This documentation can be used as a reference to create both your **Production Application Server** and **Staging Application Server** on a single **Red Hat Enterprise** or **CentOS 7.3** virtual machine. This is achieved by using SNI within Apache 2. A word of caution, this setup will cause Internet Explorer on Windows XP to produce SSL certificate warnings.
 
 The hostnames that will be referenced throughout this document will be `entrada.med.university.edu` and `staging.med.university.edu`. These hostnames should be replaced by your actual DNS hostnames.
 
