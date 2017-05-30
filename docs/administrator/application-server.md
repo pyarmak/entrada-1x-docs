@@ -36,9 +36,9 @@ The hostnames that will be referenced throughout this document will be `entrada.
         screen
         yum install https://centos7.iuscommunity.org/ius-release.rpm
 
-7. Install Apache, OpenSSL, PHP, Git, HTMLDoc, wkhtmltopdf, mariadb (client), and ClamAV packages:
+7. Install Apache, OpenSSL, PHP, Git, HTMLDoc, wkhtmltopdf, mariadb (client), ClamAV, and NTP packages:
 
-        yum install httpd openssl mod_ssl php56u php56u-opcache php56u-xml php56u-mcrypt php56u-gd php56u-devel php56u-mysql php56u-intl php56u-mbstring php56u-bcmath php56u-ldap php56u-imap php56u-pspell php56u-soap php56u-xmlrpc git htmldoc wkhtmltopdf mariadb clamav
+        yum install httpd openssl mod_ssl php56u php56u-opcache php56u-xml php56u-mcrypt php56u-gd php56u-devel php56u-mysql php56u-intl php56u-mbstring php56u-bcmath php56u-ldap php56u-imap php56u-pspell php56u-soap php56u-xmlrpc git htmldoc wkhtmltopdf mariadb clamav ntp
 
 8. Start Apache, and set to start on system startup:
 
