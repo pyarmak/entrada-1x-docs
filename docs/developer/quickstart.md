@@ -6,7 +6,7 @@ This Quickstart guide is designed as a resource for PHP developers to learn how 
 
 The history of Entrada development goes back over a decade and as time has passed, best practices in both the industry and our codebase have improved. These improvements change the way that we write our code. Even though the way that we write our code has improved we have not, in many cases, gone back and updated older modules within the application.
 
-While this can cause some confusion and perhaps frustration for new Entrada developers, it is important to realize that updating older modules in the application would potentially cause significant merge conflicts for schools that have customized those modules to meet their specific needs. The time taken to resolve these conflicts would be time taken away from the development of new functionality to support the mission of the instituions.
+While this can cause some confusion and perhaps frustration for new Entrada developers, it is important to realize that updating older modules in the application would potentially cause significant merge conflicts for schools that have customized those modules to meet their specific needs. The time taken to resolve these conflicts would be time taken away from the development of new functionality to support the mission of the institutions.
 
 Instead of a large rewrite of the core codebase the Entrada Development Community in 2016 committed to moving ahead with a transition to Service Oriented Architecture using the Lumen micro framework. This transition will begin with Entrada ME 1.9 and this documentation will be updated accordingly to reflect these changes.
 
