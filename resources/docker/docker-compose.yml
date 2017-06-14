@@ -1,0 +1,13 @@
+version: '3'
+services:
+  web:
+    build: entrada
+    container_name: entrada-developer
+    ports:
+      - 80:80
+      - 443:443
+      - 3306:3306
+    volumes:
+      - ~/Data:/var/lib/mysql
+      - ~/Sites:/var/www/vhosts
+    restart: always
