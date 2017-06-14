@@ -158,7 +158,7 @@ Vagrant.configure("2") do |config|
     echo "Installing Composer for PHP dependency management..."
     curl -sS https://getcomposer.org/installer | sudo php -- --install-dir=/usr/local/bin --filename=composer
 
-    echo "Installing capistrano for deployment recipies"
+    echo "Installing capistrano for deployment recipes"
     gem install capistrano -v 2.15.9
     gem install colorize
     gem install sshkit
