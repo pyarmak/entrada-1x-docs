@@ -72,11 +72,16 @@ RUN sed -i 's@upload_max_filesize = 2M@upload_max_filesize = 512M@g' /etc/php.in
 RUN sed -i 's@post_max_size = 8M@post_max_size = 512M@g' /etc/php.ini
 RUN sed -i 's@memory_limit = 128M@memory_limit = 512M@g' /etc/php.ini
 
+# Set the container volumes.
+VOLUME /var/lib/mysql
+VOLUME /var/www/vhosts
+VOLUME /etc/httpd/vhosts.d
+
 # Install Composer
 RUN curl -sS https://getcomposer.org/installer | php -- --install-dir=/usr/local/bin --filename=composer
 
-# Install default Apache configuration.
-COPY apache/entrada-1x-me.dev.conf /etc/httpd/conf.d/entrada-1x-me.dev.conf
+# Tell Apache to include all of the virtual hosts
+RUN echo "IncludeOptional vhosts.d/*.conf" >> /etc/httpd/conf/httpd.conf
 
 # Install PHPMyAdmin
 RUN yum -y install phpmyadmin
@@ -96,6 +101,7 @@ EXPOSE 3306
 COPY supervisor/supervisord.conf /etc/supervisord.conf
 
 # Create the MariaDB entrada user account and default databases.
+COPY mariadb/entrada.cnf /etc/my.cnf.d
 COPY mariadb/entrada.sql /tmp
 COPY mariadb/mariadb-start.sh /usr/bin
 RUN chmod +x /usr/bin/mariadb-start.sh

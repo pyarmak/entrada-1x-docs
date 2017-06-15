@@ -10,4 +10,5 @@ services:
     volumes:
       - ~/Data:/var/lib/mysql
       - ~/Sites:/var/www/vhosts
+      - ./entrada/apache/vhosts.d:/etc/httpd/vhosts.d
     restart: always
