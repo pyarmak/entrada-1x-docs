@@ -54,8 +54,8 @@ You will be asked to provide the corresponding GitHub Issue number, and then a n
         public function up() {
             $this->record();
             ?>
-            CREATE TABLE IF NOT EXISTS `sandbox` (
-            `id` int(11) unsigned NOT NULL AUTO_INCREMENT,
+            CREATE TABLE IF NOT EXISTS `sandboxes` (
+            `sandbox_id` int(11) unsigned NOT NULL AUTO_INCREMENT,
             `title` varchar(128) NOT NULL DEFAULT '',
             `description` text,
             `created_date` bigint(64) unsigned DEFAULT NULL,
@@ -64,7 +64,7 @@ You will be asked to provide the corresponding GitHub Issue number, and then a n
             `updated_by` int(11) unsigned DEFAULT NULL,
             `deleted_date` bigint(64) unsigned DEFAULT NULL,
             `deleted_by` int(11) unsigned DEFAULT NULL,
-            PRIMARY KEY (`id`)
+            PRIMARY KEY (`sandbox_id`)
             ) ENGINE=InnoDB DEFAULT CHARSET=utf8;
     
             INSERT INTO `<?php echo AUTH_DATABASE; ?>`.`acl_permissions` (`permission_id`, `resource_type`, `resource_value`, `entity_type`, `entity_value`, `app_id`, `create`, `read`, `update`, `delete`, `assertion`)
@@ -83,7 +83,7 @@ You will be asked to provide the corresponding GitHub Issue number, and then a n
         public function down() {
             $this->record();
             ?>
-            DROP TABLE `sandbox`;
+            DROP TABLE `sandboxes`;
     
             DELETE FROM `<?php echo AUTH_DATABASE; ?>`.`acl_permissions` WHERE `resource_type` = 'sandbox';
             <?php
@@ -102,7 +102,7 @@ You will be asked to provide the corresponding GitHub Issue number, and then a n
          */
         public function audit() {
             $migration = new Models_Migration();
-            if ($migration->tableExists(DATABASE_NAME, "sandbox")) {
+            if ($migration->tableExists(DATABASE_NAME, "sandboxes")) {
                 return 1;
             }
     
@@ -116,7 +116,7 @@ Once your new migration file has been created, you can apply and test these chan
 
 #### 2. Create the New Model
 
-You will use the `Model_Sandbox` class exclusively to access the new `entrada.sandbox` table created by the migration. You can create a template for the new Model by running:
+You will use the `Model_Sandbox` class exclusively to access the new `entrada.sandboxes` table created by the migration. You can create a template for the new Model by running:
 
     php entrada model --create
     
@@ -168,7 +168,7 @@ Here are a few examples of how you can use your new model:
 **Deleting data**
 
     $sandbox = new Models_Sandbox();
-    if ($sandbox->delete($PROCESSED["id"])) {
+    if ($sandbox->delete($PROCESSED["sandbox_id"])) {
         ...
     }
 
@@ -474,9 +474,9 @@ Within `www-root/core/modules/admin/sandbox/delete.inc.php` place the following 
              */
             $delete_ids = array();
     
-            foreach ($_POST["delete"] as $id) {
-                if ($id = (int) $id) {
-                    $delete_ids[] = $id;
+            foreach ($_POST["delete"] as $sandbox_id) {
+                if ($sandbox_id = (int) $sandbox_id) {
+                    $delete_ids[] = $sandbox_id;
                 }
             }
     
@@ -598,8 +598,8 @@ Within `www-root/core/modules/admin/sandbox/edit.inc.php` place the following co
     
         $BREADCRUMB[] = array("title" => $translate->_("Edit Sandbox"));
     
-        if (isset($_GET["id"]) && ($id = clean_input($_GET["id"], "int"))) {
-            $PROCESSED = Models_Sandbox::fetchRowByID($id)->toArray();
+        if (isset($_GET["id"]) && ($sandbox_id = clean_input($_GET["id"], "int"))) {
+            $PROCESSED = Models_Sandbox::fetchRowByID($sandbox_id)->toArray();
         }
     
         if ($PROCESSED) {
@@ -632,13 +632,13 @@ Within `www-root/core/modules/admin/sandbox/edit.inc.php` place the following co
     
                     if (!has_error()) {
                         /*
-                         * Adding a created_date and created_by record for the sandbox table.
+                         * Adding a created_date and created_by record for the sandboxes table.
                          */
                         $PROCESSED["updated_date"] = time();
                         $PROCESSED["updated_by"] = $ENTRADA_USER->getID();
     
                         /*
-                         * Instantiates a new Models_Sandbox, update the row into the sandbox table, and returns
+                         * Instantiates a new Models_Sandbox, update the row into the sandboxes table, and returns
                          * the new auto-incremented id of this sandbox record.
                          */
                         $sandbox = new Models_Sandbox($PROCESSED);
@@ -693,7 +693,7 @@ Within `www-root/core/modules/admin/sandbox/edit.inc.php` place the following co
              * Required options used by the form renderer.
              */
             $options = array(
-                "action_url" => ENTRADA_RELATIVE . "/admin/sandbox?section=edit&id=" . $PROCESSED["id"],
+                "action_url" => ENTRADA_RELATIVE . "/admin/sandbox?section=edit&id=" . $PROCESSED["sandbox_id"],
                 "cancel_url" => ENTRADA_RELATIVE . "/admin/sandbox",
             );
     
@@ -903,7 +903,7 @@ Within `www-root/core/library/Views/Sandbox/Sidebar.php` place the following con
 
 ### Finishing Tasks
 
-At this point you should have a relatively functional module that allows you to create, read, update, and delete items from the `entrada.sandbox` table. There a few final tasks to complete the new module.
+At this point you should have a relatively functional module that allows you to create, read, update, and delete items from the `entrada.sandboxes` table. There a few final tasks to complete the new module.
  
 #### 1. Add an ACL Array Entry
  
