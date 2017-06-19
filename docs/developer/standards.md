@@ -127,7 +127,7 @@ Every function, including object methods, must have a docblock that contains at 
 
   * Variables which are used within only one file should be in all lower case
 
-        $title_suffix = " All Facutly";
+        $title_suffix = " All Faculty";
 
   * Variables and Constants with multi-word names should have each word separated with an underscore
 
@@ -146,21 +146,23 @@ Every function, including object methods, must have a docblock that contains at 
 
 #### If, Foreach and Switch statements
 
-All `if`, `foreach`, and `switch` statements should have the following formatting:
-
-  * A space after the initial statement and after the closing parenthesis
-  * If statements with an `else` branch should have a space after the first closing brace bracket and after the `elseif` or `else` statement, and after the parenthesis if it's an `elseif`.
-  * Always include brace brackets, whether the code inside the statement is one line or more.
+  * For `if`, `foreach`, and `switch` statements, include a space after the initial statement and after the closing parenthesis.
+  * For `if` statements with an `else` branch, include a space after the first closing brace bracket and after the `else` statement.
+  * For `if` statements with an `elseif` branch, include a space after the first closing brace bracket and after the `elseif` statement, and after the parenthesis.
+  * For `if`, `foreach`, and `switch` statements, include brace brackets, whether the code inside the statement is one line or more.
   * Use && and || in logic instead of 'AND' and 'OR'
-  * All `foreach` and `if` statements should be on at least 3 lines
-    * The statement, parameters and open brace-bracket
+  * Lay out `foreach` and `if` statements on at least 3 lines:
+    * The statement, parameters, and open brace-bracket
     * A new line with code to be executed
     * One more line with a closing brace bracket.
-  * switch statements must have at least 5 lines, same as above plus: * at least one case "parameter" : line before the code to be executed. * a break; line after the code to be executed.
-  * case and default lines should have a space before the colon on switch statements
-  * all case and default sections in switch statements should end with a break; line which is indented one tab less than the code to be executed.
-  * all code within brace brackets should be indented one additional tab
-  * all code after a 'case' or 'default' line in a switch statement should be indented an additional tab
+  * Lay out `switch` statements with at least 5 lines:
+    * same as above plus:
+    * at least one `case "parameter" :` line before the code to be executed.
+    * a `break;` line after the code to be executed.
+  * For `case` and `default` lines, include a space before the colon.
+  * End all `case` and `default` sections in `switch` statements with a `break;` line which is indented one tab less than the code to be executed.
+  * Indent all code within brace brackets by one additional tab (four spaces).
+  * Indent all code after a `case` or `default` line in a `switch` statement by one additional tab (four spaces).
 
         if ((($variable > 20) && ($variable < 50)) || $boolean) {
             echo "this code executed.";
@@ -188,12 +190,12 @@ All `if`, `foreach`, and `switch` statements should have the following formattin
 
 #### Functions and Methods
 
-  * Global functions should be created as `public static` methods in `core/library/Entrada/Utilities.php`.
-  * All historical global functions are declared in `core/includes/functions.inc.php`.
-  * Multi-word function names should be separated with underscores.
-  * Functions primarily used only in one module should be methods of that modules' class (i.e. `Entrada_Events::filter_events()` in `core/library/Entrada/Events.php`).
+  * Create new global functions as `public static` methods in `core/library/Entrada/Utilities.php`.
+    * Historical global functions are declared in `core/includes/functions.inc.php`.
+  * Separate multi-word function names with underscores.
+  * Define functions primarily used only in one module as methods of that module's class (e.g. `Entrada_Events::filter_events()` in `core/library/Entrada/Events.php`).
   * Group like functions / methods together in the same file where possible.
-  * There should be a space after the closing parenthesis and before the opening brace bracket in function declarations.
+  * Include a space after the closing parenthesis and before the opening brace bracket in function declarations.
 
         /**
          * Determines whether or not a PHP session is available.
@@ -216,10 +218,10 @@ All `if`, `foreach`, and `switch` statements should have the following formattin
 
 * If the query you are writing is over 120 characters long you should add line breaks and align the query so `JOIN`, `WHERE`, `ON`, `AND`, `ORDER BY` and `GROUP BY` keywords start a new line and are indented to line up with the first statement of the query.
 * All of the query except the field, table and database names should be in uppercase.
-* Use prepared statements whenever possible, otherwise use ADOdb's qstr() method `".$db->qstr($variable)."` to add variables into queries. This will help prevent SQL Injection Vulnerabilities.
-* You should avoid writing your own `INSERT` and `UPDATE` queries, and instead use ADOdb's AutoExecute() method.
-* SQL queries should only exist within models, not within the controllers.
-* Queries should use back-ticks around field names to prevent possible naming collisions.
+* To prevent SQL injection vulnerabilities, use prepared statements whenever possible, otherwise use ADOdb's qstr() method `".$db->qstr($variable)."` to add variables into queries.
+* Avoid writing your own `INSERT` and `UPDATE` queries. Instead, use ADOdb's AutoExecute() method.
+* Include SQL queries within models only, not controllers.
+* Include back-ticks around field names in queries to prevent possible naming collisions.
 
 ### Using prepared statements
 
