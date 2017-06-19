@@ -176,9 +176,9 @@ Here are a few examples of how you can use your new model:
 
 Entrada does not use a typical MVC pattern as you would recognize from frameworks like Laravel, CakePHP, or Symfony. Although similiar in effect, our pattern is not entirely object oriented; we use a mix of object oriented and procedural design patterns.
 
-Entrada's `.htaccess` file contains `mod_rewrite` rules that pipe the majority of requests through the `index.php` and `admin.php` files. The `index.php` file is used to display **public modules**, where as the `admin.php` file is used to display **admin modules**.
+Entrada's `.htaccess` file contains `mod_rewrite` rules that pipe the majority of requests through the `index.php` and `admin.php` files. The `index.php` file is used to display **public modules**, whereas the `admin.php` file is used to display **admin modules**.
 
-One significant difference between most MVC frameworks and Entrada is that our request routing is entirely automatic vs. being manually defined in a routes file. For example, if you visit [http://entrada-1x-me.dev/profile/gradebook/assignments](http://entrada-1x-me.dev/profile/gradebook/assignments) in your browser, Entrada will be loading the `www-root/core/modules/public/profile/gradebook/assignments/index.inc.php` file.
+One significant difference between most MVC frameworks and Entrada is that our request routing is entirely automatic vs. being manually defined in a routes file. For example, if you visit [http://entrada-1x-me.dev/profile/gradebook/assignments](http://entrada-1x-me.dev/profile/gradebook/assignments) in your browser, Entrada will load the `www-root/core/modules/public/profile/gradebook/assignments/index.inc.php` file.
  
  For a more thorough overview of this information please see the [Directory Structure](overview/#directory-structure) section within Overview. 
  
@@ -937,4 +937,4 @@ This will give anyone with _create_ access to the sandbox resource a menu item w
 
 ## Getting Help
 
-This Quickstart Guide is intended to give you an overview of how to create a new module within Entrada ME 1.8. It will also give you a glimpse into how Entrada operates. If you would like a more indepth one-on-one tutorial, please contact the Entrada Consortium team or reach out in our Slack channel.
+This Quickstart Guide is intended to give you an overview of how to create a new module within Entrada ME 1.8. It will also give you a glimpse into how Entrada operates. If you would like a more in-depth one-on-one tutorial, please contact the Entrada Consortium team or reach out in our Slack channel.
