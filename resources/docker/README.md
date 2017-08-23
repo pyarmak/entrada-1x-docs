@@ -10,9 +10,9 @@ Developers using Docker don’t have to install and configure complex databases 
 
 ## Prerequisites
 
-1. You must have Docker installed on your local development machine. The simplest way to install everything is to use Docker Toolbox, which consists of Docker Engine, Compose, Machine, and Kitematic (GUI):
+1. You must have Docker installed on your local development machine. The simplest way to install everything is to use Docker Community Edition. You should also install Kitematic (GUI):
 
-    https://www.docker.com/products/docker-toolbox
+    https://www.docker.com/community-edition
 2. You must have the Entrada ME Git repository cloned to `~/Sites/entrada-1x-me.dev`.
 3. You must edit your local `hosts` file and add each hostname you would like to use. For example:
     ```
