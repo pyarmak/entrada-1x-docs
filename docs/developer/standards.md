@@ -28,7 +28,7 @@ All source code files written for Entrada or that operate within the framework m
 Every file that contains Entrada PHP code must have a "file-level" docblock at the top of the file that contains these phpDocumentor tags at a minimum:
 
     /**
-     * Entrada [ http://www.entrada-project.org ]
+     * Entrada [ https://entrada.org ]
      * 
      * Entrada is free software: you can redistribute it and/or modify
      * it under the terms of the GNU General Public License as published by

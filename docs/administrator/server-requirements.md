@@ -6,8 +6,8 @@ Software requirements for Entrada are relatively straight forward. Entrada can r
 | ----------- | ------- | ----------- | ----- |
 | Linux | RHEL 6 | RHEL 7 | Red Hat Enterprise Linux or CentOS would be our recommended distribution at this time; however, since Entrada will run on almost any distribution, your best bet would be to utilize the distribution most widely adopted and supported by your infrastructure group. |
 | Apache | 2.2+ | 2.4+ | | 
-| MySQL | 5.1 | 5.5+ | MariaDB or MySQL are both fully supported. |
-| PHP | 5.3 | 5.6+ | PHP 7 is supported in Entrada ME 1.9+ | 
+| MariaDB | 5.1 | 5.5+ | MySQL and other commercial flavors are also fully supported. |
+| PHP | 5.6.4+ | 5.6.31+ | PHP7+ is fully supported as of Entrada ME 1.9+ | 
 
 
 ## Virtual Servers
@@ -33,7 +33,9 @@ If you are allowing students, faculty, and staff to log into your Entrada enviro
 
 ## Containers
 
-Application containers, such as Docker, are increasingly becoming industry standard. Entrada has been successfully been "Dockerized" by University of Ottawa, Faculty of Medicine. The associated documentation, recipes, and best practices are forthcoming.    
+Containerization through ecosystems such as Docker are increasingly becoming an industry standard. The Entrada development community utilizes a Docker-based development and testing environment called `entrada-developer`, but few consortium members are using containerization for production environments at this time. We look forward to watching as this technology matures, and will update our documentation accordingly as member institutions adopt and adapt their stacks.
+
+For more information on Docker, please [see our Docker resources](https://github.com/EntradaProject/entrada-1x-docs/tree/master/resources/docker).
 
 ## Server Requirements
 
