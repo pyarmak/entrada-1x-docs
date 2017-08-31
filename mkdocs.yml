@@ -18,8 +18,8 @@ pages:
     - 'Global Namespace': 'developer/namespace.md'
     - 'Entrada ACL': 'developer/entrada-acl.md'
     - 'Authentication Methods': 'developer/authentication-methods.md'
-- 'Upgrading':
-    - 'Upgrading to Entrada 1.10': 'upgrading/to_110.md'
+- 'Upgrade Guides':
+    - 'Upgrading to Entrada ME 1.10': 'upgrade/1.10.md'
 - 'Support':
     - 'Overview': 'support/overview.md'
     - 'Knowledge Base': 'support/kb.md'
