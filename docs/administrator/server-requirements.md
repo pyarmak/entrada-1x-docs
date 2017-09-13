@@ -71,7 +71,7 @@ Recommended Specs:
 
 * 2 or 4 vCPU
 * 4GB+ Memory
-* 75GB of disk space
+* 100GB of disk space
 
 Network:
 
@@ -90,7 +90,7 @@ Recommended Specs:
 
 * 4 or 8 vCPU
 * 12GB+ Memory
-* 75GB of disk space
+* 100GB of disk space
 
 Network:
 
@@ -108,7 +108,7 @@ Recommended Specs:
 
 * 2 or 4 vCPU
 * 4GB+ Memory
-* 75GB of disk space
+* 100GB of disk space
 
 Network:
 
@@ -134,7 +134,7 @@ Recommended Specs:
 
 * 2 or 4 vCPU
 * 4GB+ Memory
-* 75GB of disk space
+* 100GB of disk space
 
 Network:
 

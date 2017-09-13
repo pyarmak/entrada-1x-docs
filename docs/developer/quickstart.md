@@ -274,7 +274,7 @@ Within `www-root/core/modules/admin/sandbox.inc.php` place the following content
         $BREADCRUMB[] = array("url" => ENTRADA_RELATIVE . "/admin/sandbox", "title" => $translate->_("Sandbox Admin"));
     
         /*
-         * More information on our global namespace is documented http://docs.entrada-project.org/developer/namespace/
+         * More information on our global namespace is documented http://docs.entrada.org/developer/namespace/
          * Some commonly used ones include $HEAD[] and $ONLOAD[].
          */
     
