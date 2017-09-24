@@ -61,6 +61,7 @@ RUN yum -y install git \
                 php56u-soap \
                 php56u-xmlrpc \
                 php56u-tidy \
+                php56u-opcache \
                 mariadb-client \
                 mariadb-server
 
