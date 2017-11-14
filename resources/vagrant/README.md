@@ -12,10 +12,10 @@ If you presently use VirtualBox to manage your development environment then you 
 ### macOS
 
 ```
-mkdir ~/Vagrant
+mkdir -p ~/Vagrant/Entrada
 cd ~/Documents
 git clone git@github.com:EntradaProject/entrada-1x-docs.git
-cp ~/Documents/entrada-1x-docs/resources/vagrant ~/Vagrant/Entrada
+cp -rp ~/Documents/entrada-1x-docs/resources/vagrant ~/Vagrant/Entrada
 cd ~/Vagrant/Entrada
 vagrant plugin install vagrant-vbguest
 vagrant plugin install vagrant-reload

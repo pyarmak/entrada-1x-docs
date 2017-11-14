@@ -145,7 +145,7 @@ Vagrant.configure("2") do |config|
 
     sed -i 's@;date.timezone =@date.timezone = America/Toronto@g' /etc/php.ini
     sed -i 's@display_errors = Off@display_errors = On@g' /etc/php.ini
-    sed -i 's@error_reporting = E_ALL \& ~E_DEPRECATED \& ~E_STRICT@error_reporting = E_ALL \& ~E_NOTICE \& ~E_STRICT \& ~E_DEPRECATED@g' /etc/php.ini
+    #sed -i 's@error_reporting = E_ALL \& ~E_DEPRECATED \& ~E_STRICT@error_reporting = E_ALL \& ~E_NOTICE \& ~E_STRICT \& ~E_DEPRECATED@g' /etc/php.ini
     sed -i 's@upload_max_filesize = 2M@upload_max_filesize = 512M@g' /etc/php.ini
     sed -i 's@post_max_size = 8M@post_max_size = 512M@g' /etc/php.ini
     sed -i 's@memory_limit = 128M@memory_limit = 512M@g' /etc/php.ini
@@ -154,14 +154,14 @@ Vagrant.configure("2") do |config|
 
     echo "Setting up MariaDB ..."
 
-    curl -s -o /etc/my.cnf.d/entrada.cnf https://raw.githubusercontent.com/EntradaProject/entrada-1x-docs/master/resources/vagrant/mariadb/entrada.cnf
+    curl -sk -o /etc/my.cnf.d/entrada.cnf https://raw.githubusercontent.com/EntradaProject/entrada-1x-docs/master/resources/vagrant/mariadb/entrada.cnf
 
     # Setup the MySQL database and set root password to 'password'
     systemctl enable mariadb
     systemctl start mariadb
     mysqladmin -u root password password
 
-    curl -s -o /tmp/entrada.sql https://raw.githubusercontent.com/EntradaProject/entrada-1x-docs/master/resources/vagrant/mariadb/entrada.sql
+    curl -sk -o /tmp/entrada.sql https://raw.githubusercontent.com/EntradaProject/entrada-1x-docs/master/resources/vagrant/mariadb/entrada.sql
     mysql -uroot -ppassword < /tmp/entrada.sql
 
     echo "Installing an Apache configuration file..."
@@ -173,15 +173,15 @@ Vagrant.configure("2") do |config|
     # NOTE change 'your-university-1x-me' to the name of your entrada git repository under ~/Sites
     # NOTE you may also have to change the apache ports if you have changed the port settings for Vagrant
     mkdir /etc/httpd/vhosts.d
-    curl -s -o /etc/httpd/vhosts.d/entrada-1x-me.dev.conf https://raw.githubusercontent.com/EntradaProject/entrada-1x-docs/master/resources/vagrant/apache/vhosts.d/entrada-1x-me.dev.conf
-    curl -s -o /etc/httpd/conf.d/phpmyadmin.conf https://raw.githubusercontent.com/EntradaProject/entrada-1x-docs/master/resources/vagrant/apache/phpmyadmin.conf
+    curl -sk -o /etc/httpd/vhosts.d/entrada-1x-me.dev.conf https://raw.githubusercontent.com/EntradaProject/entrada-1x-docs/master/resources/vagrant/apache/vhosts.d/entrada-1x-me.dev.conf
+    curl -sk -o /etc/httpd/conf.d/phpmyadmin.conf https://raw.githubusercontent.com/EntradaProject/entrada-1x-docs/master/resources/vagrant/apache/phpmyadmin.conf
 
     # Restart Apache
     systemctl enable httpd.service
     systemctl restart httpd.service
 
     echo "Installing Composer for PHP dependency management ..."
-    curl -sS https://getcomposer.org/installer | sudo php -- --install-dir=/usr/local/bin --filename=composer
+    curl -skS https://getcomposer.org/installer | sudo php -- --install-dir=/usr/local/bin --filename=composer
 
     echo "Installing capistrano for deployment recipes"
     gem install capistrano -v 2.15.9
