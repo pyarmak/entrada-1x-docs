@@ -72,7 +72,7 @@ Vagrant.configure("2") do |config|
   # Puppet, Chef, Ansible, Salt, and Docker are also available. Please see the
   # documentation for more information about their specific syntax and use.
 
-  # Stage 1 - update CentOS
+  # Stage 1 - Update CentOS
   config.vm.provision "shell", inline: <<-SHELL1
     echo "Provisioning your Entrada development machine."
 
@@ -96,66 +96,91 @@ Vagrant.configure("2") do |config|
     yum -y update
   SHELL1
 
-  # Stage 2 - reboot
+  # Stage 2 - Reboot
   config.vm.provision :reload
 
   # Stage 3 - Entrada requirements
   config.vm.provision "shell", inline: <<-SHELL2
     yum -y install https://centos7.iuscommunity.org/ius-release.rpm
-    yum -y install httpd \
-                openssl \
-                mod_ssl \
-                php56u \
-                php56u-opcache \
-                php56u-mcrypt \
-                php56u-gd \
-                php56u-devel \
-                php56u-mysql \
-                php56u-intl \
-                php56u-mbstring \
-                php56u-bcmath \
-                php56u-ldap \
-                php56u-imap \
-                php56u-pspell \
-                php56u-soap \
-                php56u-xmlrpc \
-                php56u-tidy \
-                git \
-                htmldoc \
-                wkhtmltopdf \
-                mariadb \
-                mariadb-server \
-                curl \
-                ruby \
-                rubygems \
-                vim
+    yum -y install git \
+                    htmldoc \
+                    wkhtmltopdf \
+                    curl \
+                    wget \
+                    unzip \
+                    vim \
+                    nano \
+                    iproute \
+                    python-setuptools \
+                    hostname \
+                    inotify-tools \
+                    yum-utils \
+                    which \
+                    ruby \
+                    rubygems \
+                    exim \
+                    openssl \
+                    httpd \
+                    mod_ssl \
+                    php56u \
+                    php56u-mcrypt \
+                    php56u-gd \
+                    php56u-devel \
+                    php56u-mysql \
+                    php56u-intl \
+                    php56u-mbstring \
+                    php56u-pecl-xdebug \
+                    php56u-bcmath \
+                    php56u-ldap \
+                    php56u-imap \
+                    php56u-pspell \
+                    php56u-soap \
+                    php56u-xmlrpc \
+                    php56u-tidy \
+                    php56u-opcache \
+                    mariadb-client \
+                    mariadb-server
+
+    echo "Updating PHP's default configuration ..."
+
+    sed -i 's@;date.timezone =@date.timezone = America/Toronto@g' /etc/php.ini
+    sed -i 's@display_errors = Off@display_errors = On@g' /etc/php.ini
+    sed -i 's@error_reporting = E_ALL \& ~E_DEPRECATED \& ~E_STRICT@error_reporting = E_ALL \& ~E_NOTICE \& ~E_STRICT \& ~E_DEPRECATED@g' /etc/php.ini
+    sed -i 's@upload_max_filesize = 2M@upload_max_filesize = 512M@g' /etc/php.ini
+    sed -i 's@post_max_size = 8M@post_max_size = 512M@g' /etc/php.ini
+    sed -i 's@memory_limit = 128M@memory_limit = 512M@g' /etc/php.ini
 
     yum -y install phpmyadmin
 
     echo "Setting up MariaDB ..."
+
+    curl -s -o /etc/my.cnf.d/entrada.cnf https://raw.githubusercontent.com/EntradaProject/entrada-1x-docs/master/resources/vagrant/mariadb/entrada.cnf
 
     # Setup the MySQL database and set root password to 'password'
     systemctl enable mariadb
     systemctl start mariadb
     mysqladmin -u root password password
 
-    curl -s -o /tmp/entrada.sql https://raw.githubusercontent.com/EntradaProject/entrada-1x-docs/master/resources/vagrant/mysql/entrada.sql
+    curl -s -o /tmp/entrada.sql https://raw.githubusercontent.com/EntradaProject/entrada-1x-docs/master/resources/vagrant/mariadb/entrada.sql
     mysql -uroot -ppassword < /tmp/entrada.sql
 
     echo "Installing an Apache configuration file..."
 
+    # Tell Apache to include all of the virtual hosts
+    echo "IncludeOptional vhosts.d/*.conf" >> /etc/httpd/conf/httpd.conf
+
     # Download development Apache configuration file from entrada-1x-docs and customize the DocumentRoot
     # NOTE change 'your-university-1x-me' to the name of your entrada git repository under ~/Sites
     # NOTE you may also have to change the apache ports if you have changed the port settings for Vagrant
-    curl -s -o /etc/httpd/conf.d/000-entrada.conf https://raw.githubusercontent.com/EntradaProject/entrada-1x-docs/master/resources/vagrant/apache/000-entrada.conf
-    curl -s -o /etc/httpd/conf.d/phpMyAdmin.conf https://raw.githubusercontent.com/EntradaProject/entrada-1x-docs/master/resources/vagrant/apache/phpMyAdmin.conf
-    # sed -i.bak -e 's/entrada-1x-me/nus-entrada-1x-me/' /etc/httpd/conf.d/entrada.conf
+    mkdir /etc/httpd/vhosts.d
+    curl -s -o /etc/httpd/vhosts.d/entrada-1x-me.dev.conf https://raw.githubusercontent.com/EntradaProject/entrada-1x-docs/master/resources/vagrant/apache/vhosts.d/entrada-1x-me.dev.conf
+    curl -s -o /etc/httpd/conf.d/phpmyadmin.conf https://raw.githubusercontent.com/EntradaProject/entrada-1x-docs/master/resources/vagrant/apache/phpmyadmin.conf
 
     # Restart Apache
     systemctl enable httpd.service
     systemctl restart httpd.service
 
-    echo "Installing Composer for PHP dependency management..."
+    echo "Installing Composer for PHP dependency management ..."
     curl -sS https://getcomposer.org/installer | sudo php -- --install-dir=/usr/local/bin --filename=composer
 
     echo "Installing capistrano for deployment recipes"
@@ -167,9 +192,9 @@ Vagrant.configure("2") do |config|
     echo "All finished. Happy Entrada-ing."
   SHELL2
 
-  # stage 4 - this runs on EVERY boot, to make sure httpd starts (because it depends on the folders being mapped)
+  # Stage 4 - This runs on EVERY boot, to make sure httpd starts (because it depends on the folders being mapped)
   config.vm.provision "shell", run: "always",  inline:  <<-SHELL3
-    if [ -f "/etc/httpd/conf.d/000-entrada.conf" ]
+    if [ -f "/etc/httpd/conf.d/entrada-1x-me.dev.conf" ]
     then
       service httpd restart
     fi
