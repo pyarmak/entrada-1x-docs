@@ -24,20 +24,38 @@ Once you have permission to contribute to the Entrada repository, you can commit
 
 While there is no specific workstation tooling / configuration required for development within the Entrada Platform (beyond a LAMP stack), there are a number of technologies used by Entrada Consortium developers that dramatically increase productivity and reliability. The vast majority of these applications are available for Mac, Windows, and Linux workstations.
 
-### Highly Recommended Workstation Software Stack
+### Virtualization Layer
 
-- [Docker Community Edition](https://www.docker.com/community-edition)
-    - [Docker Setup Documentation](https://github.com/EntradaProject/entrada-1x-docs/tree/master/resources/docker)
-- [SourceTree](https://www.sourcetreeapp.com) || [GitKracken](https://www.gitkraken.com) 
-- [Sequel Pro](https://sequelpro.com) || [MySQL Workbench](https://www.mysql.com/products/workbench)
-- [PhpStorm](https://www.jetbrains.com/phpstorm)
-- [Postman](https://www.getpostman.com)
+| Operating System        | Technology                                                  | Notes                                                                                                           |
+| ----------------------- | ----------------------------------------------------------- | --------------------------------------------------------------------------------------------------------------- | 
+| macOS 10.10.3+          | [Docker for Mac](https://www.docker.com/docker-mac)         | [Setup documentation](https://github.com/EntradaProject/entrada-1x-docs/tree/master/resources/docker).   | 
+| Windows 10+             | [Docker for Windows](https://www.docker.com/docker-windows) | [Setup documentation](https://github.com/EntradaProject/entrada-1x-docs/tree/master/resources/docker).   | 
+| Older macOS / Windows 7 | [Vagrant](https://www.vagrantup.com) + [VirtualBox](https://www.virtualbox.org) | [Setup documentation](https://github.com/EntradaProject/entrada-1x-docs/tree/master/resources/vagrant). | 
+
+### Highly Recommended Software Stack
+
+| Category         | Software                                                    | macOS | Windows | Linux |
+| ---------------- | ----------------------------------------------------------- | ----- | ------- | ----- |
+| SCM              | [Git for Windows](https://git-scm.com/downloads)            |       | X       |       |
+| Git Client       | [SourceTree](https://www.sourcetreeapp.com)                 | X     | X       |       |  
+| Git Client       | [GitKracken](https://www.gitkraken.com)                     |       |         | X     |
+| MariaDB GUI      | [Sequel Pro](https://sequelpro.com)                         | X     |         |       |
+| MariaDB GUI      | [MySQL Workbench](https://www.mysql.com/products/workbench) | X     | X       | X     |
+| IDE              | [PhpStorm](https://www.jetbrains.com/phpstorm)              | X     | X       | X     |
+
+*Please Note: You only need to have one per category.*
 
 ### Additional Recommended Software
 
-- [Araxis Merge](https://www.araxis.com/merge) || [Meld Merge](http://meldmerge.org) || [Beyond Compare](https://www.scootersoftware.com)
-- [Atom](https://atom.io) || [Sublime Text](https://www.sublimetext.com)
-- [DbSchema](http://www.dbschema.com)
+| Category         | Software                                                    | macOS | Windows | Linux |
+| ---------------- | ----------------------------------------------------------- | ----- | ------- | ----- |
+| API Client       | [Postman](https://www.getpostman.com)                       | X     | X       | X     |
+| Visual Diff      | [Araxis Merge](https://www.araxis.com/merge)                | X     | X       |       |  
+| Visual Diff      | [Meld Merge](http://meldmerge.org)                          | X     | X       |       |  
+| Visual Diff      | [Beyond Compare](https://www.scootersoftware.com)           | X     | X       | X     |
+| Text Editor      | [Atom](https://atom.io)                                     | X     | X       |       |
+| Text Editor      | [Sublime Text](https://www.sublimetext.com)                 | X     | X       | X     |
+| Diagram Designer | [DbSchema](https://www.dbschema.com)                        | X     | X       | X     |
 
 ## Installing Entrada
 
