@@ -46,24 +46,26 @@ RUN yum -y install git \
                 openssl \
                 httpd \
                 mod_ssl \
-                php56u \
-                php56u-mcrypt \
-                php56u-gd \
-                php56u-devel \
-                php56u-mysql \
-                php56u-intl \
-                php56u-mbstring \
-                php56u-pecl-xdebug \
-                php56u-bcmath \
-                php56u-ldap \
-                php56u-imap \
-                php56u-pspell \
-                php56u-soap \
-                php56u-xmlrpc \
-                php56u-tidy \
-                php56u-opcache \
-                mariadb-client \
-                mariadb-server
+                mod_php71u \
+                php71u-cli \
+                php71u-mcrypt \
+                php71u-gd \
+                php71u-devel \
+                php71u-mysqlnd \
+                php71u-intl \
+                php71u-mbstring \
+                php71u-pecl-xdebug \
+                php71u-bcmath \
+                php71u-ldap \
+                php71u-imap \
+                php71u-pspell \
+                php71u-soap \
+                php71u-xmlrpc \
+                php71u-tidy \
+                php71u-opcache \
+                php71u-json \
+                mariadb101u \
+                mariadb101u-server
 
 # Update PHP's configuration
 RUN sed -i 's@;date.timezone =@date.timezone = '"$TZ"'@g' /etc/php.ini
