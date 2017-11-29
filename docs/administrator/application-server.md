@@ -68,7 +68,7 @@ The hostnames that will be referenced throughout this document will be `entrada.
         touch /home/production/.ssh/authorized_keys
         chown -R production:production /home/production/.ssh
         chmod 700 /home/production/.ssh
-        chmod 644 /home/production/.ssh/authorized_keys
+        chmod 600 /home/production/.ssh/authorized_keys
 
 12. Add all developers' SSH public keys (i.e. `cat ~/.ssh/id_rsa.pub`) that are allowed to deploy Entrada to your production environment to the new `authorized_keys` file.
 
@@ -86,7 +86,7 @@ The hostnames that will be referenced throughout this document will be `entrada.
         touch /home/staging/.ssh/authorized_keys
         chown -R staging:staging /home/staging/.ssh
         chmod 700 /home/staging/.ssh
-        chmod 644 /home/staging/.ssh/authorized_keys
+        chmod 600 /home/staging/.ssh/authorized_keys
 
 15. Add all developers' SSH public keys (i.e. `cat ~/.ssh/id_rsa.pub`) that are allowed to deploy Entrada to your staging environment to the new `authorized_keys` file.
 
@@ -99,6 +99,7 @@ The hostnames that will be referenced throughout this document will be `entrada.
         mkdir /var/www/vhosts/entrada.med.university.edu/storage/app
         mkdir /var/www/vhosts/entrada.med.university.edu/storage/app/public
         mkdir /var/www/vhosts/entrada.med.university.edu/storage/cache
+        mkdir /var/www/vhosts/entrada.med.university.edu/storage/cbme-uploads
         mkdir /var/www/vhosts/entrada.med.university.edu/storage/community-discussions
         mkdir /var/www/vhosts/entrada.med.university.edu/storage/community-galleries
         mkdir /var/www/vhosts/entrada.med.university.edu/storage/community-shares
@@ -127,6 +128,7 @@ The hostnames that will be referenced throughout this document will be `entrada.
         mkdir /var/www/vhosts/staging.med.university.edu/storage/app
         mkdir /var/www/vhosts/staging.med.university.edu/storage/app/public
         mkdir /var/www/vhosts/staging.med.university.edu/storage/cache
+        mkdir /var/www/vhosts/staging.med.university.edu/storage/cbme-uploads
         mkdir /var/www/vhosts/staging.med.university.edu/storage/community-discussions
         mkdir /var/www/vhosts/staging.med.university.edu/storage/community-galleries
         mkdir /var/www/vhosts/staging.med.university.edu/storage/community-shares
@@ -207,15 +209,14 @@ The hostnames that will be referenced throughout this document will be `entrada.
         # This will limit what information Apache reveals about itself.
         ServerTokens Prod
         ServerSignature Off
-        
+
         <VirtualHost *:80>
             ServerName entrada.med.university.edu
             ServerAdmin sysadmin@med.university.edu
             DocumentRoot /var/www/vhosts/entrada.med.university.edu/current/www-root
             <Directory "/var/www/vhosts/entrada.med.university.edu/current/www-root">
                 Options FollowSymLinks
-                Order allow,deny
-                Allow from all
+                Require all granted
                 AllowOverride all
             </Directory>
         </VirtualHost>
@@ -235,8 +236,7 @@ The hostnames that will be referenced throughout this document will be `entrada.
             DocumentRoot /var/www/vhosts/entrada.med.university.edu/current/www-root
             <Directory "/var/www/vhosts/entrada.med.university.edu/current/www-root">
                 Options FollowSymLinks
-                Order allow,deny
-                Allow from all
+                Require all granted
                 AllowOverride all
             </Directory>
         </VirtualHost>
@@ -246,8 +246,7 @@ The hostnames that will be referenced throughout this document will be `entrada.
             DocumentRoot /var/www/vhosts/staging.med.university.edu/current/www-root
             <Directory "/var/www/vhosts/staging.med.university.edu/current/www-root">
                 Options FollowSymLinks
-                Order allow,deny
-                Allow from all
+                Require all granted
                 AllowOverride all
             </Directory>
         </VirtualHost>
@@ -267,8 +266,7 @@ The hostnames that will be referenced throughout this document will be `entrada.
             DocumentRoot /var/www/vhosts/staging.med.university.edu/current/www-root
             <Directory "/var/www/vhosts/staging.med.university.edu/current/www-root">
                 Options FollowSymLinks
-                Order allow,deny
-                Allow from all
+                Require all granted
                 AllowOverride all
             </Directory>
         </VirtualHost>

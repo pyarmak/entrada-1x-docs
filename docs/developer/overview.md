@@ -12,7 +12,7 @@ The Entrada Platform is broken up into three applications: Entrada Admissions, E
 2. [Entrada ME](https://github.com/EntradaProject/entrada-1x-me) is referred to as `entrada-1x-me`.
 3. [Entrada CPD](https://github.com/EntradaProject/entrada-1x-cpd) is referred to as `entrada-1x-cpd`.
 
-The Entrada Project follows the "git flow" branching model based on [this successful Git branching model](http://nvie.com/posts/a-successful-git-branching-model/). Our branch structure in each repository looks like this:
+The Entrada Platform follows the "git flow" branching model based on [this successful Git branching model](http://nvie.com/posts/a-successful-git-branching-model/). Our branch structure in each repository looks like this:
 
 ### Master Branch
 
@@ -24,7 +24,7 @@ The `develop` branch is the latest "stable" development release of the next plan
 
 ### Release Branches
 
-The `release/*` branches are a series of branches that contain previous major releases. For example, there are `release/1.6`, `release/1.7`, and `release/1.8` branches.
+The `release/*` branches are a series of branches that contain previous major releases. For example, there are `release/1.9`, `release/1.10`, and `release/1.11` branches. These branches will also contain the next minor release of that particular point release. For example: 1.9.4, 1.10.3, 1.11.2, etc. 
 
 ### Feature Branches
 
@@ -36,15 +36,18 @@ The `hotfix/*` branches are a series of branches that provide fixes for bugs wit
 
 ## Directory Structure
 
-Entrada is a large PHP application that includes many different folders, files, and libraries. This will provide developers with a brief introduction to the structure Entrada's codebase.
+Entrada ME is a large PHP application that includes many different folders, files, and libraries. This will provide developers with a brief introduction to the structure Entrada's codebase.
 
     LICENSE
     README.md
     composer.json
     developers
+        acceptance-tests
+        documentation
         functional-tests
-        phpcs.xml
+        load-tests
         tools
+        phpcs.xml
         unit-tests
     entrada
     www-root
@@ -94,7 +97,7 @@ Other files/folders in `www-root`:
 
 This brief introduction to the user permissions in Entrada will give you an overview of what groups and roles come with Entrada by default and what broad functionality these group and role combinations are allowed to access.
 
-The access control level system in Entrada is very flexible, so you can modify and extend these permissions in many different ways. All permissions are defined the `entrada_auth.acl_permissions` table and detailed documentation can be found on the [Entrada ACL](entrada-acl/) wiki page.
+The access control level system in Entrada is very flexible, so you can modify and extend these permissions in many different ways. All permissions are defined the `entrada_auth.acl_permissions` table and detailed documentation can be found in the [Entrada ACL](entrada-acl/) section.
 
 ### Students
 

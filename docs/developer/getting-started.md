@@ -7,66 +7,55 @@ Entrada does not have heavy system requirements and will run on most web-hosting
 ### Overall Requirements
 
 * **Apache 2.2+** including ability to use .htaccess and mod_rewrite
-* **PHP 5.3+** must be running as an Apache module 
-* **MySQL 5.1+** or variant including MariaDB
+* **PHP 5.6.4+** must be running as an Apache module 
+* **MariaDB 5.1+** or variant including MySQL.
 
 Our recommended operating system is Red Hat Enterprise / CentOS Linux. Entrada is largely operating system independent, but unfortunately will not run on Windows at this time.
 
 ## Becoming a Contributor
 
-To contribute any changes to Entrada you must first complete and submit a [Contributors License Agreement](http://www.entrada-project.org/wp-content/uploads/Entrada-CLA.pdf), which provides legal protection for the rest of the Entrada community. You must also register an account at [GitHub](https://github.com) that we can give access to the EntradaProject GitHub organization.
+To contribute anything to Entrada you must first complete and submit a [Contributors License Agreement](https://entrada.org/wp-content/uploads/Entrada-CLA.pdf), which provides legal protection for the Entrada community. You must also register an account at [GitHub](https://github.com) that we can give access to the EntradaProject GitHub organization.
 
-Please submit your CLA and GitHub username via e-mail to [cla@entrada-project.org](mailto:cla@entrada-project.org) for approval. Once your contributor request has been approved, you will be sent a confirmation.
+Please submit your CLA and GitHub username via e-mail to [cla@entrada.org](mailto:cla@entrada.org) for approval. Once your contributor request has been approved, you will be sent a confirmation.
 
-Once you have permission to contribute to the Entrada repository, you can commit new features or fixes to a local  `feature` or `hotfix` Git branch, and then push the branch that to the our `entrada-1x-me` repository on GitHub when you are ready to share. Once your completed feature branch is in the `entrada-1x-me` repository create a Pull Request to our `develop` branch, and we will initiate a code review.
+Once you have permission to contribute to the Entrada repository, you can commit new features or fixes to a local `feature` or `hotfix` Git branch, and then push the branch that to the our `entrada-1x-me` repository on GitHub when you are ready to share. Once your completed feature branch is in the `entrada-1x-me` repository create a Pull Request to our `develop` branch, and we will initiate a code review.
 
 ## Workstation Setup
 
-There is no specific setup required for developing Entrada, but there are a number of tools that work well for Entrada consortium members and can be used as a starting point to finding your preferred way of working. Platform availability is noted for each of the packages.
+While there is no specific workstation tooling / configuration required for development within the Entrada Platform (beyond a LAMP stack), there are a number of technologies used by Entrada Consortium developers that dramatically increase productivity and reliability. The vast majority of these applications are available for Mac, Windows, and Linux workstations.
 
-### Recommended Software
+### Virtualization Layer
 
-- [Apple Xcode](https://developer.apple.com/xcode) is Apple's development tools package (Mac)
-- [Araxis Merge Professional Edition](http://www.araxis.com/merge/) for doing diffs between multiple directories (Mac, PC)
-- [Atlassian SourceTree](http://www.sourcetreeapp.com/) to visually manage local Git repositories (Mac, PC)
-- [PhpStorm](http://www.jetbrains.com/phpstorm/) is the Entrada Consortium recommended IDE (Mac, PC, Linux)
-- [Zend Server Developer Edition](http://www.zend.com/en/products/server/downloads) is a commercially available PHP/Apache/MySQL stack (MAC, PC, Linux)
+| Operating System        | Technology                                                  | Notes                                                                                                           |
+| ----------------------- | ----------------------------------------------------------- | --------------------------------------------------------------------------------------------------------------- | 
+| macOS 10.10.3+          | [Docker for Mac](https://www.docker.com/docker-mac)         | [Setup documentation](https://github.com/EntradaProject/entrada-1x-docs/tree/master/resources/docker).   | 
+| Windows 10+             | [Docker for Windows](https://www.docker.com/docker-windows) | [Setup documentation](https://github.com/EntradaProject/entrada-1x-docs/tree/master/resources/docker).   | 
+| Older macOS / Windows 7 | [Vagrant](https://www.vagrantup.com) + [VirtualBox](https://www.virtualbox.org) | [Setup documentation](https://github.com/EntradaProject/entrada-1x-docs/tree/master/resources/vagrant). | 
 
-#### Zend Server Configuration Notes 
+### Highly Recommended Software Stack
 
-- Request an OSS license for Zend Server from the [developer editions](http://www.zend.com/en/products/server/developer-editions-comparison) page.
-- Once you have installed Zend Server, visit [http://localhost:10081](http://localhost:10081) to set your password and access the administrative interface.
-    * Click Administration > License and enter the license detail
-    * Click PHP > Extensions, then search for and change the following PHP settings:
+| Category         | Software                                                    | macOS | Windows | Linux |
+| ---------------- | ----------------------------------------------------------- | ----- | ------- | ----- |
+| SCM              | [Git for Windows](https://git-scm.com/downloads)            |       | X       |       |
+| Git Client       | [SourceTree](https://www.sourcetreeapp.com)                 | X     | X       |       |  
+| Git Client       | [GitKracken](https://www.gitkraken.com)                     |       |         | X     |
+| MariaDB GUI      | [Sequel Pro](https://sequelpro.com)                         | X     |         |       |
+| MariaDB GUI      | [MySQL Workbench](https://www.mysql.com/products/workbench) | X     | X       | X     |
+| IDE              | [PhpStorm](https://www.jetbrains.com/phpstorm)              | X     | X       | X     |
 
-| Search...           | Change Value To                                 |
-| -----------------   | ----------------------------------------------- |
-| error_reporting     | `E_ALL & ~E_NOTICE & ~E_STRICT & ~E_DEPRECATED` |
-| upload_max_filesize | `250M`                                          |
-| post_max_size       | `250M`                                          |
-| fileinfo            | enable                                          |
+*Please Note: You only need to have one per category.*
 
+### Additional Recommended Software
 
-- Open up Terminal and edit the Apache configuration file:
-```
-sudo vi /usr/local/zend/apache2/conf/httpd.conf
-```
-- Make the following changes:
-```
-# Near the top of the file change the Apache Listen port from 10088 to 80:
-Listen 80
-
-# Near the bottom of the file change the NameVirtualHost and VirtualHost from 10088 to 80:
-NameVirtualHost *:80
-<VirtualHost *:80>
-```
-- Now restart Apache so the changes take effect:
-```
-# Restart Apache in Terminal by typing:
-sudo /usr/local/zend/bin/zendctl.sh restart-apache
-```
-- After cloning the Entrada source code (i.e. `~/Sites/entrada-1x-me.dev`), set up a virtual host in the Administration > Applications > Virtual Hosts section so that Zend Server will host the installation.
-- Add a line to your local `/etc/hosts` file for your new hostname (i.e. `127.0.0.1 entrada-1x-me.dev`).
+| Category         | Software                                                    | macOS | Windows | Linux |
+| ---------------- | ----------------------------------------------------------- | ----- | ------- | ----- |
+| API Client       | [Postman](https://www.getpostman.com)                       | X     | X       | X     |
+| Visual Diff      | [Araxis Merge](https://www.araxis.com/merge)                | X     | X       |       |  
+| Visual Diff      | [Meld Merge](http://meldmerge.org)                          | X     | X       |       |  
+| Visual Diff      | [Beyond Compare](https://www.scootersoftware.com)           | X     | X       | X     |
+| Text Editor      | [Atom](https://atom.io)                                     | X     | X       |       |
+| Text Editor      | [Sublime Text](https://www.sublimetext.com)                 | X     | X       | X     |
+| Diagram Designer | [DbSchema](https://www.dbschema.com)                        | X     | X       | X     |
 
 ## Installing Entrada
 
