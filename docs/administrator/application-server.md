@@ -209,6 +209,7 @@ The hostnames that will be referenced throughout this document will be `entrada.
         # This will limit what information Apache reveals about itself.
         ServerTokens Prod
         ServerSignature Off
+        TraceEnable Off
 
         <VirtualHost *:80>
             ServerName entrada.med.university.edu
