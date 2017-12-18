@@ -1,0 +1,21 @@
+site_name: Entrada User Documentation
+repo_url: https://github.com/EntradaProject/entrada-1x-docs
+theme: readthedocs
+pages:
+- 'Home': 'index.md'
+- 'Assessment & Evaluation':
+    - 'Getting Started': 'assessments/index.md'
+    - 'Items': 'assessments/items.md'
+    - 'Forms': 'assessments/forms.md'
+    - 'Distributions': 'assessments/distributions.md'
+- 'Exams':
+    - 'Getting Started': 'exams/index.md'
+- 'Courses':
+    - 'Getting Started': 'courses/index.md'
+- 'Curriculum Management':
+    - 'Getting Started': 'curriculum/index.md'
+- 'Support':
+    - 'Overview': 'support/overview.md'
+    - 'Knowledge Base': 'support/kb.md'
+    - 'Developer FAQ': 'support/faq.md'
+
