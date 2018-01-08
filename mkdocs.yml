@@ -21,6 +21,7 @@ pages:
     - 'Authentication Methods': 'developer/authentication-methods.md'
 - 'Upgrade Guides':
     - 'Upgrading to Entrada ME 1.10': 'upgrade/1.10.md'
+    - 'Upgrading to Entrada ME 1.11': 'upgrade/1.11.md'
 - 'Support':
     - 'Overview': 'support/overview.md'
     - 'Knowledge Base': 'support/kb.md'

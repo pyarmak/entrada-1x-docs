@@ -1,4 +1,4 @@
-# Scrubber v1.0.0
+# Scrubber v1.1
 
 ## Executing
 
