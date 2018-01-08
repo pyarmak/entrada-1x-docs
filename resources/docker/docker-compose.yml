@@ -7,8 +7,11 @@ services:
       - 80:80
       - 443:443
       - 3306:3306
+      - 4444:4444
     volumes:
-      - ~/Data:/var/lib/mysql
+      - mariadb_data:/var/lib/mysql
       - ~/Sites:/var/www/vhosts
       - ./entrada/apache/vhosts.d:/etc/httpd/vhosts.d
     restart: always
+volumes:
+        mariadb_data:
