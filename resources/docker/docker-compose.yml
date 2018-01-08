@@ -1,6 +1,6 @@
 version: '3'
 services:
-  web:
+  entrada:
     build: entrada
     container_name: entrada-developer
     ports:

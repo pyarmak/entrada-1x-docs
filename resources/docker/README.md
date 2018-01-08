@@ -10,28 +10,40 @@ Developers using Docker don’t have to install and configure complex databases 
 
 ## Prerequisites
 
-1. You must have Docker installed on your local development machine. The simplest way to install everything is to use Docker Community Edition. You should also install Kitematic (GUI):
+1. You must have Docker for Mac or Docker for Windows installed on your local development machine. The simplest way to install everything is to use Docker Community Edition. You should also install Kitematic (GUI):
 
     https://www.docker.com/community-edition
-2. You must have the Entrada ME Git repository cloned to `~/Sites/entrada-1x-me.dev`.
+2. You must have the Entrada ME Git repository cloned to `~/Sites/entrada-1x-me.localhost`.
 3. You must edit your local `hosts` file and add each hostname you would like to use. For example:
     ```
-    127.0.0.1   entrada-1x-me.dev
+    127.0.0.1   entrada-1x-me.localhost
     ```
     
 ## Usage
 
 ### macOS
 
-```
-mkdir ~/Data
-cd ~/Documents
-git clone git@github.com:EntradaProject/entrada-1x-docs.git
-cd ~/Documents/entrada-1x-docs/resources/docker
-docker-compose up -d
-```
+1. Launch Terminal.app and run the following commands:
+    ```
+    cd ~/Documents
+    git clone git@github.com:EntradaProject/entrada-1x-docs.git
+    cd ~/Documents/entrada-1x-docs/resources/docker
+    docker-compose up -d
+    ```
 
-You can connect to the terminal of your new container by typing:
+### Windows 10
+
+1. Launch the **Git Bash** application and run the following commands:
+    ```
+    cd ~/Documents
+    git clone git@github.com:EntradaProject/entrada-1x-docs.git
+    cd ~/Documents/entrada-1x-docs/resources/docker
+    docker-compose up -d
+    ```
+
+## Connecting
+
+You can connect to the terminal of your new container by typing the following in Terminal or Git Bash:
 
 ```
 docker exec -it entrada-developer bash

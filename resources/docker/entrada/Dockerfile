@@ -99,6 +99,7 @@ RUN gem install gnm-caplock
 EXPOSE 80
 EXPOSE 443
 EXPOSE 3306
+EXPOSE 4444
 
 # Copy Supervisor configuration.
 COPY supervisor/supervisord.conf /etc/supervisord.conf
