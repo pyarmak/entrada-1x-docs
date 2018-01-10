@@ -1,6 +1,6 @@
 FROM centos:centos7
 
-LABEL maintainer "Matt Simpson <simpson@queensu.ca>"
+LABEL maintainer="Matt Simpson <simpson@queensu.ca>"
 
 # You can connect to a bash shell on entrada-developer by typing:
 # docker exec -it entrada-developer bash
@@ -28,7 +28,6 @@ RUN easy_install supervisor
 # Install Entrada Developer dependancies.
 RUN yum -y install git \
                 htmldoc \
-                wkhtmltopdf \
                 curl \
                 wget \
                 unzip \
@@ -66,6 +65,9 @@ RUN yum -y install git \
                 php71u-json \
                 mariadb101u \
                 mariadb101u-server
+
+# Install wkhtmltopdf from the binary package because the yum package provided by EPEL is broken.
+RUN curl -SL https://github.com/wkhtmltopdf/wkhtmltopdf/releases/download/0.12.4/wkhtmltox-0.12.4_linux-generic-amd64.tar.xz | tar -xJC /root && cp /root/wkhtmltox/bin/* /usr/bin
 
 # Update PHP's configuration
 RUN sed -i 's@;date.timezone =@date.timezone = '"$TZ"'@g' /etc/php.ini
@@ -109,5 +111,16 @@ COPY mariadb/entrada.cnf /etc/my.cnf.d
 COPY mariadb/entrada.sql /tmp
 COPY mariadb/mariadb-start.sh /usr/bin
 RUN chmod +x /usr/bin/mariadb-start.sh
+
+# Add github.com to your known_hosts file.
+RUN mkdir -p /root/.ssh && chmod 0700 /root/.ssh && ssh-keyscan github.com > /root/.ssh/known_hosts
+
+# At this time there is no good way of automatically getting your SSH private key
+# into the container. Most say it's a bad idea anyways, but most aren't using Docker
+# the way that we are (i.e. entrada-developer) for a local development environment.
+# Once this is running type this.
+# docker exec -it entrada-developer bash
+# cp /run/secrets/ssh_private_key /root/.ssh/id_rsa
+# chmod 600 /root/.ssh/id_rsa
 
 CMD ["/usr/bin/supervisord"]
