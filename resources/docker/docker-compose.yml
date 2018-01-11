@@ -13,7 +13,10 @@ services:
             - ~/Sites:/var/www/vhosts
             - ./entrada/apache/vhosts.d:/etc/httpd/vhosts.d
         secrets:
-            - ssh_private_key
+            - source: ssh_private_key
+              uid: '0'
+              gid: '0'
+              mode: 0400
         restart: always
 volumes:
     mariadb_data:
