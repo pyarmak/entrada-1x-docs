@@ -1,3 +1,3 @@
 # Knowledge Base
 
-The Administrative Knowledge Base is a first stop for administrative staff who are looking to ask questions related to using Entrada. At this point in time we do not have a lot of user-level documentation available at the Consortium level, so our hope is that over time the Knowledge Base serves as a solid source of information for new users within the Entrada Platform.
+If the posted documentation doesn't give you the answer you need, the Administrative Knowledge Base is your next stop to ask questions related to using Entrada. Feel free to submit your question and we'll work to answer it.  Don't be afraid to be the first!  By asking questions you help us improve our training materials and sometimes even the Entrada platform, which in turn provides all users with a better experience.
