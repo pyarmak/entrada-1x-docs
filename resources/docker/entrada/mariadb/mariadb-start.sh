@@ -2,7 +2,7 @@
 
 if [ ! -f /var/lib/mysql/ibdata1 ]; then
 
-	/usr/bin/mysql_install_db
+	/usr/bin/mysql_install_db --user=mysql
 
 	/usr/bin/mysqld_safe &
 	sleep 5s

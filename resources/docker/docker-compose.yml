@@ -1,14 +1,25 @@
-version: '3'
+version: '3.4'
 services:
-  web:
-    build: entrada
-    container_name: entrada-developer
-    ports:
-      - 80:80
-      - 443:443
-      - 3306:3306
-    volumes:
-      - ~/Data:/var/lib/mysql
-      - ~/Sites:/var/www/vhosts
-      - ./entrada/apache/vhosts.d:/etc/httpd/vhosts.d
-    restart: always
+    entrada:
+        build: entrada
+        container_name: entrada-developer
+        ports:
+            - 80:80
+            - 443:443
+            - 3306:3306
+            - 4444:4444
+        volumes:
+            - mariadb_data:/var/lib/mysql
+            - ~/Sites:/var/www/vhosts
+            - ./entrada/apache/vhosts.d:/etc/httpd/vhosts.d
+        secrets:
+            - source: ssh_private_key
+              uid: '0'
+              gid: '0'
+              mode: 0400
+        restart: always
+volumes:
+    mariadb_data:
+secrets:
+    ssh_private_key:
+        file: ~/.ssh/id_rsa
