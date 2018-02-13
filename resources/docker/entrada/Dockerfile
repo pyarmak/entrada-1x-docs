@@ -94,8 +94,8 @@ RUN curl -sS https://getcomposer.org/installer | php -- --install-dir=/usr/local
 RUN echo "IncludeOptional vhosts.d/*.conf" >> /etc/httpd/conf/httpd.conf
 
 # Install PHPMyAdmin.
-RUN yum -y install phpmyadmin
-COPY apache/phpmyadmin.conf /etc/httpd/conf.d/phpmyadmin.conf
+#RUN yum -y install phpmyadmin
+#COPY apache/phpmyadmin.conf /etc/httpd/conf.d/phpmyadmin.conf
 
 # Install Capistrano for deployment recipes.
 RUN gem install capistrano -v 2.15.9
