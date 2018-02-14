@@ -16,4 +16,4 @@ Learners can access their portfolios through their user profile and are shown an
 * To create their own artifacts, learners can click My Artifacts and select Create My Own Artifact at the bottom of the list.  If this option does not appear it is because the folder was set up to not allow learner artifacts; in this case learners can only add entries to required artifacts.
 * After clicking Create My Own Artifact learners enter an artifact title and description and save.  Then they can click on the My Artifacts button again and at the bottom of the list the artifact will appear.  Click on it to open it and upload an entry.
 
-* After advisors have reviewed artifacts, learners will see the appropriate notes on each artifact entry.  These might include "Reviewed by my advisor" and "Flagged by my advisor"
+* After advisors have reviewed artifacts, learners will see the appropriate notes on each artifact entry.  These might include "Reviewed by my advisor" and "Flagged by my advisor".

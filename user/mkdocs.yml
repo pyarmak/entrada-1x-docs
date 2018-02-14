@@ -12,7 +12,7 @@ pages:
   - 'Feature Requests': 'support/featurerequests.md'
 - 'System Setup':
   - 'Getting Started': 'systemsetup/index.md'
-  - 'Organization': 'systemsetup/organization.md'
+  - 'Organisation': 'systemsetup/organisation.md'
   - 'Location': 'systemsetup/location.md'
   - 'Departments': 'systemsetup/departments.md'
 - 'Curriculum Management':
@@ -22,6 +22,9 @@ pages:
   - 'Curriculum Map Versions': 'curriculum/mapversions.md'
   - 'Curriculum Tags': 'curriculum/tags.md'
   - 'Hot Topics': 'curriculum/hottopics.md'
+  - 'Curriculum Search': 'curriculum/search.md'
+  - 'Curriculum Explorer': 'curriculum/explorer.md'
+  - 'Curriculum Matrix': 'curriculum/matrix.md'
 - 'User Management':
   - 'Create Users': 'users/create.md'
   - 'User Cohorts': 'users/cohorts.md'
@@ -43,7 +46,8 @@ pages:
   - 'Creating a Community': 'communities/create.md'
   - 'Community Pages': 'communities/pages.md'
   - 'Manage Community': 'communities/manage.md'
-  - 'What Users Can Do': 'communities/useractions.md'
+  - 'Using Different Page Types': 'communities/pageactions.md'
+  - 'Subscribing to Community Notifications': 'communities/subscribecnotifications.md'
 - 'Courses':
   - 'Getting Started': 'courses/index.md'
   - 'Creating and Managing Courses': 'courses/create.md'
@@ -67,15 +71,18 @@ pages:
   - Logbook: 'clinicallearning/logbook.md'
   - Lottery: 'clinicallearning/lottery.md'
   - Rotations: 'clinicallearning/rotations.md'
+  - Electives: 'clinicallearning/electives.md'
 - 'Assessment and Evaluation':
   - 'Getting Started': 'assessment-evaluation/index.md'
   - 'Settings': 'assessment-evaluation/settings.md'
   - 'Items': 'assessment-evaluation/items.md'
   - 'Forms': 'assessment-evaluation/forms.md'
   - 'Distributions': 'assessment-evaluation/distributions.md'
+  - 'User View of A&E': 'assessment-evaluation/userbadge.md'
 - 'Exams':
   - 'Getting Started': 'exams/index.md'
   - 'Create Exam Items': 'exams/items.md'
+  - 'Importing Exam Items': 'exams/imports.md'
   - 'Create an Exam': 'exams/create.md'
   - 'Post an Exam': 'exams/post.md'
   - 'Reporting Exams Results': 'exams/reporting.md'
@@ -114,8 +121,11 @@ pages:
   - 'Manage Apartments': 'regionaled/apartments.md'
   - 'Scheduling Learners': 'regionaled/schedules.md'
 - 'User Tools':
+  - 'Swithcing Organisations': 'usertools/switchorganisations.md'
   - 'My Bookmarks': 'usertools/bookmark.md'
   - 'People Search': 'usertools/peoplesearch.md'
   - 'Masking Identity': 'usertools/maskingid.md'
+  - 'RSS Feeds': 'usertools/rssfeeds.md'
+  - 'Subscribing to Calendars': 'usertools/subscribecalendar.md'
 - 'Rich Text Content':
   - 'Using Rich Text Content Editor': 'richtexteditor/index.md'

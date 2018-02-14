@@ -1,1 +1,1 @@
-#Clinical Learning Logbook
+The logbook module allows learners to record clinical learning experiences (e.g., tasks like dictation, procedures like catheter insertion, or involvement in cases with specific presentations).  Curriculum tags with the "Clinical logbook" option selected will be available through the logbook.

@@ -3,10 +3,7 @@ The MSPR is a collection of information about a student including activities com
 
 The MSPR includes three sections which are populated different ways. "Information Requiring Approval" is logged by learners and approved by program coordinators.  "Information Requiring Entry" is entered by program coordinators. "Information Extracted from Other Sources" is automatically populated from other Entrada data.
 
-In this section you'll learn:
-* How to add information as a student
-* How to add information as a program coordinator
-* How to approve student submissions as a program coordinator
+There is currently no user interface to edit the required elements of the MSPR or alter what gets automatically populated by Entrada.  If your organisation wishes to customize this you will need help from a developer.
 
 Additional information about how to manage the MSPR in general can be found in the Manage MSPR section.
 
