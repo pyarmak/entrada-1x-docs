@@ -1,12 +1,13 @@
 <?php
 /**
- * Data Scrubber v1.0.0
+ * Scrubber v1.1
  * ==============================================================
  *
  * This script will scrub some of the user data so that it's
  * safer to use in staging and developer environments.
  *
  * CHANGELOG:
+ * 20170825: Changed the variable names to match environment variables defined in Scrubber Executor.
  * 20170309: Initial commit of this script.
  *
  */
@@ -21,16 +22,16 @@ error_reporting(E_ALL);
 /*
  * Database server connection information.
  */
-$database_hostname = $_SERVER["DATABASE_HOSTNAME"];
-$database_username = $_SERVER["DATABASE_USERNAME"];
-$database_password = $_SERVER["DATABASE_PASSWORD"];
+$destination_database_hostname = $_SERVER["DESTINATION_DATABASE_HOSTNAME"];
+$destination_database_username = $_SERVER["DESTINATION_DATABASE_USERNAME"];
+$destination_database_password = $_SERVER["DESTINATION_DATABASE_PASSWORD"];
 
 /*
  * Databases that will be scrubbed.
  */
-$staging_entrada = $_SERVER["STAGING_ENTRADA"];
-$staging_entrada_auth = $_SERVER["STAGING_ENTRADA_AUTH"];
-$staging_entrada_clerkship = $_SERVER["STAGING_ENTRADA_CLERKSHIP"];
+$destination_entrada = $_SERVER["DESTINATION_ENTRADA"];
+$destination_entrada_auth = $_SERVER["DESTINATION_ENTRADA_AUTH"];
+$destination_entrada_clerkship = $_SERVER["DESTINATION_ENTRADA_CLERKSHIP"];
 
 /*
  * Username prefix (i.e user = user1, user2030, user225322)
@@ -68,16 +69,16 @@ date_default_timezone_set($timezone);
  * Connect to entrada_auth MySQL database using the same user used to import
  * the MySQL dump from db02.
  */
-$db = new mysqli($database_hostname, $database_username, $database_password, $staging_entrada);
+$db = new mysqli($destination_database_hostname, $destination_database_username, $destination_database_password, $destination_entrada);
 if ($db->connect_errno) {
     echo "Failed to connect to MySQL: " . $mysqli->connect_error;
     exit;
 }
 
-$users = $db->query("SELECT a.* FROM `" . $staging_entrada_auth . "`.`user_data` AS a ORDER BY a.`id`");
+$users = $db->query("SELECT a.* FROM `" . $destination_entrada_auth . "`.`user_data` AS a ORDER BY a.`id`");
 if ($users) {
     while ($user = $users->fetch_object()) {
-        $query = "UPDATE `" . $staging_entrada_auth . "`.`user_data` SET
+        $query = "UPDATE `" . $destination_entrada_auth . "`.`user_data` SET
                     `number` = '12345" . $user->id . "',
                     `username` = '" . $username_prefix . $user->id . "',
                     `password` = SHA1('" . $user_password . "dabb46b438407ffca46f9b866b5776247dfde702'),
@@ -95,10 +96,10 @@ if ($users) {
     }
 }
 
-$electives = $db->query("SELECT a.* FROM `" . $staging_entrada_clerkship . "`.`electives` AS a ORDER BY a.`electives_id`");
+$electives = $db->query("SELECT a.* FROM `" . $destination_entrada_clerkship . "`.`electives` AS a ORDER BY a.`electives_id`");
 if ($electives) {
     while ($elective = $electives->fetch_object()) {
-        $query = "UPDATE `" . $staging_entrada_clerkship . "`.`electives` SET
+        $query = "UPDATE `" . $destination_entrada_clerkship . "`.`electives` SET
                     `email` = '" . $username_prefix . "+elective" . $elective->electives_id . "@example.org', 
                     `preceptor_first_name` = '" . $firstnames[array_rand($firstnames)] . "',
                     `preceptor_last_name` = '" . $lastnames[array_rand($lastnames)] . "',
@@ -113,10 +114,10 @@ if ($electives) {
     }
 }
 
-$occupants = $db->query("SELECT a.* FROM `" . $staging_entrada_clerkship . "`.`apartment_schedule` AS a WHERE `occupant_title` != '' OR `occupant_title` != NULL ORDER BY a.`aschedule_id`");
+$occupants = $db->query("SELECT a.* FROM `" . $destination_entrada_clerkship . "`.`apartment_schedule` AS a WHERE `occupant_title` != '' OR `occupant_title` != NULL ORDER BY a.`aschedule_id`");
 if ($occupants) {
     while ($occupant = $occupants->fetch_object()) {
-        $query = "UPDATE `" . $staging_entrada_clerkship . "`.`apartment_schedule` SET
+        $query = "UPDATE `" . $destination_entrada_clerkship . "`.`apartment_schedule` SET
                     `occupant_title` = '" . $firstnames[array_rand($firstnames)] . " " . $lastnames[array_rand($lastnames)] . "'
                     WHERE `aschedule_id` = " . $occupant->aschedule_id;
         if (!$db->query($query)) {
@@ -125,11 +126,11 @@ if ($occupants) {
     }
 }
 
-$supers = $db->query("SELECT a.* FROM `" . $staging_entrada_clerkship . "`.`apartments` as a ORDER BY a.`apartment_id`");
+$supers = $db->query("SELECT a.* FROM `" . $destination_entrada_clerkship . "`.`apartments` as a ORDER BY a.`apartment_id`");
 if ($supers) {
     while ($super = $supers->fetch_object()) {
         $address = rand(1, 999) . " " . $streetnames[array_rand($streetnames)] . " " . $streetsuffix[array_rand($streetsuffix)];
-        $query = "UPDATE `" . $staging_entrada_clerkship . "`.`apartments` SET
+        $query = "UPDATE `" . $destination_entrada_clerkship . "`.`apartments` SET
                     `super_firstname` = '" . $firstnames[array_rand($firstnames)] . "',
                     `super_lastname` = '" . $lastnames[array_rand($lastnames)] . "',
                     `keys_firstname` = '" . $firstnames[array_rand($firstnames)] . "',
