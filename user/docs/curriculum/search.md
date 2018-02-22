@@ -1,4 +1,4 @@
-The Curriculum Search tool is available to all users and uses boolean search terms to look for content within learning events.
+The Curriculum Search tool is available to all users and uses boolean search terms to look for content within learning events.  It searches event titles, event descriptions, and curriculum tag names.  Users can also use advanced options to search files attached to learning events.
 
 #How to use Curriculum Search
 * Type your search term(s) into the search space.

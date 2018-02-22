@@ -1,6 +1,8 @@
 The Curriculum Explorer is available to all users and allows you to filter by curriculum tag set, course, cohort, and academic year, in order to see where a specific curriculum tag has been applied to a course, learning event, or assessment.
 
-One big difference between Curriculum Explorer and Curriculum Search is that Explorer includes assessments.  Currently, the results returned in curriculum explorer reflect curriculum tags applied to an assessment in the gradebook module.  It does not return results for individual exam items.
+One big difference between Curriculum Explorer and Curriculum Search is that Explorer includes assessments.  Currently, the results returned in curriculum explorer regarding assessments reflect curriculum tags applied to an assessment in the gradebook module.  It does not return results for individual exam items.
+
+Curriculum Explorer does not currently reflect mapping between curriculum tags. It will only display curriculum tags directly assigned to an event, course, or assessment.
 
 #How to use Curriculum Explorer  
 * Select a curriculum tag set from the dropdown menu.

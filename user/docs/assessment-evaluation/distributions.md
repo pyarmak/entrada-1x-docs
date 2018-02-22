@@ -4,14 +4,14 @@ A distribution defines who will complete a form, who/what the form is about, and
 In this section you'll learn:
 * How to create a distribution
 * How to copy a distribution
-* How to manage distributions (monitor completion of forms, remind people to complete forms, etc.)
+* How to manage extisting distributions (monitor completion of forms, remind people to complete forms, etc.)
 * How to delete a distribution
 * How to manage tasks at the individual level
 
 #How to create a distribution
-* Navigate to Admin>Assessment & Evaluation
-* Click on Distributions
-* Click Add New Distribution
+* Navigate to Admin>Assessment & Evaluation.
+* Click 'Distributions'.
+* Click 'Add New Distribution'.
 * This will open a five-step wizard that walks you through creating a distribution.  Complete the information in each step noting the following:
 **Form**
   * The distribution title will be visible to users completing the form but the description will not be.
@@ -42,32 +42,36 @@ In this section you'll learn:
   * **Prompted Response Notifications**: When creating items, certain responses can be flagged for prompted responses.  If a form includes items with prompted responses, here you can set who is notified when any of those prompted responses are selected.
 
 #How to copy a distribution
-* Navigate to Admin>Assessment & Evaluation
-* Click on Distributions
+* Navigate to Admin>Assessment & Evaluation.
+* Click 'Distributions'.
 * Use the search bar to look for the distribution you want to copy.  Click the down arrow beside the search bar to apply filters to refine your search results.
-* Click on the cog icon to the right of the distribution you want to copy. Select Copy Distribution.
+* Click on the cog icon to the right of the distribution you want to copy. Select 'Copy Distribution'.
 * Edit the information in each step of the distribution wizard as needed and save your work.
 
 #How to manage distributions (monitor completion of forms, remind people to complete forms, etc.)
-* Navigate to Admin>Assessment & Evaluation
-* Click on Distributions
-* Use the search bar to look for the distribution you want to manage.  Click the down arrow beside the search bar to apply filters to refine your search results.
-* Click on the cog icon to the right of the distribution you want to copy. Select View Distribution Report.
+* Navigate to Admin>Assessment & Evaluation.
+* Click 'Distributions'.
+* Use the search bar to look for the distribution you want to manage.  Click the down arrow beside the search bar to apply filters to refine your search results.  You will only see distributions to which you have access.
+* Click on the cog icon to the right of the distribution you want to copy. Select 'View Distribution Report'.
 * Review progress.  Click on any category (Pending, In Progress, Completed) to view more details about specific targets and assessors.
+* Pending tasks have not yet been started.  In Progess tasks have been started but not complete.  Completed tasks are done and have been submitted.
 * To **delete tasks** tick off the box below the garbage icon on each task card and then click the red Delete Task(s) button.
 * To **send reminders** to those with incomplete forms, tick off the box below the bell icon on each task card and then click the blue Manage Distribution button and select Send Reminders from the dropdown list.
 * Review your choices and, if correct, click Confirm Reminders.  You will get a green success message.
-* To **add a task** to a distribution, click the blue Manage Distribution button and select Add a Task from the dropdown list.  Complete the required information and click Confirm Task.
+* To **add a task** to a distribution, click the blue Manage Distribution button and select 'Add a Task' from the dropdown list.  Complete the required information and click 'Confirm Task'.
 
 **Viewing progress results for learning event-based distributions: Program coordinators who set up such distributions should view progress from their My Assessments page.**
 
 #How to delete a distribution
-* Navigate to Admin>Assessment & Evaluation
-* Click on Distributions
+* Navigate to Admin>Assessment & Evaluation.
+* Click 'Distributions'.
 * Use the search bar to look for the distribution you want to delete.  Click the down arrow beside the search bar to apply filters to refine your search results.
-* Tick off the box beside the name of the distributions you want to delete.
+* Click the checkbox beside the name of the distributions you want to delete.
 * Click the red Delete Distributions button.
 
 #How to manage tasks at the individual level
-* Most of the functions described above can also be completed at individual task level when logged into the system as a program coordinator or faculty directory.
-* When looking at a users Assessment & Evaluation dashboard, some users will be able to send reminders, remove tasks, and download PDFs of selected tasks from their assigned learners or faculty.
+* Many of the functions described above can also be completed at an individual task level when logged into the system as a program coordinator or faculty director.
+* Click the Assessment and Evaluation badge at the top right (beside the logout button).
+* Click the My Learners tab.
+* Click on the appropriate tab for a learner (e.g. CBME, Assessments, Logbook).
+* When looking at a user's Assessment & Evaluation dashboard, some users will be able to send reminders, remove tasks, and download PDFs of selected tasks from their assigned learners or faculty.

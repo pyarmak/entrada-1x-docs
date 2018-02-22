@@ -1,20 +1,19 @@
-# Assessment Options in Entrada
-
 There are multiple tools available to facilitate assessment and evaluation through Entrada.
-To create items and forms to assess leaner performance on tasks (e.g., clinical skills), use the assessment and evaluation module.
-To create items and forms to have learners evaluate courses, faculty, and other activities, use the assessment and evaluation module.
-To create assessment items to use in small, low-stakes assessments use the quiz module.
-To create assessment items to use for tests and exams use the exam module.
-To store learner grades and facilitate faculty grading of assignments use the gradebook.
 
-The Assessment and Evaluation Module also provides users with a quick way to view their tasks.
+* To create items and forms to assess leaner performance on tasks (e.g., clinical skills), use the assessment and evaluation module.  
+* To create items and forms to have learners evaluate courses, faculty, themselves, and other activities, use the assessment and evaluation module.  
+* To create assessment items to use in small, low-stakes assessments use the quiz module.  
+* To create assessment items to use for tests and exams use the exam module.  
+* To store learner grades and facilitate faculty grading of assignments use the gradebook.  
 
-Entrada also includes a portfolio, which some organisations may choose to use for student assessment purposes.  For more detail about the ePortfolio please see the ePortfolio section.
+Entrada also includes a portfolio, which some organisations may choose to use for student assessment purposes.  For more detail about the portfolio please see the Portfolio help section.
 
 #Assessment and Evaluation Module
-The Assessment and Evaluation Module in Entrada can be used to assess learner performance in a clinical environment, and provide multiple user groups with the ability to assess faculty, courses/programs, and other activities within the context of your organisation.
+The Assessment and Evaluation Module in Entrada can be used to assess learner performance in a clinical environment, and provide multiple user groups with the ability to assess faculty, courses/programs, and other activities within the context of your organisation.  
 
-To use the Assessment and Evaluation Module users must create items (e.g., questions, prompts, etc.), create a form (a collection of items), and then create a distribution.  A distribution defines who will complete a form, who/what the form is about, and when the form will be completed.
+To use the Assessment and Evaluation Module users must create items (e.g., questions, prompts, etc.), create a form (a collection of items), and then create a distribution.  A distribution defines who will complete a form, who/what the form is about, and when the form will be completed.  Through the Assessment and Evaluation Module users also have a quick way to view their assigned tasks and administrators can monitor the completion of tasks.  
+
+Reporting exists to export the results of various assessments and evaluations.
 
 Forms created through the A and E module can also be attached to gradebook items to facilitate inline grading.
 

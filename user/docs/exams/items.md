@@ -90,7 +90,7 @@ When creating exams, you can add a question with multiple versions and actually 
 * Click on a folder title to look for questions within a specific folder. Turn sub-folder view on or off to see more or fewer questions.  
 * Type in a word or phrase to retrieve any questions with matching terms.  The search feature looks within question descriptions and stems.  
 * Use Advanced Search to further refine your results by filtering by a curriculum tag, author (really the creator of the question), or previous exam. You can apply multiple tags to one search.  Don’t forget to type in a search term and hit enter to return results.  
-(Maybe there should also be a search button?  And what if you want to apply author and tag filters and return all questions, not look for a specific phrase?)
+*(Maybe there should also be a search button?  And what if you want to apply author and tag filters and return all questions, not look for a specific phrase?)*
 * Toggle between a list view and question detail view using the icons on the left (beside sub-folders).  
 * In list view, edit, preview, or view groups for a question by using the pencil, magnifying glass, and chain icons.  
 * In question detail view, quickly view the expanded details of all question by clicking on the eye icon to the left of the Actions button.  
