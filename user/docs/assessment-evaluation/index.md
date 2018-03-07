@@ -1,6 +1,8 @@
+#Getting Started with Assessment and Evaluation  
+
 There are multiple tools available to facilitate assessment and evaluation through Entrada.
 
-* To create items and forms to assess leaner performance on tasks (e.g., clinical skills), use the assessment and evaluation module.  
+* To create items and forms to assess learner performance on tasks (e.g., clinical skills), use the assessment and evaluation module.  
 * To create items and forms to have learners evaluate courses, faculty, themselves, and other activities, use the assessment and evaluation module.  
 * To create assessment items to use in small, low-stakes assessments use the quiz module.  
 * To create assessment items to use for tests and exams use the exam module.  

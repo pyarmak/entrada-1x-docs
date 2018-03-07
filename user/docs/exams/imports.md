@@ -21,9 +21,24 @@ fnb Fill in the Blank
 
 You can also indicate the following information for any question, although it is optional:
 description (this is short description or title of the question)
-rationale
-correct_text (this can be used for short answer or essay questions)
-code  
+* rationale
+* correct_text (this can be used for short answer or essay questions)
+* code  
+* locked response(s) - this allows you to lock a response option on a question if you intend to randomize question response options when you post the exam  
+
+Example:
+Which are vowels?
+a. a
+b. e
+c. i
+d. All of the above
+answer: d
+type: mc_v
+folder: /some/folder
+locked: d
+
+* curriculum tags - this allows you to import curriculum tags with your questions.  To use this feature you need to know the curriculum tag id.  These can be found in Admin>Manage Curriculum.  When you open a curriculum tag set, toggle to the table view of curriculum tags (use icons beside 'Add Tag'), and if ID is not a visible field, add a column by clicking the columns selector (under the Import from CSV button) and adding the ID column.  To the question text add a line formatted like this:
+curriculum_tags: 1024, 1025
 
 #Additional formatting information about importing questions from a text document
 Each question shows the minimal amount of information required.  It is recommended that you also provide description, rationale, etc.
@@ -50,10 +65,10 @@ c. trees
 
 answer: a
 answer: b
+**or**
+answer: a, b
 type: mc_v_m
 folder: /some/folder
-
-In ME1.12 you will also be able to write the answer as answer: a, b
 
 **Multiple Choice Horizontal**
 Multiple choice horizontal questions follow the same format as multiple choice vertical, but with a type of "mc_h". They can have at most 5 answer choices. An example is shown below.
@@ -62,7 +77,6 @@ Multiple choice horizontal questions follow the same format as multiple choice v
 a. red
 b. green
 c. blue
-
 
 answer: a
 type: mc_h
@@ -76,15 +90,15 @@ a. sky
 b. ocean  
 c. trees  
 
-answer: a  
-answer: b  
+answer: a
+answer: b
+**or**
+answer: a, b
 type: mc_h_m  
 folder: /some/folder
 
-In ME1.12 you will also be able to write the answer as answer: a, b
-
 **Short Answer**  
-Short answer questions have a type of "short" and require only the question stem. An example is shown below.
+Short answer questions have a type of "short" and require only the question stem although it is recommended to provide correct text and rationale. An example is shown below.
 
 1. Where is your favorite color?  
 type: short  
@@ -106,7 +120,7 @@ b. This is the second answer choice.
 c. This is the third answer choice.  
 item: This is the first item stem, its correct answer is choice C.  
 answer: c  
-item: :This is the second item stem, its correct answer is choice A.  
+item: This is the second item stem, its correct answer is choice A.  
 answer: a  
 type: match  
 folder: /some/folder  
@@ -114,7 +128,7 @@ folder: /some/folder
 **Text**
 Text questions are not questions at all; they are generally used as instruction text for further questions. Text questions have a type of "text" and require no other special attributes. An example is shown below.
 
-1. The next three questions cover the following scenario: (scenario here)  
+1. The next three questions cover the following scenario: A patient arrives at your family medicine clinic at 2:30 on a Friday afternoon...  
 type: text  
 folder: /some/folder  
 
@@ -127,15 +141,13 @@ answer: woodchuck|hamster|groundhog
 type: fnb  
 folder: /some/folder  
 
-*Currently, you cannot import curriculum tags associated with questions through this feature.  A future version of Entrada will support this function.*
-
 #How to import existing questions from ExamSoft
 
 Migrate Questions (only available to Medtech Admin)
 To import existing questions from another exam management tool, navigate to Admin>Manage Exams>Questions and click on Migrate Q’s. Indicate a folder you wish to populate and attach the appropriate file noting the requirement for plain text format.  (See additional migration instructions here.) Then, click ‘Import Questions.’
 
-Migrate Images (only available to Medtech Admin?)
+Migrate Images (only available to Medtech Admin)
 To import existing images from another exam management tool, click on the Migrate Images tab. Attach the appropriate file noting the requirement for HTML format (should they select a folder or is there a question id it looks for?).  Then, click ‘Import Question Images.’
 
-Migrate Responses (only available to Medtech Admin?)
+Migrate Responses (only available to Medtech Admin)
 To import existing responses from another exam management tool, click on the Migrate Responses tab. Attach the appropriate file noting the requirement for plain text format (should they select a folder or is there a question id it looks for?).  Then, click ‘Import Responses.’

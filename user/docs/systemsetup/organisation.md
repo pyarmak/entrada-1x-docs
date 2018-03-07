@@ -8,10 +8,10 @@ You can add and manage organisations through Admin>System Settings.  Although Me
 * Navigate to Admin>System Settings.
 * Click 'Add New Organisation'.
 * Provide the required information noting the following:  
-**Interface:** Stock Entrada only has a default interface.  If you are testing things on an installation with dummy data provided by Entrada and have a 'pgme' interface option available please do not select it.
+**Interface Template:** Stock Entrada only has a default interface.  If you are testing things on an installation with dummy data provided by Entrada and have a 'pgme' interface option available please do not select it.
 * Click 'Save'.
 
-Additional interface information: If you would like an additional templated interface, that is customization that your institution can do.  A use case might be that you have undergraduate and postgraduate or graduate medical education organizations using your installation of Entrada and they have slightly different vocabularies (e.g., course vs. program).
+Additional interface template information: The Entrada template is entirely configurable by a developer and if you would like additional interface templates, that is customization that your institution can do.  Many schools apply their own branding to the look of Entrada or you might have different templates for different organisations using your installation of Entrada (e.g., undergraduate and postgraduate or graduate medical education organizations).
 
 #How to edit an existing organisation's metadata
 * Navigate to Admin>System Settings.

@@ -1,31 +1,25 @@
 #Creating a Gradebook and Gradebook Entries
 Gradebooks automatically exist for specific courses and curriculum periods, however they must be populated with assessments. Once you have existing assessments, you can copy and apply them to new curriculum periods.
 
-In this section you'll learn:
-* How to create new gradebook assessments (includes linking to events, forms, portfolios, curriculum tags, and setting up graders and groups)
-* How to manage graders and learners
-* How to copy and modify existing gradebook entries
-* How to manage existing assessments in a gradebook (including collections)
-
 #How to create a new gradebook assessment
-* Navigate to Admin>Manage Gradebook
-* Search for or click on the name of the course/program you want to work with
-* Make sure that you are in the correct Curriculum Period, and adjust it if necessary
-* Click Add New Assessment
-* Fill in the required fields, noting the following:
-**Assessment Details**
+* Navigate to Admin>Manage Gradebook.
+* Search for or click on the name of the course/program you want to work with.
+* Make sure that you are in the correct Curriculum Period, and adjust it if necessary.
+* Click 'Add New Assessment'.
+* Fill in the required fields, noting the following:  
+**Assessment Details:**  
 * Assessment Weighting-If your course has a number of mandatory assessments that require satisfactory completion and result in a Pass/Fail grade, you can leave this as 0.  After inputting all the assessments for a course, the total weight should be 100% (unless you have only required assessments that result in a pass/fail course grade).
-* Notify if grade is below-This features triggers an automatic email to the selected audience if students score below the designated threshold.
+* Notify if grade is below-This feature triggers an automatic email to the selected audience if students score below the designated threshold.
 * Link existing online quizzes-If you need to create a quiz navigate to Admin>Manage Quizzes.  More details about this can be found in the Quizzes help section.
-* Link existing online exams- If you need to create an exam navigate to Admin>Manage Exams
+* Link existing online exams-If you need to create an exam navigate to Admin>Manage Exams.
 * Characteristic-This is assessment type (test, paper, oral exam, etc.).  You can customize this list by navigating to Admin>Manage Settings>Assessment Types.  When doing so you can map your institution’s assessment types to Medbiquitous assessment types or your institution can use only the Medbiquitous assessment types.
 * Selecting certain characteristics will open additional fields:
   * Track Late Submissions-This adds a late submission column that allows you to identify students who have submitted assessments late with a checkmark. This will be visible in the course gradebook.
   * Track Resubmissions-This adds a resubmission column that allows you to identify the number of times a student had to resubmit an assignment.
-* Extended Options-This allows you to define the type of questions in the assessment
-* Marking Scheme-The numeric field allows you to create a denominator so you can enter scores like 8/10 or 13/17.  Enter the maximum points possible.
+* Extended Options-This allows you to define the type of questions in the assessment.
+* Marking Scheme-The numeric field allows you to create a denominator so you can enter scores like 8/10 or 13/17.  Enter the maximum points possible for the assessment.
 * Assessment Type-Formative and Summative are the options.  Typically, formative assessment is to monitor student learning and provide ongoing feedback, and summative assessment evaluates student learning at the end of an instructional unit.  You may wish to check with your institution’s student assessment coordinator or educational consultant to clarify how your institution uses these terms. This information is reported by course in the Assessment Summary Report.
-* Narrative assessment-Check off if students receive written feedback through this assessment. This information is reported by course in the Assessment Summary Report.
+* Narrative assessment-Check off if students receive written feedback for this assessment. This information is reported by course in the Assessment Summary Report.
 * Self-assessment-Check off if students are assessing themselves.
 * Group assessment-Check off if you want to have groups of students submit the assessment together and be graded together (more detail on group assignments is in the Group Assessments help section).
 * Assessment visibility
@@ -33,8 +27,11 @@ If you select “Don’t Show this Assessment in the Learner Gradebook” learne
 If you select “Show this Assessment”, set the appropriate start and end times.  If you enter grades after the designated start time, students will see their grades immediately when you save your work.
 
 ##How to link an event to an assessment
-Attach a learning event to an assessment. Do this if the assessment needs to appear on the learner calendar in relation to a specific learning event.  This helps collect data for the AAMC Curriculum Inventory Portal.
-Select the event by entering its name.  You will only be able to pick from events associated with the specific course/program you’re working on.
+Linking an event to an assessment in the gradebook allows you to provide data for the AAMC Curriculum Inventory Portal.
+
+* From the Edit Assessment page of any gradebook entry, click 'Attach Learning Event'.  
+* Begin to type the learning event name and click on the appropriate event when you see it. You will only be able to pick from events associated with the specific course/program you’re working on.  If an event you expected to see is not visible, check that the event is assigned to the course you are in, and that you are working in the correct curriculum period.  
+* Click 'Attach Learning Event'.  The event should now display on the Edit Assessment page.  When you visit the event page as an admin., you'll see the event type displayed in the event information overview in the top left.  You can also link to the assessment from there.
 
 ##How to manage graders and learners
 Add any graders who will be responsible for grading the assessment or portions of the assessment.

@@ -19,7 +19,7 @@ In this section you'll learn:
 * Click 'Add Item(s)' to add existing items.  
 * Search for existing items and tick off the check boxes, then click 'Attach Selected' to apply your choices.
 * You can also add grouped items, free text (e.g., for instructions), or a curriculum tag set to your form.  To add any of these, click on the down arrow beside Add Items.  If you choose to add Free Text or a Curriculum Tag Set, please note that you must save your choices within the item box using the small 'Save Required' button.
-* Adding a Curriculum Tag Set should only be used if you are creating a form that *?*
+* Adding a Curriculum Tag Set is a very specific tool that supports field notes for use in family medicine.  Most users should ignore this option. 
 * To create new items while creating your form, click Add Items and then click Create & Attach a New Item.  When you complete your new item and save it, you will be returned to the form you in the process of building.
 * Preview your form by clicking on the eye icon/Preview Form button.
 * Download a copy of the form using the Download PDF button.

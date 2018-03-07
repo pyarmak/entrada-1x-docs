@@ -1,3 +1,4 @@
+#Curriculum Tag Sets and Curriculum Tags  
 Curriculum Tag Sets are the different taxonomies an organization uses to tag and track content across the system. The sets are customizable and within each set you can have a hierarchy of tags.  Examples of curriculum tag sets include school objectives, clinical presentations, diagnoses, etc.  These tags can be applied to courses, learning events, assessment items, exam questions, etc. Tag sets can be used as filters when searching the curriculum and are used in multiple reports.
 
 While curriculum tag sets and curriculum tags are connected, there are differences in their creation and management.  You must create a tag set first and then populate it with curriculum tags.
@@ -8,8 +9,8 @@ While curriculum tag sets and curriculum tags are connected, there are differenc
 * Click 'Add Tag Set'.
 * Complete the required information noting the following:  
 **Tag Set Details:**
-* Title and shortname are required for the tag set.  The title is displayed to users when usign curriculum tags to label things and when using curriculum search tools.  
-* Standardization: If a tag set is a standardized list from an external source or something that individual courses/programs shouldn’t adjust, click the checkbox.
+* Title and shortname are required for the tag set.  The title is displayed to users when using curriculum tags to label things and when using curriculum search tools.  
+* Standardization: This field was developed for the Competency-Based Medical Education tools in Entrada and identifies a tag set that is standard across multiple courses/programs.  It is applicable to the "Stages" tag set that is required in CBME, but can be ignored when creating other tag sets.
 * Applicable to: Usually curriculum tag sets are applicable to all courses, however you can adjust the setting, if needed.  This will control which courses are able to use this tag set to tag learning events and gradebook assessments.  
 **Tag Options:**  
 * This defines the information and requirements for any tags added to this set.  You can control whether there will be a space to record code, title, and description for each tag and whether any of those fields is required.  You must have a minimum of one required tag option.  If you later download a sample csv in order to import tags to this set the csv will include columns for the required fields configured here.

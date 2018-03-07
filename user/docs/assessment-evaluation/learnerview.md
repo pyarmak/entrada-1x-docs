@@ -1,3 +1,5 @@
+#Learner Use of the Assessment and Evaluation Module  
+
 Learners have quick access to review their assessment and evaluation tasks through the Assessment and Evaluation badge.
 
 * Click the Assessment & Evaluation badge in the top right beside the logout button.  
@@ -27,3 +29,5 @@ Click 'Report'.
 This tab displays forms the learner has completed.
 Task cards display the form title and type, rotation/block name, task delivery and completion dates, and progress.
 Learners can view a task and download individual tasks or multiple tasks at once.
+
+When you toggle to card view of a list of users (e.g. within a distribution) you'll be able to see their user photo (if they have provided one).

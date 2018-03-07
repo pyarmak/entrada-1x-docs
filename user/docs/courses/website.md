@@ -1,4 +1,4 @@
-#Course Website
+#Course Websites (aka Course Communities)
 When you add a new course, you are adding information to the database about that course and users will be able to see a simple course page. However, to make a more robust online course community for learners and faculty you should also create a course website for a course.  This is done using the Communities feature of Entrada.  Using a community template for a course offers a more robust view of a course and its contents and allows for additional features like discussion boards, polls, file sharing, etc.  Often we refer to the community for a course as its course website.
 
 #How to create a course website using the communities module

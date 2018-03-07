@@ -1,9 +1,9 @@
-Any user can create a community.
-
 #How to create a community
+Any user can create a community and communities are not organisation specific.  For that reason, a community built in one organisation will be visible to users in other organisation.  
+  
 * Click 'Communities' in the main tab menu.
 * Click 'Create a Community'.  
-* Step 1: Choose a category for your community by clicking on the appropriate title (e.g., Administration, Courses, Careers in Health Care).  The list of community categories cannot be changed through the user interface. Categories may be later reviewed to see how users are using communities but there are no filter settings or reports that rely on these categories.
+* Step 1: Choose a category for your community by clicking on the appropriate title (e.g., Administration, Courses, Careers in Health Care).  The list of community categories cannot be changed through the user interface but can be adjusted by a developer if desired by your organisation. Categories may be later reviewed to see how users are using communities but there are no filter settings or reports that rely on these categories.
 * Step 2: Provide the required details, noting the following:  
 **Community Details**  
 * Name: Pick a descriptive but concise name.  

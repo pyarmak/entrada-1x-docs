@@ -1,3 +1,5 @@
+#Electives  
+
 Learners in a phase of their education focussed on clinical learning may have the opportunity to request elective opportunities.  Entrada can help with the management of electives by giving students access to an elective form to complete and submit, and providing an easy-to-use elective approval process for staff.
 
 #How to request an elective as a learner  

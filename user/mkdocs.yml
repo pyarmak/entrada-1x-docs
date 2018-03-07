@@ -15,6 +15,7 @@ pages:
   - 'Organisation': 'systemsetup/organisation.md'
   - 'Location': 'systemsetup/location.md'
   - 'Departments': 'systemsetup/departments.md'
+  - 'Event Types': 'systemsetup/eventtypes.md'
 - 'Curriculum Management':
   - 'Getting Started': 'curriculum/index.md'
   - 'Curriculum Layout': 'curriculum/layout.md'
@@ -27,6 +28,7 @@ pages:
   - 'Curriculum Explorer': 'curriculum/explorer.md'
   - 'Curriculum Matrix': 'curriculum/matrix.md'
 - 'User Management':
+  - 'Getting Started with Users': 'users/index.md'
   - 'Create Users': 'users/create.md'
   - 'User Cohorts': 'users/cohorts.md'
   - 'User Permissions': 'users/permissions.md'
@@ -56,11 +58,20 @@ pages:
   - 'Course Enrolment': 'courses/enrolment.md'
   - 'Course Website': 'courses/website.md'
   - 'Course Groups': 'courses/groups.md'
-- 'Scheduling':
+- 'Scheduling Events':
   - 'Getting Started': 'scheduling/index.md'
   - 'Creating and Managing a Schedule': 'scheduling/create.md'
   - 'Copying an Existing Schedule': 'scheduling/copy.md'
   - 'Recurring Events': 'scheduling/recurringevents.md'
+  - 'Parent Child Tool': 'scheduling/parentchild.md'
+  - 'Rotation Blocks': 'scheduling/rotationblocks.md'
+- 'Event Pages':
+  - 'Setup': 'eventpages/setup.md'
+  - 'Content': 'eventpages/content.md'
+  - 'Attendance': 'eventpages/attendance.md'
+  - 'History': 'eventpages/history.md'
+  - 'Statistics': 'eventpages/statistics.md'
+  - 'Reports': 'eventpages/reports.md'
 - 'Calendar':
   - 'Getting Started': 'calendar/index.md'
 - 'Units':
@@ -108,7 +119,8 @@ pages:
   - 'Getting Started': 'polls/index.md'
 - 'mspr':
   - 'Getting Started': 'mspr/index.md'
-  - 'MSPR Options': 'mspr/options.md'
+  - 'Managing the MSPR': 'mspr/manage.md'
+  - 'Learner View of the MSPR': 'mspr/learnerview.md'
 - 'eportfolio':
   - 'Getting Started': 'eportfolio/index.md'
   - 'Manage': 'eportfolio/manage.md'

@@ -1,4 +1,4 @@
-#Community Pages
+#Types of Pages in Communities  
 Anyone who is the administrator of a community can use various tools to manage community content and pages.  If you create a community you will automatically be a community administrator.  Different pages are templated to serve different functions and different community types come with specific page types.  In all communities you can delete pages or hide them from view if they are unneeded.  Similarly, you can add pages of most types to any community and control which users have access to the page and how they interact with it (e.g. can upload or download files, can comment on files, etc.)
 
 #What types of pages exist
@@ -58,7 +58,8 @@ Most of the pages included in a course website template are default content type
 
 #How to control access to individual pages
 * Access a page either by clicking on the Edit button or by navigating to Manage Pages and clicking on the page name.
-* In the **Page Permissions** section, check off the tick boxes to decide who can view the page. Scroll down and click 'Save'.
+* In the **Page Permissions** section, check off the tick boxes to decide who can view the page. Scroll down and click 'Save'.  
+* Note that in some community types (e.g., course website), the required pages can not be hidden from the menu.
 
 #How to hide pages from view
 * Access a page either by clicking on the Edit button or by navigating to Manage Pages and clicking on the page name.

@@ -1,4 +1,4 @@
-#Manage Community and Members
+#Managing Communities  
 Anyone who is the administrator of a community can use various tools to manage the community and its membership as well as view community statistics.  If you create a community you will automatically be a community administrator.  Note that being a community administrator is completely separate from the user permissions set via the user profile.  Any user type can be made a community administrator.
 
 #How to add members
@@ -24,7 +24,7 @@ Anyone who is the administrator of a community can use various tools to manage t
 * In the Select Member Action dropdown menu, select the appropriate action.
 * Click 'Proceed'.
 
-Removing a member will allow that person to rejoin the community at a later date.  Deactivating or banning a user means the user will receive a message alerting them to this fact if they try to access the community.
+Removing a member will allow that person to rejoin the community at a later date.  Deactivating or banning a user means the user will receive a message alerting them to this fact if they try to access the community and they will not have the option to rejoin.
 
 #How to edit the details or permissions of a community
 * If you are an administrator of a community, you'll see an Admin Center card in the left or right sidebar.  Click on 'Details' or 'Permissions' as needed.
@@ -43,6 +43,6 @@ Removing a member will allow that person to rejoin the community at a later date
 
 #How to deactivate a community
 * If you are an administrator of a community, you'll see an Admin Center card in the left or right sidebar.  Click on 'Manage Community'.
-* Click the 'Deactivate' tab.
+* Click the Deactivate tab.
 * Click the checkbox to indicate you understand what deactivation means.
 * Click 'Deactivate Now'.

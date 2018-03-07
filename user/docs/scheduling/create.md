@@ -1,5 +1,7 @@
 #Creating and Managing a Schedule
-To create a schedule of events that can be populated with instructors, learners, resources, etc. you must be logged in as a system administrator or program administrator.  While you can create an entirely new schedule using a CSV or manually (one event at a time), if you have an existing course, the fastest option to make a schedule is to copy an existing schedule.
+To create a schedule of events that can be populated with instructors, learners, resources, etc. you must be logged in with administrator or pcoordinator.  While you can create an entirely new schedule using a CSV or manually (one event at a time), if you have an existing course, the fastest option to make a schedule is to copy an existing schedule.  
+
+You can also create individual events that appear immediately in the schedule.  To do so, navigate to Admin>Manage Events and click 'Add New Event'. At that point, follow the instructions in the Manually Add New Event section below.  Using this method, upon saving the event will immediately be live in the system.
 
 #How to create a new schedule of events
 * Navigate to Admin>Manage Events.

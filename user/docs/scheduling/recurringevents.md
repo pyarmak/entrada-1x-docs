@@ -1,9 +1,9 @@
 #Recurring Events
 One feature of Entrada is the ability to schedule recurring events. The advantage of a recurring event is that you can simultaneously edit a variety of event characteristics including title, location, event type, associated faculty, event description, required preparation, objectives, etc. across multiple events.  What you edit and for which events is entirely customizable.
 
-You can create recurring events indifferent configurations including a custom series or events that repeat daily, weekly, or monthly.
+You can create recurring events in different configurations including a custom series or events that repeat daily, weekly, or monthly.
 
-* For all of the above event types, navigate to Admin>Manage Events and click Add New Event to begin.
+* For all of the above event types, navigate to Admin>Manage Events and click 'Add New Event' to begin.
 * Select a Course, add a title, and provide a first event date.  Next, follow the instructions for each specific recurring event type.
 
 #How to create a custom series of events

@@ -1,3 +1,4 @@
+#Curriculum Layouts  
 Curriculum layouts define the general blocks of time used within an organization to manage teaching and learning. Examples include year, term, semester, phase, blocks, etc. Courses, modules, or whatever more granular units of instruction are called at your institution live within a curriculum layout.
 
 Within each curriculum layout, curriculum periods are added.  A curriculum period has a defined start and end date and is often associated with a specific cohort of learners. Examples of curriculum periods include Term 1 Class of 2021, Sept. 2017-Dec. 2017; Term 1 Class of 2020, Sept. 2016-Dec. 2016; Term 1 Class of 2019, Sept. 2015-Dec. 2015.  One curriculum layout can have multiple curriculum periods.  Curriculum periods are required when creating the audience and enrolment for courses/programs and multiple features and reports in Entrada rely on this information.
@@ -28,21 +29,5 @@ Within each curriculum layout, curriculum periods are added.  A curriculum perio
 * Click the checkbox beside the curriculum period you want to delete.
 * Click 'Deactivate'.
 
-#How to create block schedules within a curriculum period  
-If a specific curriculum period applies to a time when learners will participate in clinical learning experiences, you can automatically create a block schedule to apply to that curriculum period.  This allows for each scheduling of clinical learning experiences.   
-
-* Beside the appropriate curriculum period, click 'Block Schedule'.  
-* Click 'New' in the bottom right.  
-* Provide a Schedule Title (e.g. Psychiatry Rotations) and description as desired.  The title is the title of the set of blocks, not the individual blocks. The start and end dates for the schedule are set by the curriculum period within which you are creating the blocks (you will be able to alter the individual block dates after they have been created).  
-* Click 'Save'.  
-* Now you create the actual blocks of time within this schedule.  
-**Block Type:** This is currently limited to one, two and four week blocks.  
-**Block End Day:** This is the day you want blocks to end.  
-**Start and End Date:** Set by the curriculum period in which you are creating these blocks.  
-**First Block End Date:** Optional.  You can use this to force the first block to end on a specific date (useful if the curriculum period starts on an irregular day).  
-* Click the down arrow beside Save and select Autogenerate Blocks; a list of blocks will appear.  
-* Click on any row to edit the block name, or start and end dates.  Click 'Save' when done.  
-* You can add a custom block by clicking 'Add' in the bottom right and providing the required information.  
-* When you have made the required adjustments to the block schedule, click 'Save' in the top right.  
-* You can add multiple sets of blocks to one curriculum period.  For example, you might add a set of one, two and four week blocks to one curriculum period.  This allows you to schedule learners across blocks of varying lengths during their clinical learning experience.  
-* Toggle between a list and calendar view of blocks using the list and calendar icons above the block end dates.  
+#Block schedule feature  
+If a specific curriculum period is a time when learners will participate in clinical learning experiences, you can automatically create a block schedule to apply to that curriculum period.  This allows for easy scheduling of clinical learning experiences.  Detailed instructions for this process are included in the Scheduling help section under Rotation Blocks.s

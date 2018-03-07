@@ -5,10 +5,10 @@ To access system reports navigate to Admin>System Reports.  Not all users have a
 #Curriculum Tag Mapping Report
 The Curriculum Tag Mapping Report shows you mapped relationships between individual curriculum tags.  
 * Click the down arrow to select a curriculum tag set.  
-* Switch views as needed to see "Mapped To" and "Mapped From" relationships.  
+* Switch views as needed to see "Mapped To" and "Mapped From" relationships.  If you have Tag A, and you went into Manage Curriculum and opened Tag A and linked other objectives to it, those relationships will show as "Mapped To" Tag A. Whereas if you opened Tag 26, and mapped Tag A to it, Tag 26 would show up under the "Mapped From" list when you look at Tag A.
 * The resulting list is available to print by clicking 'Print Report'.
 
-Note that if you have a tag set with hierarchies this report can currently only show the first level of the hierarchy.  This report does not have a curriculum map version selector at this time.
+Note that if you have a tag set with hierarchies this report can currently only show the first level of the hierarchy if it's mapped to anything.  If it's not mapped you'll be able to drill down to the next level of the hierarchy and view it's linkages.  This report does not have a curriculum map version selector at this time.
 
 #Curriculum Tag Minutes and Mapping Report  
 The Curriculum Tag Minutes and Mapping Report

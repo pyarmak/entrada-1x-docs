@@ -7,8 +7,8 @@ Creating a course is the first step to populating it with objectives, creating g
 * Complete each of the required steps noting the following:  
 
 **Course Setup:**  
-Select a curriculum layout category (if no curriculum layouts are set up, proceed to Admin>Manage Settings>Select Organisation>Curriculum Layout).
 
+* Select a curriculum layout category (if no curriculum layouts are set up, proceed to Admin>Manage Settings>Select Organisation>Curriculum Layout).
 * Course colour - The selected colour will be used to identify learning events that are a part of this course on the learner calendar.  
 * Course type - This presently creates metadata. It doesn’t impact the course template or anything else.  
 * Curriculum Tracks - These can be configured through Manage Curriculum.  Assigning a course to a curriculum track allows you to identify those courses that share characteristics (e.g. help prepare learner for a specific program, provide a minor, etc.)
@@ -17,12 +17,12 @@ Select a curriculum layout category (if no curriculum layouts are set up, procee
 
 * Assigning someone as a course/program director or curricular/program coordinator will allow that person to edit the course content, including all associated learning events.  Their contact information will also be displayed on the course background page if you create a course community/website for the course.  
 * Assigning someone as associated faculty will allow that person to be assigned as a grader to exams. Their contact information will also be displayed on the course background page if you create a course community/website for the course.  
-* Assigning someone as a teacher assistant will *??*
+* Assigning someone as a teaching assistant result in that person's information being displayed on the course page (if the appropriate setting is turned on) but will not give the user any additional permissions.
 
 The list of course contact options can be modified by a developer in the language file of the Entrada installation if, for example, you want Course Director to say Program Director.
 
 **Course Keywords:**  
-
+This is an optional feature that can be turned on or off in Entrada.  It allows you to assign Medical Subject Headings (MeSH) to courses and later to specific learning events.  The Course Keyword feature is separate from curriculum tag sets and as such has limited reporting abilities when compared to a tag set.  If your organisation has a list of keywords to be tracked it is recommended you make those words a curriculum tag set.  Course Keywords should only be used with MeSH terms.
 
 **Course Objectives:**  
 Map curriculum tag sets or individual curriculum tags to a course by clicking 'Show Curriculum Tag Sets' and clicking through to the appropriate tag set or tag and checking it off. Assigned curriculum tags will be accessible to tag at the event level and in gradebook assessments.

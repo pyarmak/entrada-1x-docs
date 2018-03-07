@@ -50,7 +50,7 @@ Max Attempts: Tick this off and enter a modified number of exam attempts for the
 **Feedback:**
 * Release Score: Enable this to return scores to leaners after the submit an exam.  Enable ‘Release Feedback’ if you want learners to get ??? when they get their scores; you can further modify whether to release all question or just incorrect questions.  Set the release start and end dates to delay feedback if required.
 * Re-Attempt Threshold: set a minimum score to merit completeness, then set an allowable number of attempts to attain the minimum score.
-* Attach GradeBook – select a gradebook entry to attach the exam to (the list will prepopulate based on the learning event selected in step 1).
+* Attach GradeBook – select a gradebook entry to attach the exam to (the list will prepopulate based on the learning event selected in step 1).  The results of this will be that once graded, the grades from this exam will automatically populate the gradebook for the appropriate curriculum period and audience.
 **Review**
 This page provides a summary of all the choices you’ve made for this exam post.
 

@@ -1,3 +1,4 @@
+#Curriculum Matrix  
 The Curriculum Matrix is available to all users and provides a quick visual and numerical inventory of where curriculum tags are assigned to courses.  The Matrix reflects only those curriculum tags that have been assigned to a course through the Course Setup page, not all tags applied to events, gradebook assessments, etc.
 
 Curriculum Matrix does not currently reflect relationships between mapped tags. It just shows those tags directly assigned to a course.  (If context-based linkages are enabled the Matrix shows curriculum tags assigned to the course on initial setup and any added afterwards in the "Course Tags" section.)

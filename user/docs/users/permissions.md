@@ -19,5 +19,8 @@ Specific group and role configurations have certain permissions in Entrada.  Bel
 | Staff      | Translator       | TBD     |
 | Student      | Year       | Students have basic read permissions to most public modules. They can also edit and in some cases remove information that they add themselves (e.g. discussion forum comments). It is important to note that students cannot be granted access to any administrative module within Entrada. There is a hard-coded exit in case all other security restrictions fail and they access /admin/* |
 
+Staff>Admin group and role is organisation specific whereas Medtech>Admin can access all organisations within an installation.
+
+If you are creating users for an organisation with Competency-Based Medical Education enabled, you should assign the learners group: student, role: year for the to appear on the necessary screens.
 
 For information on Masked Permissions please see the Users>Profile Preferences help section and User Tools>Masking ID.

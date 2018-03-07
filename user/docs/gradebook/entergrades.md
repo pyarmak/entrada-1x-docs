@@ -32,7 +32,7 @@ In this section you'll learn:
 * Your work saves automatically.
 
 #How to use an assessment form and drop box to complete grades (faculty)
-Make sure that faculty have been added to an assessment as a grader for them to use this process.
+Make sure that faculty are listed on the course contacts section of the course (i.e., as a course director or associated faculty) and have been added to an assessment as a grader for them to use this process.
 * Navigate to Admin>Manage Gradebook.
 * Search for the appropriate course as needed and click on the course title.
 * Search for and click on the assessment title.
@@ -44,6 +44,8 @@ For more information on using drop box (including how to pass back assessments),
 
 #How to link quizzes and exams to gradebook to automatically supply a grade
 A quiz created through the quiz module and with multiple choice, true/false, etc. questions can be automatically graded.  If a quiz is attached to a learning event and the gradebook it will automatically be graded and the gradebook will be updated accordingly.  For instructions on linking a quiz to a gradebook entry, please see the Create a Gradebook Entry help section.
+
+Exams created with the Entrada Exam module can also be attached to a gradebook entry so that when the exam is graded the grade automatically forwards to the gradebook.  This process is completed by attaching an exam post to a gradebook entry in the Feedback step of creating the post.  For additional details on completing this process please see the Exams>Post help section.
 
 #How to allow Grade Calculation Exceptions
 This feature allows you to modify the weight of an assessment for an individual student.

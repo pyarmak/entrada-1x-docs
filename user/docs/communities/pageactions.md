@@ -1,4 +1,5 @@
-#Using Different Page Types
+#Using Pages in Communities  
+
 Members of a community will have the ability to take several actions on different pages, depending on how the community is set up and the permission settings on pages and folders.  In most cases, a community administrator needs to have created a space for users to engage.  For example, a community administrator can create a discussion thread, create a folder in which users can post documents, etc.  More information about creating pages can be found in the Communities>Pages help section.  
 
 After pages have been built and events, announcements, polls, etc. created users have the option to subscribe to the page to stay up to date.  More information about subscribing to page notifications can be found in the Communities>Subscribing to Community Notifications.
