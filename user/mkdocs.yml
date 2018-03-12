@@ -16,6 +16,10 @@ pages:
   - 'Location': 'systemsetup/location.md'
   - 'Departments': 'systemsetup/departments.md'
   - 'Event Types': 'systemsetup/eventtypes.md'
+  - 'Assessment Characteristics': 'systemsetup/assessmentcharacteristics.md'
+  - 'Assessment Response Categories': 'systemsetup/assessmentresponsecategories.md'
+  - 'Evaluation Response Descriptors': 'systemsetup/evaluationresponsedescriptors.md'
+  - 'Grading Scales': 'systemsetup/gradingscales.md'
 - 'Curriculum Management':
   - 'Getting Started': 'curriculum/index.md'
   - 'Curriculum Layout': 'curriculum/layout.md'

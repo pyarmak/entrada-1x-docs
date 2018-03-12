@@ -3,11 +3,7 @@ A form is a collection of items used to assess or evaluate a learner, faculty me
 
 Some form templates are available in the CBME module but there is not a user interface to build additional form templates at this point.  This section is about creating forms without templates.
 
-In this section you'll learn:
-* How to create forms
-* How to manage forms (delete items, rearrange items, etc.)
-* How to copy an existing form
-* How to delete existing forms
+If you are creating a form to be attached to a gradebook post for the purpose of online grading using a dropbox and Assessment and Evaluation form please note that not all item types are currently supported because there is no structure to weight them on the form posted to the gradebook.  When creating a form to use with a gradebook dropbox it is recommended that you only use multiple choice, dropdown selector, rubric and scale items.  If your form requires narrative comments do not use the free text comment item type as the grader will not be able to save their comments; instead, allow or require comments on your scale or rubric items and encourage graders to provide feedback within the rubric or scale item.
 
 #How to create forms (without a template)
 * Navigate to Admin>Assessment & Evaluation.
@@ -19,7 +15,7 @@ In this section you'll learn:
 * Click 'Add Item(s)' to add existing items.  
 * Search for existing items and tick off the check boxes, then click 'Attach Selected' to apply your choices.
 * You can also add grouped items, free text (e.g., for instructions), or a curriculum tag set to your form.  To add any of these, click on the down arrow beside Add Items.  If you choose to add Free Text or a Curriculum Tag Set, please note that you must save your choices within the item box using the small 'Save Required' button.
-* Adding a Curriculum Tag Set is a very specific tool that supports field notes for use in family medicine.  Most users should ignore this option. 
+* Adding a Curriculum Tag Set is a very specific tool that supports field notes for use in family medicine.  Most users should ignore this option.
 * To create new items while creating your form, click Add Items and then click Create & Attach a New Item.  When you complete your new item and save it, you will be returned to the form you in the process of building.
 * Preview your form by clicking on the eye icon/Preview Form button.
 * Download a copy of the form using the Download PDF button.

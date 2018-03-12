@@ -1,7 +1,8 @@
 #Entrada Calendar
 
 #What users see
-On the learner dashboard, learners have a calendar view of upcoming events that include them in the audience.
+On the learner dashboard, learners have a calendar view of upcoming events that include them in the audience.  
+
 * Learners can toggle between day, week, and month view.
 * Learners can download or subscribe to a calendar.
 * From the calendar, learners can click on an event title to see more events details or navigate to the event page.

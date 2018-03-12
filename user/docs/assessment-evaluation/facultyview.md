@@ -10,7 +10,7 @@ Apply start and end dates to limit your results to a specific time frame.
 Remember to click 'Apply Filters' to apply your choices.
 Remember to click 'Remove Filters' to clear filters and view all results.  Note that your previous filter settings may still be applied so if you are seeing no results, or fewer results than you expected, try 'Remove Filters'.
 
-**Assessment Tasks**
+**Assessment Tasks**  
 This tab shows users all pending tasks for which they are responsible.
 Faculty can view and complete a task by clicking on it.
 Faculty can remove a task by clicking 'Remove Task' and providing a reason for its removal.
@@ -48,12 +48,12 @@ The My Learners tab will allow faculty to access a variety of information for le
 My Learners - Assessments
 For each of the tabs described below you can search by a task name; apply advanced search filters like distribution method (date range, delegation, learning event, rotation schedule), curriculum period, course, and task status (pending, in progress, completed); set a date range; and download a pdf of an individual task or multiple tasks (note that you can select all if required).
 
-Reports on the Learner:
+Reports on the Learner:  
 * This tool allows you to view and download a pdf report (with or without comments) that aggregates learner performance on the selected form in one report.  You can also use the Options dropdown menu to quickly view the form and the individual assessments.
 * Click group by distribution as desired to sort the forms by distribution.  If the same form has been used across multiple distributions this will tease apart each distribution and you can report on forms completed in a single distribution.
 
-**Tasks Completed on Learner:** View tasks completed on the learner.  Cards display the form title and type, task delivery and completion dates, form triggerer name (if applicable), and name and role of the assessor.
-**Pending Tasks on Learner:** These task cards will look similar to the completed tasks but will offer the ability to send a reminder about the task.  To do so, click the checkbox beside the bell and then click 'Send Reminders' at the top of the page.  You also have the option to remove a task on this screen.  Be aware that is you remove a task you will be required to give a reason why.
-**Upcoming Tasks on Learner:** This displays scheduled tasks for the learner that are not yet active.
-**Learner's Current Tasks:** This displays tasks the learner is currently responsible for completing (e.g. faculty evaluation, service evaluation, etc.).  Task cards may display a rotation or block name depending on how they were scheduled.  Faculty can send a reminder or remove a task here as well.
+**Tasks Completed on Learner:** View tasks completed on the learner.  Cards display the form title and type, task delivery and completion dates, form triggerer name (if applicable), and name and role of the assessor.  
+**Pending Tasks on Learner:** These task cards will look similar to the completed tasks but will offer the ability to send a reminder about the task.  To do so, click the checkbox beside the bell and then click 'Send Reminders' at the top of the page.  You also have the option to remove a task on this screen.  Be aware that is you remove a task you will be required to give a reason why.  
+**Upcoming Tasks on Learner:** This displays scheduled tasks for the learner that are not yet active.  
+**Learner's Current Tasks:** This displays tasks the learner is currently responsible for completing (e.g. faculty evaluation, service evaluation, etc.).  Task cards may display a rotation or block name depending on how they were scheduled.  Faculty can send a reminder or remove a task here as well.  
 **Learner's Upcoming Tasks:** This displays a learner's upcoming tasks scheduled through a distribution.

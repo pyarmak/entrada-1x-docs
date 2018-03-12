@@ -40,15 +40,15 @@ To insert media into a question stem, click the film strip icon and paste the em
 * Question Type: Select the required question type.  (Note: use ‘multiple responses’ questions if you want to have multiple correct answers.)  
 * Question Description: Add a descriptive title.  This will display in the list view of exam items and is helpful when scanning a list of items within a folder.  
 * Rationale: Add a question rationale. Rationale is shown to learners when they get feedback on their exam and can explain a question answer or provide additional detail.  
-* Correct Text: This will display **only when creating essay and short answer questions.** It is a space to provide sample answers or list what should be included in an answer.  This text is **not** visible to learners and is intended to provide information to graders.
+* Correct Text: This option will display **only when creating essay and short answer questions.** It is a space to provide sample answers or list what should be included in an answer.  This text is **not** visible to learners and is intended to provide information to graders.  When a grader corrects a free response question, they will see the correct text on the screen to help them grade the response.  If you use this question type and have faculty provide narrative feedback when they grade the questions, you must set the exam to release feedback for ALL questions for learners to be able to see the narrative comments from the grader.
 * Question Code: This optional code field can be completed according to the guidelines set by your institution. (Every question will also automatically be given a unique identifier within Entrada and that unique id displays when viewing a list of questions within a folder.)  
 * Parent Folder: If you were already in a folder when you clicked 'Add A New Question' this will automatically list that folder.  If you were not already in a folder, it is mandatory to assign your question to a specific folder.  Click 'Select Parent Folder', click on a folder name, and click 'Done'.  
 
 **Question Answers:**
 
-To add more answer options, click the green 'Add Answer' button.  To reduce answer options, click the red delete button (within a question).  
+To add more answer options, click the green 'Add Answer' button.  To reduce answer options, click the large checkbox beside the correct response, crossed arrow and lock icons, then click the red 'Delete' button on the left.  
 
-* Click the red checkmark beside a response to turn it green and indicate a correct answer; depending on your question type you can have multiple correct answers for one question.  
+* Click the existing red checkmark beside a response to turn it green and indicate a correct answer; depending on your question type you can have multiple correct answers for one question.  
 * You can create Rationale for each answer option by clicking on the eye icon beside the Add Answer button.  This will open a free text rationale space below each answer option.  This does not currently display to learners so is just for information storage at present.
 * Reorder answer options by clicking on the crossed arrows and dragging and dropping the response item in the appropriate place.  
 * If you intend to later randomize the answer response options for all questions on an exam post and want to lock an answer in place, move it to the appropriate location and click on the lock icon to close it and turn it red.  An example for using this might be a multiple choice question where an answer option is "All of the above" and you always want this option to appear last in the list of answer options.  (A reminder that you will set up randomization of questions and/or response options when you create an exam post.)  

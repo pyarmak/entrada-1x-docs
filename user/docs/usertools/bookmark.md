@@ -1,11 +1,6 @@
 #Bookmarks
 Using the built-in bookmark feature of Entrada can save users time and energy.  Bookmark filter settings for assessment and evaluation reporting, curriculum search filters, learning event displays, etc. to quickly access your most commonly used tools.
 
-In this section you'll learn:
-* How to add a bookmark
-* How to delete an existing bookmark
-* How to rearrange existing bookmarks
-
 #How to add a bookmark
 * Navigate to the page you want to bookmark (e.g., go to Curriculum Search and set the filters you want to use)
 * Click on Add Bookmark in the My Bookmarks box in the left sidebar

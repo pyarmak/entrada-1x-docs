@@ -1,3 +1,5 @@
+#External Reporting  
+
 The Curriculum Inventory Report can be used to submit your organisation's information to the AAMC curriculum portal.
 
 Note that before using your curriculum inventory reporting, it is recommended that you map your event types and assessment methods (aka assessment characteristics) to the MedBiquitous taxonomies.  If you don't do this, unmapped event types will be excluded from the report and unmapped assessments will be reported as "Exam - Institutionally Developed, Written/Computer-based".

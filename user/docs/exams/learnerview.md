@@ -1,12 +1,6 @@
 #Exam Module From a Learner Perspective
 When learners access Entrada they can easily see required assignments and exams via the My Entrada section of the left sidebar.  A small badge will display the number of exams and assignments learners need to complete.
 
-In this section you'll learn:
-* How learners can access an exam
-* What tools learners can access when taking an exam
-* How learners can submit an exam
-* How learners can view exam feedback
-
 #How learners can access an exam
 * Click on the My Exams quick link from the My Entrada section of the left sidebar.
 * Click on an exam name under the Not Submitted Exams header.
@@ -45,6 +39,7 @@ After an exam, learners will only be able to view feedback if it has been releas
 * Click on the My Exams quick link from the My Entrada section of the left sidebar.
 * Click on Submitted under the number of submitted exams.
 * Click on the name of an exam.
-* Click on Feedback in the far right column or the Exam Activity chart.
+* Click on Feedback in the far right column of the Exam Activity chart.
 * When viewing exam feedback, green means a question is correct and red is incorrect.  Highlights, strikethroughs, scratchpad notes, and marking questions for faculty review will all be maintained and visible on the exam feedback screen.  A Not Scored badge will display beside any questions removed from the exam.
-* Below the response options for each question, the points total, correct answer, and rationale will be displayed.
+* Below the response options for each question, the points total, correct answer, and rationale will be displayed.  
+* If the exam included short answer or essay questions and they have not yet been graded the learner will be informed of that via a message below their overall score and the free response questions will display on the feedback page.

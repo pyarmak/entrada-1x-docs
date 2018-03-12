@@ -21,6 +21,7 @@ After pages have been built and events, announcements, polls, etc. created users
 * Set the Time Release Options for the discussion forum.  This controls when the discussion forum will be accessible to users.
 * Click 'Save.'
 * To edit or delete an existing discussion forum, navigate to the discussions page, click on the category name, and then click 'edit' or 'delete' beside the discussion forum you want to modify. If you delete a discussion and it was the only discussion forum in a category, the category will also be removed.
+* Note that community members who participate in discussion forums have the option to post anonymously, however, community administrators will be able to see the identity of all users who post to a discussion, whether anonymous or not.  If you have faculty in community administrator roles responding to discussion posts it may be worth letting them know that students may be posting anonymously.
 
 #How community administrators can build a space to share documents
 * As a community administrator, navigate to a community and click 'Document Sharing'.
@@ -153,7 +154,7 @@ Community members can share urls and HTML through a document sharing space; thei
 ##Creating a new post
 * Click 'New Post'.
 * Add a post title and body.
-* Users can choose to make their comment anonymous by checking the box beside 'Hide my name'.
+* Users can choose to make their comment anonymous by checking the box beside 'Hide my name'.  Note that the user's identity will still be visible to community administrators.
 * File Attachments: Users can select a file from their computer to upload with their comment.
 * Set the Time Release Options to set when the comment will be visible to community members.
 * Click 'Save.'

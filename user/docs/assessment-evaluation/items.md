@@ -3,6 +3,8 @@ The assessment and evaluation module provides a way for learners to be assessed,
 
 When a user creates items, s/he automatically has permission to access and use that item.  However, additional permissions can be added to items after they have been created.  This is important to note because if you want another user to have access to edit an item or to add it to a form you should give that user permission to access the item.
 
+If you are creating items for a form to be attached to a gradebook post for the purpose of online grading using a dropbox and Assessment and Evaluation form please note that not all item types are currently supported because there is no structure to weight them on the form posted to the gradebook.  When creating items for a form to use with a gradebook dropbox it is recommended that you only use multiple choice, dropdown selector, rubric and scale items.  If your form requires narrative comments do not use the free text comment item type as the grader will not be able to save their comments; instead, allow or require comments on your scale or rubric items and encourage graders to provide feedback within the rubric or scale item.
+
 #How to create single items for use on assessment and evaluation forms
 * Note that you **can copy existing items** which may save time.  To copy an existing item, click on the item and click 'Copy Item' which is beside the Save button.
 

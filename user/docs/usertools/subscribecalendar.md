@@ -1,7 +1,9 @@
-Users can subscribe to receive ongoing updates to event dates and times.  There are two places learners can subscribe to calendars: the dashboard (gives access to course calendars) or within a community events page (access to events created within that community only).
+#Subscribing to A Calendar  
+Users can subscribe to receive ongoing updates to event dates and times.  There are two places learners can subscribe to calendars: the dashboard (gives access to course calendars) or within a community events page (access to events created within that community only).  Faculty can subscribe to a calendar of their teaching events.
 
 **Learners** can subscribe to or download a calendar from their Dashboard page.  
-* If CBME is enabled in your organisation, learners can scroll down the page or click 'My Event Calendar' from their dashboard options (by default their dashboard will show their CBME data at the top of the page).
+
+* If CBME is enabled in your organisation, learners can scroll down the page or click 'My Event Calendar' from their dashboard options (by default their dashboard will show their CBME data at the top of the page).  Without CBME enabled learners will land on a dashboard page with their calendar upon logging into the system.
 * Below the calendar, click 'Subscribe to Calendar or Download Calendar'.
 * Click to select All Calendars or Individual Course Calendar.  For the second option, indicate the appropriate course using the dropdown menu.
 * Click 'Subscribe' to get a version of the calendar that will not allow you to edit events but will update automatically to reflect changes made to the schedule in Entrada.  After clicking Subscribe you can click to copy the subscription URL and add it to your calendar tool or click 'Subscribe to Calendar'.  Your computer will likely prompt you to choose an application to open the link.
@@ -9,7 +11,8 @@ Users can subscribe to receive ongoing updates to event dates and times.  There 
 * Click 'Download Calendar'. Your computer will prompt you to choose an application to open the download or you can save the file. If you save the file you can later add it to your preferred calendar tool.
 * Events in the calendar will display any required preparation supplied in the event and will include a link to the learning event.
 
-**Faculty** can subscribe to a calendar that displays the learning events the individual faculty member is associated with.
+**Faculty** can subscribe to a calendar that displays the learning events the individual faculty member is associated with.  
+
 * From the dashboard, scroll to My Teaching Events and look for the small calendar icon in the bottom right.
 * Right click on Subscribe to Calendar.
 * Click 'Copy Link Location/Address' or Send Link to Device/Services depending on the browser being used and how you want to subscribe.
