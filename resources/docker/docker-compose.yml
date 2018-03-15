@@ -7,7 +7,6 @@ services:
             - 80:80
             - 443:443
             - 3306:3306
-            - 4444:4444
         volumes:
             - mariadb_data:/var/lib/mysql
             - ~/Sites:/var/www/vhosts
