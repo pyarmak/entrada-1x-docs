@@ -13,7 +13,7 @@ Developers using Docker don’t have to install and configure complex databases 
 1. You must have Docker for Mac or Docker for Windows installed on your local development machine. The simplest way to install everything is to use Docker Community Edition. You should also install Kitematic (GUI):
 
     https://www.docker.com/community-edition
-2. You must have the Entrada ME Git repository cloned to `~/Sites/entrada-1x-me.localhost`.
+2. You must have the Entrada ME Git repository cloned to `~/Sites/entrada-1x-me`.
 3. You must edit your local `hosts` file and add each hostname you would like to use. For example:
     ```
     127.0.0.1   entrada-1x-me.localhost
