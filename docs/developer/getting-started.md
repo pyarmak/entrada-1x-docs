@@ -80,20 +80,20 @@ GRANT ALL ON entrada_clerkship.* TO 'entrada'@'localhost';
 To begin, clone the Entrada ME repository into a web-accessible directory or new virtual host on your computer:
 ```
 cd ~/Sites
-git clone git@github.com:EntradaProject/entrada-1x-me.git entrada-1x-me.dev
+git clone git@github.com:EntradaProject/entrada-1x-me.git
 ```
 
 ### Setting Up for Development
 
 Ensure that you have the develop branch checked out, and install Composer as well as our dependencies:
 ```
-cd entrada-1x-me.dev
+cd entrada-1x-me
 git checkout develop
 curl -sS https://getcomposer.org/installer | php
 php composer.phar update
 ```
 
-Now visit your Entrada installation in your web-browser to proceed: http://entrada-1x-me.dev
+Now visit your Entrada installation in your web-browser to proceed: http://entrada-1x-me.localhost
 
 ## Deploying Entrada
 
@@ -117,11 +117,11 @@ sudo gem install gnm-caplock
 
 #### Deployment
 
-This example assumes that your deployment directory is located at `~/Sites/entrada-1x-me.dev/deployment`. Your deployment recipe exists within the `config/deploy.rb` directory. Please make sure that this file accurately reflects your hostnames and Git repository location.
+This example assumes that your deployment directory is located at `~/Sites/entrada-1x-me/deployment`. Your deployment recipe exists within the `config/deploy.rb` directory. Please make sure that this file accurately reflects your hostnames and Git repository location.
 
 To deploy a release, use the terminal and navigate to the deployment directory
 ```
-cd ~/Sites/entrada-1x-me.dev/deployment
+cd ~/Sites/entrada-1x-me/deployment
 # deploy to staging
 cap staging deploy
 # deploy to production
