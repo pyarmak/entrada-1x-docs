@@ -23,6 +23,7 @@ pages:
 - 'Curriculum Management':
   - 'Getting Started': 'curriculum/index.md'
   - 'Curriculum Layout': 'curriculum/layout.md'
+  - 'Scheduling Blocks': 'curriculum/rotationblocks.md'
   - 'Curriculum Tracks': 'curriculum/tracks.md'
   - 'Curriculum Map Versions': 'curriculum/mapversions.md'
   - 'Curriculum Tags': 'curriculum/tags.md'
@@ -63,12 +64,11 @@ pages:
   - 'Course Website': 'courses/website.md'
   - 'Course Groups': 'courses/groups.md'
 - 'Scheduling Events':
-  - 'Getting Started': 'scheduling/index.md'
-  - 'Creating and Managing a Schedule': 'scheduling/create.md'
-  - 'Copying an Existing Schedule': 'scheduling/copy.md'
-  - 'Recurring Events': 'scheduling/recurringevents.md'
-  - 'Parent Child Tool': 'scheduling/parentchild.md'
-  - 'Rotation Blocks': 'scheduling/rotationblocks.md'
+  - 'Getting Started': 'schedulingevents/index.md'
+  - 'Creating and Managing a Schedule': 'schedulingevents/create.md'
+  - 'Copying an Existing Schedule': 'schedulingevents/copy.md'
+  - 'Recurring Events': 'schedulingevents/recurringevents.md'
+  - 'Parent Child Tool': 'schedulingevents/parentchild.md'
 - 'Event Pages':
   - 'Setup': 'eventpages/setup.md'
   - 'Content': 'eventpages/content.md'
@@ -82,12 +82,13 @@ pages:
   - 'Getting Started': 'units/index.md'
   - 'Creating Units': 'units/create.md'
   - 'Learner View': 'units/learnerview.md'
-- 'Clinical Learning':
-  - Getting Started: 'clinicallearning/index.md'
-  - Logbook: 'clinicallearning/logbook.md'
-  - Lottery: 'clinicallearning/lottery.md'
-  - Rotations: 'clinicallearning/rotations.md'
-  - Electives: 'clinicallearning/electives.md'
+- 'Clinical Experience':
+  - Getting Started: 'clinicalexperience/index.md'
+  - My Learners: 'clinicalexperience/mylearners.md'
+  - Logbook: 'clinicalexperience/logbook.md'
+  - Lottery: 'clinicalexperience/lottery.md'
+  - Rotation Schedule: 'clinicalexperience/rotationschedule.md'
+  - Electives: 'clinicalexperience/electives.md'
 - 'Assessment and Evaluation':
   - 'Getting Started': 'assessment-evaluation/index.md'
   - 'Settings': 'assessment-evaluation/settings.md'
@@ -101,11 +102,13 @@ pages:
   - 'Reports in A&E': 'assessment-evaluation/reports.md'
 - 'Exams':
   - 'Getting Started': 'exams/index.md'
-  - 'Create Exam Items': 'exams/items.md'
+  - 'Create Exam Questions': 'exams/questions.md'
   - 'Importing Exam Items': 'exams/imports.md'
-  - 'Create an Exam': 'exams/create.md'
+  - 'Create and Manage Exams': 'exams/create.md'
+  - 'Information and Settings': 'exams/informationandsettings.md'
   - 'Post an Exam': 'exams/post.md'
-  - 'Reporting Exams Results': 'exams/reporting.md'
+  - 'Reporting Exams Results': 'exams/reports.md'
+  - 'History': 'exams/history.md'
 - 'Gradebook':
   - 'Getting Started': 'gradebook/index.md'
   - 'Create Gradebook Assessments': 'gradebook/create.md'

@@ -1,5 +1,5 @@
 #Group Assessments
-It is possible to create groups in Entrada and require learners to complete and submit assignments as a group.  To use this functionality you must have groups configured within the course.  Navigate to Admin>Manage Courses>Manage Groups to do this and find more information on the Courses help page.  If you create a group assignment leaners only upload one assignment per group, and faculty only grade one assignment per group.  The system automatically creates grades for all group members.
+It is possible to create groups in Entrada and require learners to complete and submit assignments as a group.  To use this functionality you must have groups configured within the course.  Navigate to Admin>Manage Courses>Manage Groups to do this and find more information in the Courses help section.  If you create a group assignment leaners only upload one assignment per group, and faculty only grade one assignment per group.  The system automatically creates grades for all group members.
 
 In this section you'll learn:
 * How to create a group assessment
@@ -25,6 +25,8 @@ The names of specific learners in a group will be displayed beside the appropria
 Note: You can only assign a group to one grader.
 
 To delete a grader, check off the box beside the grader name and click Remove Selected Graders.
+
+Note that if, after associating graders with groups of students, you uncheck the 'group assessment' box, the grader->student associations persist, but the students can now be graded separately.
 
 #Faculty and learner view
 Faulty members When a grader completes a grade for one member of the group, the same grade will be assigned to other group members.  From the assessment page view, if you change a grade for one group member, you change it for everyone.

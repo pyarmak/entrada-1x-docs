@@ -11,7 +11,8 @@ Within each community, a variety of pages are available.  Below are listed the p
 * Events: Post events for the community and choose whether or not to notify members of said event.  Allows user to provide a title, date and time, and description for an event.
 * Galleries: Galleries allows you to create folders in which to store images.  Permissions can be set to allow users to upload, view, and comment on images.  Images will display using thumbnails.
 * Polling: This page allows you to create polls and make them available to members of the community.
-* Quizzes: This page allows you to post quizzes created through Manage Quizzes.
+* Quizzes: This page allows you to post quizzes created through Manage Quizzes.  
+* BasicLTI Consumer: LTI stands for Learning Tools Interoperability and is a way for one system to send a user to another system fairly seamlessly.  This page type allows you to connect to an LTI provider your school has an existing arrangement with (e.g. Khan Academy, turnitin, Quizlet, etc.).  You'll need to provide specific information from the LTI provider in the applicable fields.  In some cases LTIs are free so you might not need a key and secret.
 
 Please note that for all of the listed page types and their functions, the audience will be members of the specific community.  If you want to create a notice to display on the main Entrada dashboard in the Message Center you should use Admin>Manage Notices.  If you want to create a poll targeting all students, faculty or staff you should use Admin>Manage Polls.  If you want to create scheduled learning events to be associated with a course, specific audience, faculty, etc. and to display in faculty and learner calendars you must use Admin>Manage Events.  When you use page types and their features in a community space they are for **members of that community only**.
 

@@ -30,4 +30,4 @@ Within each curriculum layout, curriculum periods are added.  A curriculum perio
 * Click 'Deactivate'.
 
 #Block schedule feature  
-If a specific curriculum period is a time when learners will participate in clinical learning experiences, you can automatically create a block schedule to apply to that curriculum period.  This allows for easy scheduling of clinical learning experiences.  Detailed instructions for this process are included in the Scheduling help section under Rotation Blocks.s
+If a specific curriculum period is a time when learners will participate in clinical learning experiences, you can automatically create a block schedule to apply to that curriculum period.  This allows for easy scheduling of clinical learning experiences.  Detailed instructions for this process are included in the Curriculum>Rotation Blocks help section.

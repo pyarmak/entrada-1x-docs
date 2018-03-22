@@ -10,11 +10,13 @@ After you've added questions to an exam and set your setting preferences you mus
 * Click ‘Add New Exam Post’.
 * You will be guided through a multi-step wizard to configure your exam post.  Complete each section, noting the following:
 **Exam:**
+* When posting an exam to an event, you will only be able to access courses and events with which you are affiliated.  So, for example, a pcoor can only access events in the course for which s/he is the listed pcoor.  Someone with an admin role will be able to access all events.  
 * Click 'Browse Events'.  Note that a search bar is included in the resulting window.
 * Click on a course title.
 * Click on the appropriate curriculum period or click 'Show All Events'.  
 * Click on the appropriate event.
 * Select an event using the drop down menu.  
+* To go back a step at any point in selecting an event, click on the breadcrumbs (three dots) near the top of the search box.
 * Exam Title: Modify the exam title if necessary.
 * Description: This is just for internal use.
 * Instructions: This field will be displayed to learners on the exam intro page.
@@ -77,7 +79,7 @@ You will be redirected to the list of exam posts.
 * Click 'Show/hide columns' to add or remove the columns you'd like to be able to view.  
 
 #How to add graders to an exam
-In order for faculty to access exams and grade them, the faculty must be added as graders to an exam post.  Additionally, you must have groups within a course (to configure groups go to Admin>Manage Courses).  Make sure you have groups configured before you try to add graders as the only was to successfully save grader names is for them to be attached to a group.
+In order for faculty to access exams and grade them, the faculty must be added as graders to an exam post.  Additionally, you must have groups within a course (to configure groups go to Admin>Manage Courses).  Make sure you have groups configured before you try to add graders as the only was to successfully save grader names is for them to be attached to a group.  (If you are attaching an exam to a gradebook entry there is the option to add graders to the gradebook entry.  This will not allow faculty to access the exam to grade.  To allow someone to grade an exam they must be added as a grader to the specific exam post.)
 * Navigate to Admin>Manage Exams.
 * Click on ‘Exams’ from the left sidebar Manage Exams section.
 * Search for the applicable exam.
@@ -89,10 +91,11 @@ In order for faculty to access exams and grade them, the faculty must be added a
 * Any existing Course Groups will appear (if you need to create course groups go to Admin>Manage Courses>Groups).  Assign groups to a grader or allow the system to randomly distribute groups to graders.  
 * Click 'Save Grader Settings'.
 
-#How to monitor exam activity
+#How to monitor and manage exam activity
 * Navigate to Admin>Manage Exams.
 * Click on ‘Exams’ from the left sidebar Manage Exams section.
 * Search for the applicable exam.
 * Click on the cog wheel to the right of the exam title; select 'Posts' from the dropdown menu.
 * Add or remove columns from the display by clicking 'Show/hide columns'.  You will need to see the Actions column to proceed.
-* Click on the cog under the Actions column and select 'View Activity' from the dropdown options. The resulting page will show you which learners have completed an exam, their scores, start and submission dates, etc.
+* Click on the cog under the Actions column and select 'View Activity' from the dropdown options. The resulting page will show you which learners have completed an exam, their scores, start and submission dates, etc.  
+* From here you can delete progress records as needed (this will allow you to delete an exam post, and an exam if necessary).

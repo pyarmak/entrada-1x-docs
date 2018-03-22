@@ -39,7 +39,7 @@ If you are creating items for a form to be attached to a gradebook post for the 
 * Drop Down (single response): answer options will display in a dropdown menu. Response text required; response category optional.
 * Horizontal Multiple Choice (multiple responses): answer options will display horizontally on the form and the user can select two or more answers. Response text required; response category optional.
 * Vertical Multiple Choice (multiple responses): answer options will display in a vertical list on the form and the user can select two or more answers. Response text required; response category optional.
-* Drop Down (multiple responses): answer options will display in a dropdown list that remains open and allows users to select multiple responses using CNTRL or command enter.
+* Drop Down (multiple responses): answer options will display in a dropdown list that remains open and allows users to select multiple responses using the control or command and enter/return keys.
 * Free Text Comments: use this item type to ask an open ended question requiring a written response. (In ME 1.11 and lower you can not map a free text comment to a curriculum tag set.)
 * Date Selector: use this item type to ask a question to which the response is a specific date (e.g. What was the date of this encounter?)
 * Numeric Field: use this item type to ask a question to which the response is a numeric value (e.g. How tall are you?)
@@ -81,7 +81,8 @@ Creating a grouped item allows you to group items and guarantee that they appear
 * In detail view, see the details of an existing item by clicking on the eye icon.
 * In detail view, edit an existing question by clicking on the pencil.
 * To delete items, check off the tick box beside a question (list view) or beside the pencil icon (detail view) and click 'Delete Items'.
-* From an Edit Item page you can click on a link to view the forms that use an item or the grouped item an item is included in.
+* From an Edit Item page you can click on a link to view the forms that use an item or the grouped item an item is included in.  
+* When viewing items in list view, the third column shows the number of answer options the item has.  Clicking on it takes you to the item, and by clicking again you can see all the forms that use this item.
 
 #How to search for existing items
 * From the Items tab type into the search box to begin to find questions.

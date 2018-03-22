@@ -4,6 +4,8 @@ Entrada includes the ability to link multiple repeating events in a parent-child
 
 Note that the parent child relationship is only available for events that are part of the same course.
 
+If you eventually copy a schedule forward, recurring event status, as well as parent-child links if enabled, will be maintained.
+
 #How to create parent child relationships between events  
 There are several ways to create parent child relationships between events, you can either do so when creating recurring events through Admin>Manage Events, include the information on a spreadsheet you are importing to a draft schedule, or link existing events through the event setup page.
 

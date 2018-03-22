@@ -1,1 +1,0 @@
-#Clinical Learning Lottery

@@ -1,5 +1,5 @@
 #User Disclaimers
-A user disclaimer can set up to appear on the start page or your Entrada installation or when users try to access specific courses or communities.
+A user disclaimer can set up to appear on the start page or your Entrada installation or when users try to access specific courses or communities.  This tool is only available to users with admin roles.
 
 #How to set a user disclaimer
 * Navigate to Admin>System Settings.
@@ -10,7 +10,7 @@ A user disclaimer can set up to appear on the start page or your Entrada install
 **Effective Date:** Set when the disclaimer will show up to users.  
 **Trigger:** Decide when this disclaimer should be applied.  If you select course or courses, you'll have to select the specific course(s).  If you select community, you'll have to select a specific community.  Additionally, you must be an administrator of a specific community to add a disclaimer to it.  
 **When someone declines:** Decide what should happen if someone declines the disclaimer.  Click the checkbox to receive email notification of any declines.  There is currently no user interface add additional emails in the case of a declined disclaimer.  
-**Audience:** Click the down arrow beside Browse All Users and continue to click through to add your audience.  To delete someone from the list, click the small x beside the name.  
+**Audience:** Click the down arrow beside Browse All Users and continue to click through to add your audience.  Note that it is intentional that you can only drill down to the role level or user and not individuals. To delete any group from the list, click the small x beside the group.  
 * Click 'Save'.  
 
 * Edit an existing disclaimer by clicking on the disclaimer title which will open an edit page.  

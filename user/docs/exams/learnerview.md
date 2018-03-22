@@ -7,6 +7,8 @@ When learners access Entrada they can easily see required assignments and exams 
 * Review the exam information and instructions (if any) and click 'Start New Attempt'.
 * Starting an exam will vary depending on security settings and may require a password or other security steps.
 
+* A learner can exit and resume an exam.  At the top of an exam screen there is an Exit button.  If they use this tool they will later be able to access a list of their exams and the specific exam post and click 'Resume'.
+
 #What tools learners can access when taking an exam
 During an exam, the tools available to a learner will differ based on the exam post settings.  Settings options include a self-timer, calculator, scratch pad, allowing making for faculty review, and additional resources (PDFs).  Most resources will display in the navigation menu on the right-hand side. Learners can hide the sidebar at any point by clicking on Menu in the bottom right.
 * Question navigation will display on the left sidebar and question completion displays across the bottom of the screen.  Learners will be able to move forward or backward or jump between questions depending on the exam post settings.
@@ -21,7 +23,7 @@ During an exam, the tools available to a learner will differ based on the exam p
 
 When answering questions students can:
 * Select an answer by clicking the desired radio button or answer text
-* Strike out an answer choice by clicking the S button or by right clicking on answer text
+* Strike out an answer choice by clicking the S button or by right clicking on answer text. (Note that multiple choice questions presented in horizontal view to learners will not have the strikethrough feature available when learners take an exam.)
 * Highlight question text by selecting the text and clicking on the highlight icon
 * Flag a question for review later by clicking the flag button (a yellow border will appear around the question and a yellow flag will also show up beside the question number in the Navigation section of the sidebar)
 * Record scratchpad notes about the question by clicking the speech bubble icon; a speech bubble will show up beside the question number in the Navigation section of the sidebar (if enabled via exam settings learners can also mark these scatchpad notes for faculty review)

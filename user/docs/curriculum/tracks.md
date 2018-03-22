@@ -1,5 +1,5 @@
 #Curriculum Tracks  
-Curriculum Tracks can be used to create specializations or concentrations within programs or to show a course’s language of instruction.  After tracks are created, courses can be assigned to them from the course setup page.
+Curriculum Tracks can be used to create specializations or concentrations within programs or to show a course’s language of instruction.  After tracks are created, courses can be assigned to them from the course setup page.  Currently this tool functions as a way to collect information but does not interact with any other feature in Entrada.
 
 **Adding courses to a curriculum track** is done via individual course setup pages.  Please see the the Courses help section for more information.
 

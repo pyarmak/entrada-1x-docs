@@ -1,4 +1,4 @@
-#Exam Items
+#Exam Questions
 Exam items include the questions, prompts, etc. that are included on an exam.  Items are stored in folders and can be created through the Questions tab, while creating an exam, or can be imported.  To allow other users to access questions to edit them or use them on exams, you must add permissions to the questions.  This is done after the question is created.
 
 #How to manage question folders
@@ -10,7 +10,7 @@ Exam items include the questions, prompts, etc. that are included on an exam.  I
 **Folder Text:** Provide the folder title here.  This will display when you click 'Questions' and see a list of folders.  
 **Folder Description:** You will only see this if you open the folder to edit it.  
 **Folder Color:** The system requires you to select a color.  
-* Click 'Save' to create the folder.
+* Click 'Save' to create the folder.  You will be redirected to the list of folders but in the dialogue box that pops up you can also click to go to the Edit Folder page and add permissions to the folder.
 
 * To copy, delete, edit and manage folder authors, or move a folder, click the the gear icon to the right of the folder name.  You will only have the ability to do this if you created the folder or are listed as a folder author.
 * To add permission for other users to access a folder, select the user type (individual, organisation or course), begin to type in a name and click on the name you want.  The selected user will appear on a list below.  To remove a permission click the red x beside a name.  If you make a folder accessible to an organisation it means anyone in that organisation with access to the exam module will be able to access the folder.  If you make a folder accessible to a course, anyone listed in the course contacts section of the course setup page will be able to access the folder.  
@@ -22,6 +22,8 @@ Exam items include the questions, prompts, etc. that are included on an exam.  I
 Entrada currently supports a variety of question types: Multiple Choice (vertical and horizontal – use ‘multiple responses’ to allow for multiple correct answers), short answer, essay, matching, text, and fill in the blank. Different question types have different templates for their layout.
 
 A ‘text’ question can be used to provide instructions.
+
+Note that questions presented in horizontal view to learners will not have the strikethrough feature available when learners take an exam.
 
 #How to create questions
 Within a folder, users can manually add individual questions, import questions in bulk through a free text box, or migrate questions, images, and responses from another exam management tool (this last tool is only available to Medtech Admins).  This section addresses how to manually create individual questions; please see additional tabs for information on importing questions.  Note that the system stores a record of who created a question and displays this information in the question detail view.

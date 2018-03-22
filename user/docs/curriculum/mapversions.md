@@ -1,5 +1,5 @@
 #Curriculum Map Versions  
-The Curriculum Map Versions feature allows an organisation to map curricular content for specific cohorts or time periods.
+The Curriculum Map Versions feature allows an organisation to create curriculum maps with specific linkages between curriculum tags.  Each curriculum map includes curriculum periods and the curriculum tags and mapped relationships between tags are available to be applied to any features (courses, learning events, gradebook assessment entries, etc.) taht exist with the curriculum periods included in a specific map.
 
 #How to create a curriculum map version
 * Navigate to Admin>Manage Curriculum.
@@ -11,4 +11,5 @@ The Curriculum Map Versions feature allows an organisation to map curricular con
 #How to copy an existing curriculum map version
 * Repeat the steps above and in the **Import Options** section, tick off the checkbox.
 * Select the curriculum map version you wish to copy from the dropdown menu.
-* Click 'Save'.
+* Click 'Save'.  
+* This will create an identical curriculum map for the new map version which you can then edit as needed.

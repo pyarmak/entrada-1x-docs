@@ -1,5 +1,5 @@
 #Manage Cohorts
-The Manage Cohort tool allows you to create groups of users such as cohorts and class lists.  You can add specific learners to cohorts and set them as the audience for courses and events.
+The Manage Cohort tool allows you to create groups of users such as cohorts and class lists.  You can add specific learners to cohorts and set them as the audience for courses and events.  Only users with admin. roles in Entrada can manage cohorts.
 
 # How to add a new cohort
 * Navigate to Admin>Manage Cohort.
@@ -10,9 +10,9 @@ The Manage Cohort tool allows you to create groups of users such as cohorts and 
 * Cohort: This is generally a full list of learners moving through a program together for a duration of time.  They may take multiple courses together.  
 * Course list: A course list is a type of cohort. It is generally a list of learners in one specific course for a set duration of time.  
 
-* In the Add Learners section, click on the arrow to access a list menu of user types.  Click through the options to access the users you want to add to the cohort.  Note the Select All option at the top of the list.  
+* In the Add Learners section, click on the arrow to access a list menu of user groups.  Click through the options to access the users you want to add to the cohort.  Note the Select All option at the top of the list in case it is useful.  
 * To remove a name from the list, click the small x beside the name to be removed.
-* Click Proceed.
+* Click 'Proceed'.
 
 Once a cohort exists it can be added as the audience of an enrolment in a course.  As mentioned above, cohorts are also available as filter settings.
 
