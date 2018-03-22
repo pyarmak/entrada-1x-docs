@@ -3,12 +3,8 @@ repo_url: https://github.com/EntradaProject/entrada-1x-docs
 theme: readthedocs
 pages:
 - 'Home': 'index.md'
-- 'About':
-  - 'License': 'about/license.md'
-  - 'Reporting Issues': 'about/reporting-issues.md'
 - 'Support':
   - 'Overview': 'support/overview.md'
-  - 'Knowledge Base': 'support/kb.md'
   - 'Feature Requests': 'support/featurerequests.md'
 - 'System Setup':
   - 'Getting Started': 'systemsetup/index.md'
@@ -89,6 +85,7 @@ pages:
   - Lottery: 'clinicalexperience/lottery.md'
   - Rotation Schedule: 'clinicalexperience/rotationschedule.md'
   - Electives: 'clinicalexperience/electives.md'
+  - Leave Tracking: 'clinicalexperience/leavetracking.md'
 - 'Assessment and Evaluation':
   - 'Getting Started': 'assessment-evaluation/index.md'
   - 'Settings': 'assessment-evaluation/settings.md'
@@ -128,6 +125,8 @@ pages:
   - 'Getting Started': 'mspr/index.md'
   - 'Managing the MSPR': 'mspr/manage.md'
   - 'Learner View of the MSPR': 'mspr/learnerview.md'
+- 'Clerkship':
+  - 'Duty Hours Tracking': 'clerkship/dutyhours.md'
 - 'eportfolio':
   - 'Getting Started': 'eportfolio/index.md'
   - 'Manage': 'eportfolio/manage.md'
@@ -165,3 +164,6 @@ pages:
 - 'Rich Text Content':
   - 'Using Rich Text Content Editor': 'richtexteditor/index.md'
   - 'Embedding Media': 'richtexteditor/embedmedia.md'
+- 'About':
+  - 'License': 'about/license.md'
+  - 'Reporting Issues': 'about/reporting-issues.md'

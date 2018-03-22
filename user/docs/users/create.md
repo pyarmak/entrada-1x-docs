@@ -59,12 +59,12 @@ Although there is a user interface to manually add individual users, it is stron
 * You will see a green success message or be prompted to correct something in the CSV file.
 
 #Uploading revised records for users
-You are able to upload revised user records to the system.  When you do the system will compare the records and ask you to confirm which record you want to use.
+You are able to upload revised user records to the system.  When you do the system will compare the records and in some circumstances ask you to confirm which record you want to use.
 
 The system will respond the following way when you update records:
-If the user has the same group but a new role compared to their previous record - system will update the role and everything else (start and end date, and account status).
-If the user has a different group from their previous record the user will be added to that group and the information from the csv will be applied to their account.
-If the user has the same group and same role as their previous record the system will update everything included in the csv.  
+If the user has the same group but a new role compared to their previous record - system will update the role and everything else (start and end date, and account status).  You will be asked to confirm whether you want to update the user record.
+If the user has a different group from their previous record that group will be added to the user's account and all other information will be updated.
+If the user has the same group and same role as their previous record the system will automatically update everything included in the csv.  
 
 When the system finds two records for the same user it will display the two records.  Currently, these lines look identical but we are working on adding a popover card to display the conflicting information so users can more easily decide which record to import.
 
