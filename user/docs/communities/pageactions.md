@@ -62,7 +62,7 @@ These polls function differently than polls set up via Manage Polls.  These poll
 * Click 'Add Poll'.
 * Provide polling details including title and description.
 * Decide whether or not to allow multiple votes by clicking the appropriate radio button.  If you allow users to have multiple votes you should type in how many each gets (leave at zero for unlimited votes).
-* Set up the polling question in the Question Details section.
+* Set up the polling question in the Question Details section.  
 **Question:** This is what you are asking.  If you'd like to create a poll with multiple questions you'll need to create your first question, save the poll, and then you can add additional questions.  
 **Multiple Responses:** Check this off to allow respondents to choose more than one response.  If you pick this, type in the range of response numbers each participant can give (e.g., between 2 and 4 responses allowed).  
 **Responses:** Add answer options here.  Click on the blue plus button to add your response option.  After your first response is added to the list, type in another and click the blue plus button again.  Edit a response by clicking on it.  Delete a response by clicking the red trash can icon. Reorder responses by clicking on a response and dragging it to the place you want it to be.  
@@ -96,12 +96,12 @@ Community members can share urls and HTML through a document sharing space; thei
 * Click 'Expand All Folders' to quickly view all existing files if desired.
 ##For urls
 * Click the cog beside a folder name and select 'Add Link' from the dropdown menu.
-* Provide link details and if applicable open the Advanced Settings menu.
-**Access Method:**
-**Iframe Javascript Resizing:**
-**Session Variables:**
-**Hide link from students:**
-* Batch Link Permissions allows you to customize who can view and upload new versions of links.
+* Provide link details and if applicable open the Advanced Settings menu.  
+**Access Method:**  Define where the URL should open.  
+**Iframe Javascript Resizing:**  Select whether the resize the iframe.  
+**Session Variables:**  More information coming soon.  
+**Hide link from students:**  Define whether or not to allow students to see the link.  
+* Batch Link Permissions allows you to customize who can view and upload new versions of links.  If you select Course Groups you'll be able to further set how browsing non-members can interact with the link (assuming your course community is open beyond enrolled learners).
 * Batch Time Release Options controls when this link will be accessible to other community members.
 * Click 'Save'.
 * To delete or modify an existing link, click on the cog to the left of the link title and select the appropriate action.

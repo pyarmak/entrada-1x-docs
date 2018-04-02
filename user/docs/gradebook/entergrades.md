@@ -1,14 +1,6 @@
 #How to Enter Grades
 There are several ways to enter grades into the gradebook including importing grades with a CSV, manually entering grades, and using an assessment form which when completed automatically populates the grade.
 
-In this section you'll learn:
-* How to import grades using a CSV
-* How to manually enter grades
-* How to use an assessment form to complete grades
-* How to link quizzes and exams to gradebook to automatically supply a grade
-* How to allow Grade Calculation Exceptions
-* More about releasing grades to leaners
-
 #How to import grades using a CSV
 * Navigate to Admin>Manage Gradebook.
 * Search for and click on the required course name.
@@ -32,7 +24,8 @@ In this section you'll learn:
 * Your work saves automatically.
 
 #How to use an assessment form and drop box to complete grades (faculty)
-Make sure that faculty are listed on the course contacts section of the course (i.e., as a course director or associated faculty) and have been added to an assessment as a grader for them to use this process.
+Make sure that faculty are listed on the course contacts section of the course (i.e., as a course director or associated faculty) and have been added to an assessment as a grader for them to use this process.  
+
 * Navigate to Admin>Manage Gradebook.
 * Search for the appropriate course as needed and click on the course title.
 * Search for and click on the assessment title.
@@ -48,7 +41,8 @@ A quiz created through the quiz module and with multiple choice, true/false, etc
 Exams created with the Entrada Exam module can also be attached to a gradebook entry so that when the exam is graded the grade automatically forwards to the gradebook.  This process is completed by attaching an exam post to a gradebook entry in the Feedback step of creating the post.  For additional details on completing this process please see the Exams>Post help section.
 
 #How to allow Grade Calculation Exceptions
-This feature allows you to modify the weight of an assessment for an individual student.
+This feature allows you to modify the weight of an assessment for an individual student.  
+
 * Navigate to Admin>Manage Gradebook.
 * Search for the appropriate course as needed and click on the course title.
 * Search for and click on the assessment title.

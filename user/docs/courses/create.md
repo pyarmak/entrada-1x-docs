@@ -13,7 +13,8 @@ Creating a course is the first step to populating it with objectives, creating g
 * Course Code: This will display as part of the course identification visible to users on individual learning event pages and will also be used in the list of event from the Learning Events tab. The course code is also used in the breadcrumbs when you are managing courses and their different pages so codes should be logical.
 * Course Colour: The selected colour will be used to identify learning events that are a part of this course on the learner calendar. (You can further customize the colour of specific events when you create them.)
 * Course Type: This presently creates metadata. It doesn’t impact the course template or anything else.  
-* Reminder Notifications:  This is specific to faculty teaching events in the course and allows you to choose whether or not to enable email notifications for this course.  Through the database you can set when and how often email reminders about teaching responsibilities are sent out.
+* Curriculum Tracks - Curriculum Track options will only display if you have curriculum tracks built within an organisation.  These can be configured through Manage Curriculum.  Assigning a course to a curriculum track allows you to identify those courses that share characteristics (e.g. help prepare learner for a specific program, provide a minor, etc.)
+* Reminder Notifications:  This is specific to faculty teaching events in the course and allows you to choose whether or not to enable email notifications for this course.  Through the database/settings table you can set when and how often email reminders about teaching responsibilities are sent out.
 * Course Permissions: An open course will allow all logged in users to access it.  If you attach the course to a community or course website you'll be able to set permissions for the course website as well.
 * Audience Sync: Choose whether or not to automatically sync your audience with the LDAP server.
 
@@ -27,8 +28,6 @@ Creating a course is the first step to populating it with objectives, creating g
 You will see a green success message indicating that the course has been created.  You'll be redirected to the full course setup tab to provide additional details about the course.  
 
 **Course Setup:** This first section of the page is complete with the information you already provided.  If you need to edit any of the information you can do so here.
-
-* Curriculum Tracks - Curriculum Track options will only display if you curriculum tracks built.  These can be configured through Manage Curriculum.  Assigning a course to a curriculum track allows you to identify those courses that share characteristics (e.g. help prepare learner for a specific program, provide a minor, etc.)
 
 **Course Contacts:**  
 
@@ -52,7 +51,8 @@ The curriculum tag set designated as Curriculum Objectives will be immediately v
 
 Note that if you want students to be able to log specific objectives they should be assigned to the course.
 
-**Course Tags:** For use if your installation of Entrada has weeks/unit enabled.
+**Course Tags:** Only for use if your installation of Entrada has weeks/unit and context-based linkages enabled.  If you don't have these features enabled you won't see this section of the page.
+
 * Select the appropriate Curriculum Period from the dropdown menu.  
 * Select the appropriate Curriculum Map Version from the dropdown menu.  (Configure a curriculum map via Admin>Manage Curriculum if necessary.  More information can be found in the Curriculum>Map Versions help section.)  
 * Select curriculum tags from the dropdown menu.  Whatever is added as a Course Tag will display on the course page.  
@@ -68,11 +68,9 @@ Indicate which reports should be available to be generated from this course by s
 
 **Course Enrolment:** This will appear near the bottom of the screen but was already completed during the initial course build.  If you need to edit the enrolment you can do so from here.  
 
-**Course Syllabus:**  
+**Course Syllabus:** If this feature is enabled users will be able to generate a PDF summarizing the course information provided in the course website tabs.
 
-If this feature is enabled users will be able to generate a PDF summarizing the course information provided in the course website tabs.
-
-* After completing the required fields in Course Setup, click Save.
+* After completing the required fields in Course Setup, click 'Save'.
 
 # How to delete a course
 * Navigate to Admin>Manage Courses.

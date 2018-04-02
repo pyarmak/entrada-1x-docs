@@ -50,23 +50,23 @@ To assign groups of leaners to a grader please see the Group Assessment help sec
 You can link a gradebook assessment to an existing portfolio requirement.  Doing this will allow graders to access a learner portfolio via the gradebook and if a form has also been attached to the assessment will permit a grader to view the portfolio entry and complete the assessment form simultaneously on the page.
 
 ##How to link a form to an assessment
-Assessment Form allows you to link an existing assessment form to the gradebook assessment.  This can permit online, electronic grading by faculty.
-If you need to create a form navigate to Admin>Assessment and Evaluation>Forms
-* Click Attach Assessment Form
-* Begin to type the form title and options should appear.  Click on the form you wish to attach and click Attach Assessment Form.
+Assessment Form allows you to link an existing assessment form to the gradebook assessment.  This can permit online, electronic grading by faculty.  (If you need to create a form navigate to Admin>Assessment and Evaluation>Forms.)  
+
+* Click 'Attach Assessment Form'.
+* Begin to type the form title and options should appear.  Click on the form you wish to attach and click 'Attach Assessment Form'.
 * The assessment form will now appear on the assessment screen.  You must indicate weights for the items on the assessment form and enter scores as required by different item types.
-* Click Attach Assessment.
-* To remove an attached assessment form, click the red Remove Form button.
+* Click 'Attach Assessment'.
+* To remove an attached assessment form, click the red 'Remove Form' button.
 
 ##How to assign curriculum tags to an assessment
-Assessment Objectives allows you to map learning objectives from the Curriculum Tags sets to the assessment. The objectives are hidden by default so access this feature by clicking the faint gray plus box to the left of the Assessment Objectives title.
-The curriculum tags assigned to a course will automatically appear for selection.
-To assign curriculum tags to this assessment, tick off each desired tag.
-If you need to access additional curriculum tags, click the green Map Additional Objectives button.  Click through the curriculum tag set to the required tag and tick off the small box beside the curriculum tag.
-Assigned curriculum objectives and MCC presentations (two curriculum tag sets) are reported by course via the Assessment Objective Summary report.
+Assessment Objectives allows you to map learning objectives from the Curriculum Tags sets to the assessment. The objectives are hidden by default so access this feature by clicking the faint gray plus box to the left of the Assessment Objectives title.  
 
-Pick **Draft** or **Publish** to indicate whether you want to finalize the assessment or leave it hidden and editable.  Once published, an assessment can still be edited, however if it is already visible, learners may see any changes made.
-Click Save.
+* The curriculum tags assigned to a course will automatically appear for selection.
+* To assign curriculum tags to this assessment, tick off each desired tag.  
+* If you need to access additional curriculum tags, click the green Map Additional Objectives button.  Click through the curriculum tag set to the required tag and tick off the small box beside the curriculum tag.  
+* Assigned curriculum objectives and MCC presentations (two curriculum tag sets) are reported by course via the Assessment Objective Summary report.  
+* Pick **Draft** or **Publish** to indicate whether you want to finalize the assessment or leave it hidden and editable.  Once published, an assessment can still be edited, however if it is already visible, learners may see any changes made.  
+* Click Save.
 
 By default, when you save your work the system will redirect you to the Grade assessment page where you can input student marks.  To select a different destination after saving use the dropdown menu immediately to the left of the blue Save button.
 
@@ -74,16 +74,17 @@ By default, when you save your work the system will redirect you to the Grade as
 #How to copy and modify an existing gradebook
 Before you start, ensure that the period (e.g., Sept. 1, 2017 – Dec. 31, 2017) you want to create a new gradebook for exists and has an audience (e.g., a cohort). Navigate to Admin>Manage Course>Setup to review and adjust this as needed. If a required period is unavailable this can be modified from Admin>Manage Settings>Curriculum Layout.
 
-Navigate to Admin>Manage Gradebook and scroll down to the relevant course.
-Open the gradebook you plan to copy.
-Check that you’re using the appropriate period by looking at and adjusting as needed the Period dropdown menu in the top right.
-Select the assignments you want to copy by ticking the small box beside the assessment title.
-When prompted, select the new target audience (which is defined by a period so that’s what you’ll see as your options) and press Copy Assessments.
-NOTE: When you copy assessments, they will maintain the same date parameters, so make sure that you adjust the dates.  Other things like who is notified if grade doesn’t meet threshold, learners assigned to groups, etc. will also have to be updated.
+* Navigate to Admin>Manage Gradebook and scroll down to the relevant course.  
+* Open the gradebook you plan to copy.  
+* Check that you’re using the appropriate period by looking at and adjusting as needed the Period dropdown menu in the top right.  
+* Select the assignments you want to copy by ticking the small box beside the assessment title.  
+* When prompted, select the new target audience (which is defined by a period so that’s what you’ll see as your options) and press Copy Assessments.  
+* NOTE: When you copy assessments, they will maintain the same date parameters, so make sure that you adjust the dates.  Other things like who is notified if grade doesn’t meet threshold, learners assigned to groups, etc. will also have to be updated.  
 
 
 #How to manage existing assessments in a gradebook
-**Collections** - The collections tool allows you to group multiple assessments together in a course gradebook assessment list allowing for quick review of learner performance (e.g., all quizzes will show up beside each other).
+**Collections** - The collections tool allows you to group multiple assessments together in a course gradebook assessment list allowing for quick review of learner performance (e.g., all quizzes will show up beside each other).  
+
 * Tick the small boxes beside the assessments you want to group together.
 * Click on “Add to Collection” at the bottom of the gradebook screen.
 * Provide a title and optional description for the collection and click Add to Collection.

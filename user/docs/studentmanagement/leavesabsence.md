@@ -1,8 +1,8 @@
 #Student Leaves of Absence
-Learners can request leaves of absence. These need to be logged and approved by a program coordinator which can be done through the user's profile page.
+Entrada can be used to track learner leaves of absence. These need to be logged by a curriculum coordinator and can be done through a user's profile page.
 
 * Navigate to Admin>Manage Users.
-* Search for the appropriate user and click on his/her name.
+* Search for the appropriate user (the person taking leave) and click on his/her name.
 * From the Student Management box on the left sidebar, click 'Leaves of Absence'.
 * Click 'Add Leave of Absence' to create a new absence.
 * Provide the relevant details and click 'Add Absence'.

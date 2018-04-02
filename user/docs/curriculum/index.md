@@ -1,4 +1,4 @@
-#Getting Started with Curriculum Management  
+#Curriculum Management  
 The tools within Manage Curriculum are used to build the structure on which many of Entrada's features rely.
 
 The structure of curriculum management within Entrada includes:  

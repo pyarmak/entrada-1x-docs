@@ -1,4 +1,4 @@
-#Course Groups  
+#Course Groups Tab  
 Once there are learners enrolled in a course/program, you can create groups of learners within a course.  Course groups are useful for assigning small groups of learners to specific learning events (e.g., repeating clinical skills sessions where small groups of learners all do the same thing), and can also be used to link tutors to assigned learners.  Linking tutors and groups of learners allows faculty to review specific students’ logged encounters, or act as academic advisors (especially relevant if you are using the competency-based medical education module of Entrada).  Tutors linked to groups will also be able to access any community shared resources restricted to that group.
 
 #How to create groups through the user interface
