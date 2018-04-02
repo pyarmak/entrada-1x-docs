@@ -5,14 +5,14 @@ Specific group and role configurations have certain permissions in Entrada.  Bel
 | Group     | Role     | System Permissions     |
 | :------------- | :------------- | :------------- |
 | Alumni      | Year of Graduation       | TBD     |
-| Faculty      | Admin       | TBD     |
+| Faculty      | Admin       | Faculty Admin can pretty much do anything in the system within their designated organisation.      |
 | Faculty      | Director       | Course Directors can edit the content of any course pages / website or learning event that they are designated as a "Course Director" for on the Admin > Manage Courses page. |
 | Faculty      | Faculty       | Basic read-only access as faculty members.|
 | Faculty      | Lecturer      | Teaching faculty can edit the content of any learning event that they are scheduled to teach. |
 | Medtech      | Admin       | System administrators can pretty much do anything in the system regardless of any organizational restrictions. |
 | Medtech      | Staff      | TBD     |
-| Resident      | Lecturer       | TBD     |
-| Resident      | Resident       | TBD     |
+| Resident      | Lecturer       | This can be used in UG installations where residents act as lecturers.     |
+| Resident      | Resident       | This can be used in UG installations where residents play some role.  Do not use this group and role for PG installations of Entrada using CBME; in that case the residents should be student:year.     |
 | Staff      | Admin       | Organization administrators can pretty much do anything in the system within their designated organisation.  |
 | Staff      | Pcoordinator       | Can add, edit, or delete learning events and manage any content within any of the courses they are designated as a "Program Coordinator" for on the Admin > Manage Courses page   |
 | Staff      | Staff       | Staff members have basic read-only access.      |

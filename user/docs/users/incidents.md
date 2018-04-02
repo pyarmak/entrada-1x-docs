@@ -9,7 +9,7 @@ The User Incident tools allows an organisation to keep a record of an incident i
 * Provide the required information noting the following:  
 **Severity:** Incident Severity cannot currently be configured through the user interface.  If you wish to change the available incident severity levels you will need help from a developer.  
 **Status:** An open incident can be edited for more information to be added including any follow-up. If an incident is closed its appearance will be greyed out when viewing a list of incidents.  
-**Dates:** Both the incident date and the date of any follow-up can be recorded.
+**Dates:** Both the incident date and the date of any follow-up can be recorded.  
 **Details:** Information provided here is not currently visible to the user although it will be accessible to users with permission to view learner incident reports.  The system will not automatically record and display the names of users who add to the initial report.
 * Click 'Save Incident'.  
 

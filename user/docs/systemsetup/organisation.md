@@ -3,6 +3,8 @@ In Entrada, organisation refers to the entity using and managing its own curricu
 
 You can add and manage organisations through Admin>System Settings.  While Medtech>Admin and Staff>Admin users have access to System Settings ONLY Medtech>Admin can add a new organisation.
 
+![Add a New Organisation](/img/systemsetup/manageorg-me1.12.png)
+
 #How to add a new organisation
 * Note that this tool is only available to Medtech>Admin.  
 * Navigate to Admin>System Settings.

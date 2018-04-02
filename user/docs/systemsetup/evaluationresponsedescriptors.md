@@ -1,5 +1,5 @@
 #How to manage evaluation response descriptors
-Evaluation response categories are used to create rubrics in a relatively old Clerkship Evaluation feature.  It is **strongly** recommended that instead of the Clerkship Evaluations feature you use the more recent Assessment and Evaluation module.
+Evaluation response categories are used to create rubrics in a relatively old Clerkship Evaluation feature.  **It is strongly recommended that instead of the Clerkship Evaluations feature you use the more recent Assessment and Evaluation module.**
 
 * Navigate to Admin>System Settings.
 * Click the organisation for which you want to manage the evaluation response descriptors.

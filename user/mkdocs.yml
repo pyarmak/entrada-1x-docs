@@ -134,6 +134,9 @@ pages:
   - 'Advisors': 'eportfolio/advisors.md'
   - 'Learners': 'eportfolio/learners.md'
   - 'Gradebook': 'eportfolio/gradebook.md'
+- 'Learning Object Repository':
+  - 'Getting Started': 'learningobjects/index.md'
+  - 'Uploading Learning Objects': 'learningobjects/upload.md'
 - 'Annual Reports':
   - 'Getting Started': 'annualreports/index.md'
   - 'Faculty Annual Reports': 'annualreports/faculty.md'

@@ -43,9 +43,17 @@ If you are creating items for a form to be attached to a gradebook post for the 
 * Free Text Comments: use this item type to ask an open ended question requiring a written response. (In ME 1.11 and lower you can not map a free text comment to a curriculum tag set.)
 * Date Selector: use this item type to ask a question to which the response is a specific date (e.g. What was the date of this encounter?)
 * Numeric Field: use this item type to ask a question to which the response is a numeric value (e.g. How tall are you?)
-* Rubric Attribute (single response): use this to create an item that relies on response categories as answer options.  If you enter text in the response text area it will not show up to the user **unless you create a grouped item.** If you create a grouped item remember you need to use the same scale all across items to be grouped together.
+* Rubric Attribute (single response): use this to create an item that relies on response categories as answer options.  If you enter text in the response text area it will not show up to the user **unless you create a grouped item.**  If you create a grouped item remember you need to use the same scale all across items to be grouped together.
 * Scale Item (single response): use this to create an item that relies on response categories as answer options.  If you enter text in the response text area it will not show up to the user **unless you create a grouped item.**  If you create a grouped item remember you need to use the same scale across all items to be grouped together.
 * Field Note: Queen's/CBME?
+
+Scale prefers the response descriptor, rubric prefers the response text...except it doesn't.
+
+Response descriptors provide another data point so you can potentially report on them in the future.  They are metadata in MC questions.  In a rubric - they display.
+
+If you want a rubric with one item build a group item.
+
+Horizontal MC will let you assign the same response descriptors to multiple responses.
 
 #How to create grouped items
 Creating a grouped item allows you to group items and guarantee that they appear together on forms.  If you use the rubric attribute or scale item item types, creating a grouped item will create a rubric with common response categories (e.g. developing, achieved) and specific response text for each field (e.g. performed a physical exam with 1-2 prompts from supervisor, independently performed a physical exam).
