@@ -51,6 +51,7 @@ The hostnames that will be referenced throughout this document will be `entrada.
         upload_max_filesize = 512M
         post_max_size = 512M
         expose_php = Off
+        memory_limit = 512M
         
         ; Defines the default timezone used by the date functions
         ; http://php.net/date.timezone
