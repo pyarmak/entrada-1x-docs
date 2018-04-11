@@ -1,8 +1,26 @@
-# Database Server
+# Database Servers
 
 This documentation can be used as a reference to create your **Primary Database Server** and optional **Slave Database Server** on **Red Hat Enterprise** or **CentOS 7.2** virtual machines.
 
 The hostnames that will be referenced throughout this document will be `db01.med.university.edu` and `db02.med.university.edu`. These hostnames should be replaced by your actual DNS hostnames.
+
+## Prerequisites
+
+If you server infrastructure is configured such that you require the use of a proxy server for the server to access the external Internet,
+then please configure this before starting.
+
+1. Set the /etc/environment variables:
+        vim /etc/environment
+        
+        # Route all connectivity through the provided proxy server.
+        http_proxy=http://your.proxy.university.edu:3128
+        https_proxy=https://your.proxy.university.edu:3128
+        
+2. Configure Yum to use the proxy server:
+        vim /etc/yum.conf
+        
+        # Add the following to [main]
+        proxy=https://your.proxy.university.edu:3128
 
 ## Primary Database Server
 
@@ -18,7 +36,7 @@ The hostnames that will be referenced throughout this document will be `db01.med
 3. Edit the hostname of the virtual machine in the `/etc/hostname` file:
 
         db01.med.university.edu
-
+        
 4. Install `screen`, update RHEL, and reboot:
 
         yum install screen
@@ -31,23 +49,47 @@ The hostnames that will be referenced throughout this document will be `db01.med
         ssh service@db01.med.university.edu
         sudo -s
         screen
+        yum install https://centos7.iuscommunity.org/ius-release.rpm
 
 6. Install MariaDB Client, Server, and NTP:
 
-        yum install mariadb mariadb-server ntp
+        yum install mariadb101u mariadb101u-server ntp
 
-7. Add the following to the `mysqld` section of `/etc/my.cnf`, but **don't forget** to enter a unique 8 digit number (i.e. 12359380) in the `server-id` variable.
+7. Create a new file `/etc/my.cnf.d/entrada.cnf` and the following in. But **do not forget** to enter a unique 8 digit number (i.e. 12359380) in the `server-id` variable.
 
-        slow-query-log = 1
-        long_query_time = 7
-        expire_logs_days = 14
-        slow_query_log_file = /var/log/mysqld-slow-queries.log
-        server-id = RANDOM-UNIQUE-8-DIGIT-NUMBER
-        log_bin = /var/lib/mysql/mysql-bin
-        sync_binlog = 1
-        query_cache_size = 32M
+        [mysqld]
+        # MyISAM
         ft_min_word_len = 3
+        
+        # Innodb 
+        innodb_buffer_pool_size = 2G       # main memory buffer of Innodb, very imporant
+        innodb_log_file_size = 256M        # transactional journal size 
+        innodb_flush_method = O_DIRECT       # avoid double buffering with the OS
+        innodb_flush_log_at_trx_commit = 2 # writes to OS, fsynced once per second
+        innodb_buffer_pool_load_at_startup = on
+        innodb_buffer_pool_dump_at_shutdown = on
+        innodb_ft_min_token_size = 3
+        
+        # Basic Settings 
+        thread_cache_size = 8
+        table_open_cache = 4000
+        table_definition_cache = 1500
+        query_cache_size = 32M
+        query_cache_type = 1
         max_allowed_packet = 8388608
+        
+        # Replication
+        server_id = UNIQUE-8-DIGIT-NUMBER # the ip address of the server is a good idea without dots.
+        log_bin = /var/lib/mysql/mysql-bin
+        expire_logs_days = 14
+        sync_binlog = 4 # 1: with every transaction 4 or 5: every 4th or 5th transaction.
+        
+        # Slow Query Logging / Tuning
+        slow_query_log = on
+        slow_query_log_file = /var/log/mysqld-slow-queries.log
+        log_slow_verbosity = 'innodb,query_plan'
+        long_query_time = 7
+        performance_schema = on        
 
 8. Start MariaDB, and set to start on system startup:
 
