@@ -78,8 +78,8 @@ Vagrant.configure("2") do |config|
 
     echo "Adding default hostnames to /etc/hosts..."
 
-    echo "127.0.0.1 entrada.dev" >> /etc/hosts
-    echo "127.0.0.1 entrada-1x-me.dev" >> /etc/hosts
+    echo "127.0.0.1 entrada.localhost" >> /etc/hosts
+    echo "127.0.0.1 entrada-1x-me.localhost" >> /etc/hosts
 
     echo "Setting the virtual machine timezone..."
 
@@ -173,7 +173,7 @@ Vagrant.configure("2") do |config|
     # NOTE change 'your-university-1x-me' to the name of your entrada git repository under ~/Sites
     # NOTE you may also have to change the apache ports if you have changed the port settings for Vagrant
     mkdir /etc/httpd/vhosts.d
-    curl -sk -o /etc/httpd/vhosts.d/entrada-1x-me.dev.conf https://raw.githubusercontent.com/EntradaProject/entrada-1x-docs/master/resources/vagrant/apache/vhosts.d/entrada-1x-me.dev.conf
+    curl -sk -o /etc/httpd/vhosts.d/entrada-1x-me.localhost.conf https://raw.githubusercontent.com/EntradaProject/entrada-1x-docs/master/resources/vagrant/apache/vhosts.d/entrada-1x-me.localhost.conf
     curl -sk -o /etc/httpd/conf.d/phpmyadmin.conf https://raw.githubusercontent.com/EntradaProject/entrada-1x-docs/master/resources/vagrant/apache/phpmyadmin.conf
 
     # Restart Apache
@@ -194,7 +194,7 @@ Vagrant.configure("2") do |config|
 
   # Stage 4 - This runs on EVERY boot, to make sure httpd starts (because it depends on the folders being mapped)
   config.vm.provision "shell", run: "always",  inline:  <<-SHELL3
-    if [ -f "/etc/httpd/conf.d/entrada-1x-me.dev.conf" ]
+    if [ -f "/etc/httpd/conf.d/entrada-1x-me.localhost.conf" ]
     then
       service httpd restart
     fi

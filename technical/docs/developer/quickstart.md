@@ -31,7 +31,7 @@ Pay special attention to note of the bolded words above: migration, model, publi
 
 ### Let's Begin
 
-Open the `~/Sites/entrada-1x-me.dev` folder using PhpStorm or whatever IDE/Editor you have selected. Ensure that you set the tab size in your editor to 4 spaces as the tab character will not be accepted. For more information on coding standards visit the [Coding Standards](standards/) section.
+Open the `~/Sites/entrada-1x-me` folder using PhpStorm or whatever IDE/Editor you have selected. Ensure that you set the tab size in your editor to 4 spaces as the tab character will not be accepted. For more information on coding standards visit the [Coding Standards](standards/) section.
 
 #### 1. Create a New Database Migration
 
@@ -178,7 +178,7 @@ Entrada does not use a typical MVC pattern as you would recognize from framework
 
 Entrada's `.htaccess` file contains `mod_rewrite` rules that pipe the majority of requests through the `index.php` and `admin.php` files. The `index.php` file is used to display **public modules**, whereas the `admin.php` file is used to display **admin modules**.
 
-One significant difference between most MVC frameworks and Entrada is that our request routing is entirely automatic vs. being manually defined in a routes file. For example, if you visit [http://entrada-1x-me.dev/profile/gradebook/assignments](http://entrada-1x-me.dev/profile/gradebook/assignments) in your browser, Entrada will load the `www-root/core/modules/public/profile/gradebook/assignments/index.inc.php` file.
+One significant difference between most MVC frameworks and Entrada is that our request routing is entirely automatic vs. being manually defined in a routes file. For example, if you visit [http://entrada-1x-me.localhost/profile/gradebook/assignments](http://entrada-1x-me.localhost/profile/gradebook/assignments) in your browser, Entrada will load the `www-root/core/modules/public/profile/gradebook/assignments/index.inc.php` file.
  
  For a more thorough overview of this information please see the [Directory Structure](overview/#directory-structure) section within Overview. 
  
@@ -814,7 +814,7 @@ Within `www-root/core/modules/admin/sandbox/index.inc.php` place the following c
 
 A view helper allows you to create a single block of reusable code that can be displayed in many places. There are quite a few presently undocumented options and features of our view helpers so we would encourage you to review the files within the `www-root/core/library/Views/` directory for more information. Developer Tip: `HTMLTemplate.php` is an especially interesting feature.
 
-You will notice that if you visit [http://entrada-1x-me.dev/sandbox](http://entrada-1x-me.dev/sandbox) in your web browser that you will now see a PHP error. That is due to the fact that we are using **view helpers** on lines 30 - 31 of `www-root/core/modules/public/sandbox.inc.php` but have not yet created the files.
+You will notice that if you visit [http://entrada-1x-me.localhost/sandbox](http://entrada-1x-me.localhost/sandbox) in your web browser that you will now see a PHP error. That is due to the fact that we are using **view helpers** on lines 30 - 31 of `www-root/core/modules/public/sandbox.inc.php` but have not yet created the files.
 
 Proceed with creating the two new files to accommodate the `Views_Sandbox_Sidebar` and `Views_Sandbox_Form` view helpers:
 
