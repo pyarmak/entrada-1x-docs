@@ -1,13 +1,5 @@
 #Creating and Managing Quizzes
-Quizzes can be configured to include
-In this section you'll learn:
-* How to create a quiz
-* How to attach a quiz to a learning event
-* How to attach a quiz to a community page
-* How to attach a quiz to a gradebook assessment
-* How to view quiz results
-* How to import quiz grades to a gradebook
-* How to copy an existing quiz
+The quiz module in Entrada only supports MC questions and has limited reporting capabilities when compared to the Exam Module.  You may prefer to rely on the Exam Module if you aren't already using quizzes.
 
 #How to create a quiz
 * Navigate to Admin>Manage Quizzes.
@@ -58,8 +50,8 @@ In this section you'll learn:
 * Set additional quiz details like attendance, question randomization, time limits, number of attempts, and viewing feedback/results and click 'Save Resource'.
 
 #How to attach a quiz to a community page
-This feature allows you to post a quiz to a community or course website which makes it accessible to all users with access to specific community.
-To use this feature you should have a quizzes community page configured (do this through the Manage Pages feature in the Admin Center of any community).
+This feature allows you to post a quiz to a community or course website which makes it accessible to all users with access to specific community. To use this feature you should have a quizzes community page configured (do this through the Manage Pages feature in the Admin Center of any community).
+
 * To attach a quiz to a community page from the quiz itself, a user must be affiliated with community to be used.
 * Click on the greyed out Community Pages header.
 * Click Attach To Community Page.
@@ -70,6 +62,7 @@ To use this feature you should have a quizzes community page configured (do this
 
 #How to attach a quiz to a gradebook assessment
 To attach a quiz to a gradebook assessment it must first be attached to a learning event.  You will only be able to add a quiz to a gradebook assessment if the gradebook and learning event the quiz is attached to share a curriculum period.  
+
 * Create a gradebook assessment using the instructions in the Gradebook help section.
 * Click the checkbox beside Link existing online quizzes to this assessment.
 * Click Add Quiz.
@@ -83,10 +76,11 @@ To attach a quiz to a gradebook assessment it must first be attached to a learni
 #How to import quiz grades to a gradebook
 * Navigate to the appropriate course gradebook and click on the title of the assessment you want to import grades for.
 * Click 'Import/Export' and select Import from attached quiz.
-*
+
 
 #How to copy an existing quiz
-Copying an existing, in-use quiz allows you to edit the questions as needed.
+Copying an existing, in-use quiz allows you to edit the questions as needed.  
+
 * Navigate to Admin>Manage Quizzes.
 * Open an existing quiz by clicking on it's name.
 * Click Copy Quiz.

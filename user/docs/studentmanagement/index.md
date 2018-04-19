@@ -1,2 +1,13 @@
 #Student Management
-There are a variety of tools available to help manage student records while they are active in your organisation. Basic information like name and contact information can be stored in the user profile. The Manage User Meta Data feature may be useful for storing additional information like vaccination records, background checks, etc.  Incident reports, disciplinary action and formal remediation can all be recorded through Entrada. The Medical Student Performance Records, observerships, and leaves of absence can also be kept track of through Entrada.  Some of these topics have their own help sections while others are addressed below. 
+There are a variety of tools available to help manage student records while they are active in your organisation.  
+
+* User Profile: Store basic information like name and contact information  
+* User Meta Data: Store additional information like vaccination records, background checks, etc.  
+* Incident reports, disciplinary action and formal remediation can also be recorded through Entrada  
+* Medical Student Performance Records: Pull in existing data from Entrada and allow learners to submit additional documentation to forward to residency matching bodies  
+* Observerships: Allow learners to request observerships and have them be approved (or not) by curriculum coordinators
+* Leaves of Absence: Track leaves of absence
+
+* Attendance Tracking: Track learner attendance at the event level
+
+Some of these topics have their own help sections while others are addressed below.

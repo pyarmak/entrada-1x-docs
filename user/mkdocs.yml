@@ -6,8 +6,9 @@ pages:
 - 'Support':
   - 'Overview': 'support/overview.md'
   - 'Feature Requests': 'support/featurerequests.md'
+  - 'Reporting Issues': 'support/reporting-issues.md'
 - 'System Setup':
-  - 'Getting Started': 'systemsetup/index.md'
+  - 'Getting Started with System Setup': 'systemsetup/index.md'
   - 'Organisation': 'systemsetup/organisation.md'
   - 'Location': 'systemsetup/location.md'
   - 'Departments': 'systemsetup/departments.md'
@@ -17,7 +18,7 @@ pages:
   - 'Evaluation Response Descriptors': 'systemsetup/evaluationresponsedescriptors.md'
   - 'Grading Scales': 'systemsetup/gradingscales.md'
 - 'Curriculum Management':
-  - 'Getting Started': 'curriculum/index.md'
+  - 'Getting Started with Curriculum Management': 'curriculum/index.md'
   - 'Curriculum Layout': 'curriculum/layout.md'
   - 'Scheduling Blocks': 'curriculum/rotationblocks.md'
   - 'Curriculum Tracks': 'curriculum/tracks.md'
@@ -38,14 +39,14 @@ pages:
   - 'User Incidents': 'users/incidents.md'
   - 'User Profile Preferences': 'users/profilepreferences.md'
 - 'Student Management':
-  - 'Getting Started': 'studentmanagement/index.md'
+  - 'Getting Started with Student Management': 'studentmanagement/index.md'
   - 'Disciplinary Actions': 'studentmanagement/discipline.md'
   - 'Formal Remediation': 'studentmanagement/remediation.md'
   - 'Leaves of Absence': 'studentmanagement/leavesabsence.md'
   - 'MSPR': 'studentmanagement/mspr.md'
   - 'Observerships': 'studentmanagement/observerships.md'
 - 'Communities':
-  - 'Getting Started': 'communities/index.md'
+  - 'Getting Started with Communities': 'communities/index.md'
   - 'Community Types and Uses': 'communities/types.md'
   - 'Creating a Community': 'communities/create.md'
   - 'Community Pages': 'communities/pages.md'
@@ -53,19 +54,20 @@ pages:
   - 'Using Different Page Types': 'communities/pageactions.md'
   - 'Subscribing to Community Notifications': 'communities/subscribecnotifications.md'
 - 'Courses':
-  - 'Getting Started': 'courses/index.md'
+  - 'Getting Started with Courses': 'courses/index.md'
   - 'Creating and Managing Courses': 'courses/create.md'
   - 'Course Content': 'courses/content.md'
   - 'Course Enrolment': 'courses/enrolment.md'
   - 'Course Website': 'courses/website.md'
   - 'Course Groups': 'courses/groups.md'
 - 'Scheduling Events':
-  - 'Getting Started': 'schedulingevents/index.md'
+  - 'Getting Started with Scheduling Events': 'schedulingevents/index.md'
   - 'Creating and Managing a Schedule': 'schedulingevents/create.md'
   - 'Copying an Existing Schedule': 'schedulingevents/copy.md'
   - 'Recurring Events': 'schedulingevents/recurringevents.md'
   - 'Parent Child Tool': 'schedulingevents/parentchild.md'
 - 'Event Pages':
+  - 'Getting Started with Managing Events': 'eventpages/index.md'
   - 'Setup': 'eventpages/setup.md'
   - 'Content': 'eventpages/content.md'
   - 'Attendance': 'eventpages/attendance.md'
@@ -73,13 +75,13 @@ pages:
   - 'Statistics': 'eventpages/statistics.md'
   - 'Reports': 'eventpages/reports.md'
 - 'Calendar':
-  - 'Getting Started': 'calendar/index.md'
+  - 'Getting Started with Calendar': 'calendar/index.md'
 - 'Units':
-  - 'Getting Started': 'units/index.md'
+  - 'Getting Started with Units': 'units/index.md'
   - 'Creating Units': 'units/create.md'
   - 'Learner View': 'units/learnerview.md'
 - 'Clinical Experience':
-  - Getting Started: 'clinicalexperience/index.md'
+  - Getting Started with Clinical Experiences: 'clinicalexperience/index.md'
   - My Learners: 'clinicalexperience/mylearners.md'
   - Logbook: 'clinicalexperience/logbook.md'
   - Lottery: 'clinicalexperience/lottery.md'
@@ -87,7 +89,7 @@ pages:
   - Electives: 'clinicalexperience/electives.md'
   - Leave Tracking: 'clinicalexperience/leavetracking.md'
 - 'Assessment and Evaluation':
-  - 'Getting Started': 'assessment-evaluation/index.md'
+  - 'Getting Started with A&E': 'assessment-evaluation/index.md'
   - 'Settings': 'assessment-evaluation/settings.md'
   - 'Items': 'assessment-evaluation/items.md'
   - 'Forms': 'assessment-evaluation/forms.md'
@@ -98,7 +100,7 @@ pages:
   - 'Program Coordinator View': 'assessment-evaluation/pcoorview.md'
   - 'Reports in A&E': 'assessment-evaluation/reports.md'
 - 'Exams':
-  - 'Getting Started': 'exams/index.md'
+  - 'Getting Started with Exams': 'exams/index.md'
   - 'Create Exam Questions': 'exams/questions.md'
   - 'Importing Exam Items': 'exams/imports.md'
   - 'Create and Manage Exams': 'exams/create.md'
@@ -107,13 +109,13 @@ pages:
   - 'Reporting Exams Results': 'exams/reports.md'
   - 'History': 'exams/history.md'
 - 'Gradebook':
-  - 'Getting Started': 'gradebook/index.md'
+  - 'Getting Started with Gradebook': 'gradebook/index.md'
   - 'Create Gradebook Assessments': 'gradebook/create.md'
   - 'Enterging Grades': 'gradebook/entergrades.md'
   - 'Create A Dropbox': 'gradebook/dropbox.md'
   - 'Reporting Gradebook Results': 'gradebook/reporting.md'
 - 'Quizzes':
-  - 'Getting Started': 'quizzes/index.md'
+  - 'Getting Started with Quizzes': 'quizzes/index.md'
   - 'Creating and Managing Quizzes': 'quizzes/create.md'
 - 'Notices':
   - 'Getting Started': 'notices/index.md'
@@ -122,24 +124,27 @@ pages:
 - 'Polls':
   - 'Getting Started': 'polls/index.md'
 - 'mspr':
-  - 'Getting Started': 'mspr/index.md'
+  - 'Getting Started with Polls': 'mspr/index.md'
   - 'Managing the MSPR': 'mspr/manage.md'
   - 'Learner View of the MSPR': 'mspr/learnerview.md'
 - 'Clerkship':
   - 'Duty Hours Tracking': 'clerkship/dutyhours.md'
 - 'eportfolio':
-  - 'Getting Started': 'eportfolio/index.md'
+  - 'Getting Started with ePortfolio': 'eportfolio/index.md'
   - 'Manage': 'eportfolio/manage.md'
   - 'Manage Advisors and Groups': 'eportfolio/manageadvisors.md'
   - 'Advisors': 'eportfolio/advisors.md'
   - 'Learners': 'eportfolio/learners.md'
   - 'Gradebook': 'eportfolio/gradebook.md'
+- 'Learning Object Repository':
+  - 'Getting Started with the LOR': 'learningobjects/index.md'
+  - 'Uploading Learning Objects': 'learningobjects/upload.md'
 - 'Annual Reports':
-  - 'Getting Started': 'annualreports/index.md'
+  - 'Getting Started with Annual Reports': 'annualreports/index.md'
   - 'Faculty Annual Reports': 'annualreports/faculty.md'
   - 'Reporting Options': 'annualreports/reports.md'
 - 'Regional Education':
-  - 'Getting Started': 'regionaled/index.md'
+  - 'Getting Started with Regional Education': 'regionaled/index.md'
   - 'Manage Regions': 'regionaled/regions.md'
   - 'Manage Apartments': 'regionaled/apartments.md'
   - 'Scheduling Learners': 'regionaled/schedules.md'
@@ -166,4 +171,3 @@ pages:
   - 'Embedding Media': 'richtexteditor/embedmedia.md'
 - 'About':
   - 'License': 'about/license.md'
-  - 'Reporting Issues': 'about/reporting-issues.md'

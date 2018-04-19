@@ -1,16 +1,14 @@
 #Curriculum Search  
-The Curriculum Search tool is available to all users and uses boolean search terms to look for content within learning events.  It searches event titles, event descriptions, and curriculum tag names.  Users can also use advanced options to search files attached to learning events.
+The Curriculum Search tool is available to all users by default and uses boolean search terms to look for content within learning events.  It searches event titles, event descriptions, and curriculum tag names.  Users can also use advanced options to search files attached to learning events.
 
 #How to use Curriculum Search
 * Type your search term(s) into the search space.
 * If you want your search results to include files attached to Learning Events, click 'Advanced Options' and click the checkbox just below the search bar.
 * Click 'Search' and your results will display on the screen.  
-* You can toggle between three different views of your search results:
+* You can toggle between three different views of your search results:  
 **List view:** This view shows you a list of all returned events.  Export your results as desired.
-**Timeline view:** This view displays the returned events by cohort on a timeline.  Scroll through the results or quickly jump from year to year using the links on the right above the timeline.  Mouseover an event for its course affiliation and length. View a total count of results returned per cohort in the left sidebar.
+**Timeline view:** This view displays the returned events by cohort on a timeline.  Scroll through the results or quickly jump from year to year using the links on the right above the timeline.  Mouseover an event for its course affiliation and length. View a total count of results returned per cohort in the left sidebar.  
 **Table view:** This view shows you course name, learning event, date, duration, description, unit (if enabled), event types, and teachers.  Export your results as desired.
-
-Note that at present, Curriculum Search does recognize curriculum tag links made by context-based linkages (has to be enabled in your installation, results in mapping tags within individual events).  However, relationships between curriculum tags mapped to each other through Manage Curriculum are not reflected in Curriculum Search results.
 
 #How to use advanced options
 Advanced options let you further refine your curriculum search results.  

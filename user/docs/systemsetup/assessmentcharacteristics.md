@@ -1,8 +1,7 @@
 #How to manage assessment characteristics
 
-Assessment characteristics should be configured if you plan to use course gradebooks.
+Assessment characteristics should be configured if you plan to use course gradebooks. Within a gradebook you will need to define the assessment characteristic for each assessment added. Each assessment type has different extended options for recording data (e.g. the type of included questions for quizzes and exams, or whether to track late submissions for papers and projects).  
 
-When using the course gradebook you will need to define the assessment characteristic for each assessment added.  Each assessment type has different extended options for recording data (e.g. the type of included questions for quizzes and exams, or whether to track late submissions for papers and projects).  
 ![Assessment Characteristics in Gradebook](/img/assessment-evaluation/assessment-characteristics-gradebookdisplay-me1.11.png)
 
 Entrada comes with a set of assessment types.  These include assessment, exam, paper, presentation, project, quiz, rat, rating, and reflection.  Within each assessment type you can further specify assessment characteristics (e.g. oral exam, written exam, OSCE).  While there is no user interface to change the list of assessment types, the assessment characteristics list is completely configurable through the user interface.  Assessment characteristics can also be mapped to MedBiquitous Assessment Methods if required by an organisation. Whatever is created as an assessment characteristic can later be applied to the assessments listed in a course gradebook (see image above).

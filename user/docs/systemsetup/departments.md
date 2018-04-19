@@ -19,4 +19,4 @@ The list of departments will display alphabetically.
 ![Deparment List](/img/systemsetup/departmentlist-me1.11.png)
 
 #Linking departments and divisions
-As of Entrada ME 1.11 there is no user interface to link departments and divisions.  There is space in the database to create a relationship between a department and its affiliated divisions and a developer with access to the database can do this work if it is required by your organisation.  In a user profile you can assign someone to multiple departments and divisions in order to show their multiple affiliations.
+As of Entrada ME 1.12 there is no user interface to link departments and divisions.  There is space in the database to create a relationship between a department and its affiliated divisions and a developer with access to the database can do this work if it is required by your organisation.  In a user profile you can assign someone to multiple departments and divisions in order to show their multiple affiliations.

@@ -3,7 +3,7 @@ On the Attendance tab of an event page you can record attendance for an event. Y
 #How to manually enter attendance  
 * Click the checkbox beside the name of each learner in attendance.  Click the checkbox again to change the attendance status.  
 * Changes are saved constantly so there is no Save button on the page.
-* Search for a learner by typing in his/her id number.  *This seems buggy*
+* Search for a learner by typing in his/her id number.
 
 #Kiosk mode
 

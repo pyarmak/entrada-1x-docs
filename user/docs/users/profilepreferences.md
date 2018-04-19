@@ -7,7 +7,7 @@ Any user type should see their own name at the top of the page.
 * Click on the name to open the user profile.
 * **Personal Information tab:** Here users can update their email, phone and address.  Faculty users can set office hours.
 * **Extended Profile tab:** This will appear only if there is user metadata in place and set to visible for the user.
-* **Account Information tab:** Here users can view their username and change their password.  If CBME is enabled for your organisation this is also where faculty can set their PIN for assessment and evaluation forms.
+* **Account Information tab:** Here users can view their username and change their password.  If CBME is enabled for your organisation this is also where users can set their PIN for assessment and evaluation forms.
 * When making any changes users must click 'Save Profile' when complete.
 
 #How to edit privacy settings

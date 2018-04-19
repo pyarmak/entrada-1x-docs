@@ -1,4 +1,4 @@
-#Course Enrolment
+#Course Enrolment Tab
 This page displays the list of learners enrolled in the course and is based on the information provided in the course setup page.
 
 You can search for users, download the course enrolment, and toggle between a list and a grid view of learners.  Additionally, you can switch periods to view different enrolments for the course.

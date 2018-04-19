@@ -8,7 +8,7 @@ Before you can create an exam you should create folders in which to store exams.
 * Navigate to Admin>Manage Exams and click 'Exams' from the left sidebar.
 * If a new folder is needed, click 'Add Folder'.  
 * Complete the required information, noting the following:
-* Click 'Select Parent Folder' if you want to create a subfolder within an existing folder.  The permission settings of the subfolder will automatically match the permission settings of the parent folder.  Click on the desired parent folder and click 'Move'.
+* Click 'Select Parent Folder' if you want to create a subfolder within an existing folder.  The permission settings of the subfolder will automatically match the permission settings of the parent folder.  Click on the desired parent folder and click 'Move'.  
 **Folder Text:** Provide the folder title here.  This will display when you click 'Exams' and see a list of folders.  
 **Folder Description:** You will only see this if you open the folder to edit it.  
 **Folder Color:** The system requires you to select a color.  

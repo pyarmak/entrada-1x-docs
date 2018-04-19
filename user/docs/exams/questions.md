@@ -6,7 +6,7 @@ Exam items include the questions, prompts, etc. that are included on an exam.  I
 * Navigate to Admin>Manage Exams and click 'Questions' from the left sidebar.
 * If a new folder is needed, click 'Add New Folder'.  
 * Complete the required information, noting the following:
-* Click 'Select Parent Folder' if you want to create a subfolder within an existing folder.  The permission settings of the subfolder will automatically match the permission settings of the parent folder.  Click on the desired parent folder and click 'Move'.
+* Click 'Select Parent Folder' if you want to create a subfolder within an existing folder.  The permission settings of the subfolder will automatically match the permission settings of the parent folder.  Click on the desired parent folder and click 'Move'.  
 **Folder Text:** Provide the folder title here.  This will display when you click 'Questions' and see a list of folders.  
 **Folder Description:** You will only see this if you open the folder to edit it.  
 **Folder Color:** The system requires you to select a color.  
@@ -30,7 +30,7 @@ Within a folder, users can manually add individual questions, import questions i
 
 * Navigate to Admin>Manage Exams and click 'Questions' from the left sidebar.  You will automatically be working under the Questions tab.
 * Click 'Add New Question'.
-* Complete the required information noting the following:
+* Complete the required information noting the following:  
 **Question Stem:** Type the question text in this section and edit it using the rich text editor.  Insert images, tables, horizontal lines, hyperlinks, etc.
 
 To insert an image into a question stem, click the landscape icon in the rich text editor.  In the Image Properties popup window select ‘Browse Server,’ drag and drop or choose a file from your computer to upload.  After you’ve added the image you can change the name in the Alternative Text field; additionally, you can adjust the Width and Height fields (it is recommended that you click on the lock icon to change the aspect ratio of the image).

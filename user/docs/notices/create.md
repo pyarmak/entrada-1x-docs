@@ -1,12 +1,6 @@
 #How to Create and Manage Notices
 Notices created will be displayed to users in the Entrada ME Message Center on their dashboard or, if configured appropriately, can be displayed publicly on the Entrada login page.  Users are able to mark notices as read to make them disappear from the dashboard.
 
-In this section you'll learn:
-* How to post a notice
-* How to edit an existing notice
-* How to track reception of a notice
-* How to delete a notice
-
 #How to post a notice
 * Navigate to Admin>Manage Notices
 * Click Add New Notice

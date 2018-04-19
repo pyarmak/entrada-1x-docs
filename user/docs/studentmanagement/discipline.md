@@ -11,3 +11,5 @@ Note that the Manage Incident feature might also be useful in this context and m
 * Provide the relevant details and click 'Add Action'.  Unlike Incidents, the creator of a disciplinary action will not automatically be recorded and displayed.
 * Currently, learners can't view their own disciplinary actions.
 * To delete an existing action click the red minus icon beside the relevant action.
+
+By default learners can not see their own discipline records through Entrada and such records are only accessible by users with admin roles.

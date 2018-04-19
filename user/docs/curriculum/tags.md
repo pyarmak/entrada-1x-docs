@@ -11,7 +11,7 @@ While curriculum tag sets and curriculum tags are connected, there are differenc
 **Tag Set Details:**
 * Title and shortname are required for the tag set.  The title is displayed to users when using curriculum tags to label things and when using curriculum search tools.  
 * Standardization: This field was developed for the Competency-Based Medical Education tools in Entrada and identifies a tag set that is standard across multiple courses/programs.  It is applicable to the "Stages" tag set that is required in CBME, but can be ignored when creating other tag sets.
-* Applicable to: Usually curriculum tag sets are applicable to all courses, however you can adjust the setting, if needed.  This will control which courses are able to use this tag set to tag learning events and gradebook assessments.  (If you are using context-based linkages to tag curriculum that feature will allow access to all curriculum tag sets including those set to be applicable to only some courses.) 
+* Applicable to: Usually curriculum tag sets are applicable to all courses, however you can adjust the setting, if needed.  This will control which courses are able to use this tag set to tag learning events and gradebook assessments.  (If you are using context-based linkages to tag curriculum that feature will allow access to all curriculum tag sets including those set to be applicable to only some courses.)  
 **Tag Options:**  
 * This defines the information and requirements for any tags added to this set.  You can control whether there will be a space to record code, title, and description for each tag and whether any of those fields is required.  You must have a minimum of one required tag option.  If you later download a sample csv in order to import tags to this set the csv will include columns for the required fields configured here.
 * Hierarchical levels: Here you can set how many hierarchies will be allowed within the tag set (for example you might have a set of objectives that has 3 levels in its structure like Competency, Program Objectives, and Curricular Objectives). If you use multiple levels, provide labels for each.
@@ -71,12 +71,14 @@ While curriculum tag sets and curriculum tags are connected, there are differenc
 * Click on the pencil icon available to the right of the tag (you may need to use your mouse to hover over a tag for the menu icons to appear).
 
 #How to link curriculum tags
-If settings in a curriculum tag set are configured to allow the tags in the set to be mapped to other tags, you can do the mapping from the Tag Set page.
+If settings in a curriculum tag set are configured to allow the tags in the set to be mapped to other tags, you can do the mapping from the Tag Set page.  
+
 * From the Tag Set page click the chain or link icon beside a tag.  This will take you to the Map Curriculum Tags tab for this tag.
 * Use the Tag Set dropdown menu to find the tag you want to map to the tag you are editing.
 * Click off the popup window in order to see the mapping relationship you've added.
 * To delete a link click the small x beside the mapped tag.
-* Click Save.
+* Click 'Save'.  
+* Note that you can link tags via courses, units, and learning events if you are using an Entrada setting that allows context-based linkages.  See more information about this in the Curriculum>Context Based Linkages help section.
 
 #How to view tag history
 * Click on any tag to access its details, mapping, admin notes and history.
@@ -88,7 +90,7 @@ If settings in a curriculum tag set are configured to allow the tags in the set 
 #How to delete curriculum tags
 * To delete an existing curriculum tag navigate to the Tag Set page.
 * Depending on your view you'll either see small icons in the right or you'll need to hover over a curriculum tag until you see small icons appear.
-* Click the garbage pail to delete the tag
+* Click the garbage pail to delete the tag.
 
 #How to export curriculum tags
 * Navigate to Admin>Manage Curriculum.

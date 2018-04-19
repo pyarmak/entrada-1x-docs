@@ -6,7 +6,8 @@ Note that before using your curriculum inventory reporting, it is recommended th
 
 You can review an organisation's event types and assessment characteristics via Admin>System Settings.  More information is in the System Settings help section.
 
-#How to create curriculum inventory reports  
+#How to create curriculum inventory reports
+ 
 * Navigate to Admin>System Reports.  
 * Scroll down to External Reports and click 'AAMC Curriculum Inventory Reporting'.  
 * Click 'Create New Report'.

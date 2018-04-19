@@ -1,4 +1,5 @@
 #Managing Event Types  
+Event Types describe all the different things you might include in scheduled events managed through Entrada.  Examples include lectures, labs, directed independent learning, exams, lunch, etc.  The list of event types is completely up to you.  
 
 * Navigate to Admin>System Settings.
 * Click the name of the organisation for which you want to manage event types.

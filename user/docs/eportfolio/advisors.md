@@ -1,3 +1,4 @@
+#Viewing Portfolio Entries 
 Portfolio advisors can access learner artifacts through Manage ePortfolio in order to review and comment on them.  If a gradebook has been configured to include a portfolio and specific assessments rely on portfolio entries, faculty can also access the portfolio there.
 
 #How to view artifact entries from the portfolio  

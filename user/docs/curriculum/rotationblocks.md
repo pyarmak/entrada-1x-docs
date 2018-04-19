@@ -1,4 +1,6 @@
-#How to create blocks within a curriculum period
+#How to create blocks within a curriculum period  
+Blocks should be created for curriculum periods in which associated courses will have clinical learning experiences (e.g., clerkship, residency rotations).  Later, you'll use blocks to build slots in the rotation scheduler.  
+
 * Navigate to Admin>Manage Curriculum.
 * Click 'Curriculum Layout' from the left sidebar.
 * Click on the appropriate curriculum layout.

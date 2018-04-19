@@ -1,13 +1,13 @@
 #Creating and Managing a Schedule
-To create a schedule of events that can be populated with instructors, learners, resources, etc. you must be logged in with administrator or pcoordinator.  While you can create an entirely new schedule using a CSV or manually (one event at a time), if you have an existing course, the fastest option to make a schedule is to copy an existing schedule.  
+To create a schedule of events that can be populated with instructors, learners, resources, etc. you must be logged in with administrator or pcoordinator permissions.  While you can create an entirely new schedule using a CSV or manually (one event at a time), if you have an existing course, the fastest option to make a schedule is to copy an existing schedule.  
 
-You can also create individual events that appear immediately in the schedule.  To do so, navigate to Admin>Manage Events and click 'Add New Event'. At that point, follow the instructions in the Manually Add New Event section below.  Using this method, upon saving the event will immediately be live in the system.
+You can also create individual events that appear immediately in the schedule.  To do so, navigate to Admin>Manage Events and click 'Add New Event'. At that point, follow the instructions in the Manually Add New Event section below.  Using this method, the event will immediately be live in the system upon saving.
 
 #How to create a new schedule of events
 * Navigate to Admin>Manage Events.
-* Click Manage My Drafts.
-* Click Create New Draft.
-* Provide a logical draft name and an optional description, then click Create Draft.
+* Click 'Manage My Drafts'.
+* Click 'Create New Draft'.
+* Provide a logical draft name and an optional description, then click 'Create Draft'.
 
 At this point you can import a CSV file or manually add new events.  
 
@@ -33,7 +33,7 @@ Next, **you need to publish or approve your draft;** this will cause the events 
 * Click Publish Drafts or, if you are returning to a draft you previously worked on navigate to your drafts, tick off the box beside the schedule you want to publish and click Publish Drafts.  
 * Confirm your choice.  
 
-Your schedule will now show as approved on your drafts list and **within about an hour**, the scheduled events will be live in your system.
+Your schedule will now show as approved on your drafts list and **within about an hour**, the scheduled events will be live in your system.  If the events do not appear it's possible the behind the scenes actions required to do this are not turned on so speak to a developer to investigate further.
 
 * If you need to make immediately changes to a recently published draft schedule, you can reset it to open.  
 * Click the checkbox beside the schedule you want to open.  
@@ -49,27 +49,27 @@ After you've drafted some events, use this tool to preview the calendar view of 
 #Schedule import column headings and information
 Note that if you have exported a schedule there may be some columns that exported which you are not required to import.  These columns can be deleted before uploading data.
 
-* Date: Enter the date.  Multiple formats are accepted.  
-* Original Event: If you are importing a completely new schedule this is unnecessary to complete, as an event id will be generated when the event is created.  If you have exported a CSV of copied draft events, this column will be populated with the unique id numbers of the newly drafted events.  
-* Parent Event: This column should indicate if the event is a parent event or not (e.g. it is an event of which there are multiple copies in the system for multiple small groups - each event is identical in terms of structure and content but has a unique audience and perhaps teacher/tutor).  Enter 1 if the event is a parent and 0 if it is not.
-* Parent ID: This column is applicable only if the event is to be linked as a child to a parent event.  If it is, enter the parent event id.  If this is not a child event enter 0.
-* Course Code: Enter the course code for the course to which this event should belong.
-* Term: This refers to the curriculum layout the course is a part of.  Curricular layouts are defined at the organisation level and can be found in Admin>Manage Curriculum>Curriculum Layout.  Examples include terms, years, phases, etc.  You can also view curriculum layouts from the Courses tab where the layouts will be the headings above groups of courses.
-* Start Time: This is what time the event should start.  Enter in 24 hr. format.
-* Total Duration: This is the total duration for the event. Enter in the number of minutes.
-* Event Type Durations: If you have multiple event types scheduled in one event, this column can be used to indicate how much time is allotted to each event type.  Enter the time in minutes and separate times with semicolons and a space.  For example, 60; 60.  Put the times in the same order as you list the event types in the next column.  If there are not multiple event types scheduled during an event, this column will be identical to the Total Duration column.
-* Event Types: If you have multiple event types scheduled in one event, this column can be used to indicate what those events are.  Event types must match the list of event types in your organisation (found in Admin>System Settings>Event Types).  Examples include lecture, lab, small group learning, etc.  Type in an event type and separate it from another with a semicolon and space.  For example, lab; lecture; patient interview. Remember to keep the order the same as the event type duration column.
-* Event Title: Enter the event title.
-* Event Description: Enter the event description.
-* Location: Indicate the location of the event.  (Eventually this will need to match the locations stored in your organisation.)
-* Location Room: This should indicate the room number is applicable (this should eventually match the buildings and rooms listed in Admin>Manage Locations).
-* Audience (Groups): If the course to which the event belongs is using the groups function and one or more groups is the audience for this event, provide the group name here.  Group names can be found via Admin>Manage Courses>*select course*>Groups.
-* Audience (Cohorts): If a specific cohort is the audience for this event, enter the cohort here.
-* Audience (Students): If individual students need to be added to the audience, provide the names in this column.
-* Attendance Required: If attendance is required for this event and will be taken via the Entrada attendance feature enter a 1.  If the Entrada attendance feature will not be used for this event, enter 0.
-* Teacher Names: Enter the names of any teachers to be linked to this event.  Separate multiple teacher names with a semicolon.
-* Teacher Numbers: Enter the institutional id of any teachers to be linked to this event.  Separate multiple numbers with a semicolon.
-* Objective Release Dates: If there are specific release dates for the objectives linked to this event, enter 1.  If not, enter 0.
-* Event Tutors: Enter the name(s) of anyone to be linked to this event as a tutor. Separate multiple names with a semicolon.
-* Recurring Event:  If this is a recurring event, enter the original event number of the first event in the recurring series.
-* Free Text Objectives: This can be text and will populate the free text objectives box on the event content page (if such a box is enabled).
+* **Date**: Enter the date.  Multiple formats are accepted.  
+* **Original Event**: If you are importing a completely new schedule this is unnecessary to complete, as an event id will be generated when the event is created.  If you have exported a CSV of copied draft events, this column will be populated with the unique id numbers of the newly drafted events.  
+* **Parent Event**: This column should indicate if the event is a parent event or not (e.g. it is an event of which there are multiple copies in the system for multiple small groups - each event is identical in terms of structure and content but has a unique audience and perhaps teacher/tutor).  Enter 1 if the event is a parent and 0 if it is not.
+* **Parent ID**: This column is applicable only if the event is to be linked as a child to a parent event.  If it is, enter the parent event id.  If this is not a child event enter 0.
+* **Course Code**: Enter the course code for the course to which this event should belong.
+* **Term**: This refers to the curriculum layout the course is a part of.  Curricular layouts are defined at the organisation level and can be found in Admin>Manage Curriculum>Curriculum Layout.  Examples include terms, years, phases, etc.  You can also view curriculum layouts from the Courses tab where the layouts will be the headings above groups of courses.
+* **Start Time**: This is what time the event should start.  Enter in 24 hr. format.
+* **Total Duration**: This is the total duration for the event. Enter in the number of minutes.
+* **Event Type Durations**: If you have multiple event types scheduled in one event, this column can be used to indicate how much time is allotted to each event type.  Enter the time in minutes and separate times with semicolons and a space.  For example, 60; 60.  Put the times in the same order as you list the event types in the next column.  If there are not multiple event types scheduled during an event, this column will be identical to the Total Duration column.
+* **Event Types**: If you have multiple event types scheduled in one event, this column can be used to indicate what those events are.  Event types must match the list of event types in your organisation (found in Admin>System Settings>Event Types).  Examples include lecture, lab, small group learning, etc.  Type in an event type and separate it from another with a semicolon and space.  For example, lab; lecture; patient interview. Remember to keep the order the same as the event type duration column.
+* **Event Title**: Enter the event title.
+* **Event Description**: Enter the event description.
+* **Location**: Indicate the location of the event.  (Eventually this will need to match the locations stored in your organisation.)
+* **Location Room**: This should indicate the room number is applicable (this should eventually match the buildings and rooms listed in Admin>Manage Locations).
+* **Audience (Groups)**: If the course to which the event belongs is using the groups function and one or more groups is the audience for this event, provide the group name here.  Group names can be found via Admin>Manage Courses>*select course*>Groups.
+* **Audience (Cohorts)**: If a specific cohort is the audience for this event, enter the cohort here.
+* **Audience (Students)**: If individual students need to be added to the audience, provide the names in this column.
+* **Attendance Required**: If attendance is required for this event and will be taken via the Entrada attendance feature enter a 1.  If the Entrada attendance feature will not be used for this event, enter 0.
+* **Teacher Names**: Enter the names of any teachers to be linked to this event.  Separate multiple teacher names with a semicolon.
+* **Teacher Numbers**: Enter the institutional id of any teachers to be linked to this event.  Separate multiple numbers with a semicolon.
+* **Objective Release Dates**: If there are specific release dates for the objectives linked to this event, enter 1.  If not, enter 0.
+* **Event Tutors**: Enter the name(s) of anyone to be linked to this event as a tutor. Separate multiple names with a semicolon.
+* **Recurring Event**:  If this is a recurring event, enter the original event number of the first event in the recurring series.
+* **Free Text Objectives**: This can be text and will populate the free text objectives box on the event content page (if such a box is enabled).

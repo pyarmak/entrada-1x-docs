@@ -7,7 +7,7 @@ Complete the required information noting the following:
 **Course Unit:** This option will only be visible if you have weeks and units enabled for your organisation.  If no units display make sure that you have created units within the course through Admin>Manage Course on the Units page for the relevant course.  Additional instructions are available in the Units help section.  
 **Event Location Building:** If you need to add locations use Admin>System Settings and the Location tool.  
 **Event Types:** Define the event type noting that you can include multiple event types within one event.  Adjust their durations as needed.  
-**Associated Faculty:** Add teachers to this event by beginning to type a name, clicking on it and clicking 'Add'.  
+**Associated Faculty:** Add teachers to this event by beginning to type a name, clicking on it and clicking 'Add'.  Note that you can define an associated user as a teacher, tutor, teacher's assistant or auditor.  
 **Audience Options:** If you make attendance required the event will show as required in a learner's schedule, and you'll be able to record attendance during the event itself.  There are some options available when taking attendance and for more information please see the Attendance page of this help section.  
 **Associated Learners:** If you opt to create a custom event audience you'll be prompted to select an audience type.  You can assign a cohort, course group, or individual(s) as the audience.  One thing to consider here is whether you will role this event into a new schedule in the future.  If yes, the easiest option is to leave associated learners as all those enrolled since then every time you role the event forward you don't need to adjust the audience.  
 
