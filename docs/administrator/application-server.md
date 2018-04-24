@@ -2,8 +2,7 @@
 
 ## Prerequisites
 
-If you server infrastructure is configured such that you require the use of a proxy server for the server to access the external Internet,
-then please configure this before starting.
+If your server infrastructure is configured such that you require the use of a proxy server for the server to access the external Internet, then please configure this before starting.
 
 1. Set the /etc/environment variables:
         vim /etc/environment
