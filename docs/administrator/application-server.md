@@ -48,15 +48,16 @@ The hostnames that will be referenced throughout this document will be `entrada.
         yum update
         reboot
 
-6. SSH back into server, and install the Inline with Upstream Stable (IUS Community) package or epel for Red Hat Enterprise
+6. SSH back into server, and install the Inline with Upstream Stable (IUS Community) package
 
         ssh service@entrada.med.university.edu
         sudo -s
         screen
-        # Centos
-        yum install https://centos7.iuscommunity.org/ius-release.rpm
-        # RHEL
+        # RHEL only, first run this
         yum install https://dl.fedoraproject.org/pub/epel/epel-release-latest-7.noarch.rpm
+        # Centos and RHEL
+        yum install https://centos7.iuscommunity.org/ius-release.rpm
+        
 
 7. Remove Postfix temporarily as it has likely installed a conflicting mariadb-libs library. Once the main packages have been installed, simply re-install it.  Install Apache, OpenSSL, PHP, Git, HTMLDoc, MariaDB (client), Curl, ClamAV, and NTP packages:
         yum remove mariadb-libs postfix
