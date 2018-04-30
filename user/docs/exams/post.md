@@ -31,7 +31,7 @@ After you've added questions to an exam and set your setting preferences you mus
 * Time Frame: This determines where the exam will display in the resources section of a learning event page. Select from none, pre, during and post.
 * Time Limit: This allows you to limit the length of time a learner has to complete the exam (e.g. 60 minutes).  Enabling this feature will also make a Time Left counter appear to learners during an exam.  
 * Auto Submit: If using a time limit, you can also use the auto submit feature so the exam is automatically submitted when the time expires.  
-* Hide Exam From Learners: If you hide the exam you’ll be able to post it but learners won’t be able to see the post and so won't see the exam in their My Entrada task counter.  
+* Hide Exam From Learners: If you hide the exam you’ll be able to post it but learners won’t be able to see the post and so won't see the exam in their My Elentra task counter.  
 * Required: Click the box to make this exam required.
 * Attempts: Adjust this if you’d like students to be able to complete the exam more than once.
 * Backtrack: Enable this if you want learners to be able to view questions already completed.

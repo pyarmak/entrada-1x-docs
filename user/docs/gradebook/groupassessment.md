@@ -1,5 +1,5 @@
 #Group Assessments
-It is possible to create groups in Entrada and require learners to complete and submit assignments as a group.  To use this functionality you must have groups configured within the course.  Navigate to Admin>Manage Courses>Manage Groups to do this and find more information in the Courses help section.  If you create a group assignment leaners only upload one assignment per group, and faculty only grade one assignment per group.  The system automatically creates grades for all group members.
+It is possible to create groups in Elentra and require learners to complete and submit assignments as a group.  To use this functionality you must have groups configured within the course.  Navigate to Admin>Manage Courses>Manage Groups to do this and find more information in the Courses help section.  If you create a group assignment leaners only upload one assignment per group, and faculty only grade one assignment per group.  The system automatically creates grades for all group members.
 
 In this section you'll learn:
 * How to create a group assessment
@@ -40,4 +40,4 @@ Make sure that faculty have been added to an assessment as a grader (and are aff
 * Individual learners can still have their assessment weighted differently, however, there is not a current way to provide different grades to members of the same group.
 
 * From the learner perspective, any group member can upload an assignment.
-* Once a grade is entered for one group member, all group members will be able to see the grade upon its release.  Learners can see their grades through the My Gradebook link in the My Entrada card in the left sidebar.
+* Once a grade is entered for one group member, all group members will be able to see the grade upon its release.  Learners can see their grades through the My Gradebook link in the My Elentra card in the left sidebar.

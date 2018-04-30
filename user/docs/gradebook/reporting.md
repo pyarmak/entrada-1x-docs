@@ -1,5 +1,5 @@
 #Viewing and Reporting on Gradebooks
-Entrada offers users a variety of ways to view and extract information about assessments and grades.  From viewing learner results to examining the balance of objectives on an assessment, Entrada's tools and reports can help faculty make important decisions about student progress and their school wide assessment plan.
+Elentra offers users a variety of ways to view and extract information about assessments and grades.  From viewing learner results to examining the balance of objectives on an assessment, Elentra's tools and reports can help faculty make important decisions about student progress and their school wide assessment plan.
 
 #How to see an overview of grades within a course
 * Navigate to Admin>Manage Gradebook.
@@ -18,7 +18,7 @@ Entrada offers users a variety of ways to view and extract information about ass
 * A CSV file will automatically download or you will be prompted to store the file on your computer.
 
 #How learners can view their grades
-* After logging into Entrada learners can access their gradebook from the link in the My Entrada box on the left sidebar.
+* After logging into Elentra learners can access their gradebook from the link in the My Elentra box on the left sidebar.
 * The first page will show an overview of all courses, the number of assessments, and the weighted total of each course grade.
 * Learners can click on a course name to open a list of all assessments within a course gradebook and its affiliated information (grade, class mean, class median, weighted mark, percent).
 

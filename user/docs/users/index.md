@@ -1,5 +1,5 @@
-#Managing Users with Entrada
-Entrada allows you to collect and store information on users in a variety of ways.  Each user can have a basic profile but you can configure the system to collect additional information as desired.
+#Managing Users with Elentra
+Elentra allows you to collect and store information on users in a variety of ways.  Each user can have a basic profile but you can configure the system to collect additional information as desired.
 
 Many institutions sync their user records with a centralized authoritative record of users which reduces the work of maintaining a user database.
 

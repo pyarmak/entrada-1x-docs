@@ -1,5 +1,5 @@
 #Copying an Existing Schedule
-Entrada allows you to copy an existing schedule and role it forward to be added as a new series of events.  This can save significant amounts of time as you can copy forward event resources, curriculum tags, etc.  While you can always export a schedule of events and import it as a series of events, you can also copy a series of events directly in Entrada.  If you copy forward recurring events with or without the parent-child id feature enabled these links will be maintained in the copied events.
+Elentra allows you to copy an existing schedule and role it forward to be added as a new series of events.  This can save significant amounts of time as you can copy forward event resources, curriculum tags, etc.  While you can always export a schedule of events and import it as a series of events, you can also copy a series of events directly in Elentra.  If you copy forward recurring events with or without the parent-child id feature enabled these links will be maintained in the copied events.
 
 #How to copy a schedule of events
 * Navigate to Admin>Manage Events.

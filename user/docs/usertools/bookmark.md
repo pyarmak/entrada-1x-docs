@@ -1,5 +1,5 @@
 #Bookmarks
-Using the built-in bookmark feature of Entrada can save users time and energy.  Bookmark filter settings for assessment and evaluation reporting, curriculum search filters, learning event displays, etc. to quickly access your most commonly used tools.
+Using the built-in bookmark feature of Elentra can save users time and energy.  Bookmark filter settings for assessment and evaluation reporting, curriculum search filters, learning event displays, etc. to quickly access your most commonly used tools.
 
 #How to add a bookmark
 * Navigate to the page you want to bookmark (e.g., go to Curriculum Search and set the filters you want to use)

@@ -1,5 +1,5 @@
 #Creating and Managing Quizzes
-The quiz module in Entrada only supports MC questions and has limited reporting capabilities when compared to the Exam Module.  You may prefer to rely on the Exam Module if you aren't already using quizzes.
+The quiz module in Elentra only supports MC questions and has limited reporting capabilities when compared to the Exam Module.  You may prefer to rely on the Exam Module if you aren't already using quizzes.
 
 #How to create a quiz
 * Navigate to Admin>Manage Quizzes.

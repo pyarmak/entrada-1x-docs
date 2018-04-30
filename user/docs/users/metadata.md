@@ -1,5 +1,5 @@
 #User Meta Data
-Entrada provides administrators with the option to keep track of any information about users, for example immunization records, police checks, mask and gown size, etc.  At present, there is no interface for users to adjust these records about themselves.
+Elentra provides administrators with the option to keep track of any information about users, for example immunization records, police checks, mask and gown size, etc.  At present, there is no interface for users to adjust these records about themselves.
 
 #How to create a meta data field
 * Navigate to Admin>System Settings.
@@ -48,7 +48,7 @@ To view all meta data for an individual:
 * You'll see a list of meta data records for the user.
 
 #How users can see their own meta data
-* Users can view their user profiles by clicking on their names at the top of the Entrada screen.
+* Users can view their user profiles by clicking on their names at the top of the Elentra screen.
 * If meta data is required/logged for the user s/he will see an **Extended Profile** tab.
 * By clicking on this tab users will see any meta data collected for them AND which is set to **Public Viewable**.
 * At present, there is no interface for users to adjust these records about themselves.

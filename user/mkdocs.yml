@@ -55,7 +55,8 @@ pages:
   - 'Subscribing to Community Notifications': 'communities/subscribecnotifications.md'
 - 'Courses':
   - 'Getting Started with Courses': 'courses/index.md'
-  - 'Creating and Managing Courses': 'courses/create.md'
+  - 'Creating Courses': 'courses/create.md'
+  - 'Course Setup Tab': 'courses/setup.md'
   - 'Course Content': 'courses/content.md'
   - 'Course Enrolment': 'courses/enrolment.md'
   - 'Course Website': 'courses/website.md'

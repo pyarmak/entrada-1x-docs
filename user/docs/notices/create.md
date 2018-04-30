@@ -1,12 +1,12 @@
 #How to Create and Manage Notices
-Notices created will be displayed to users in the Entrada ME Message Center on their dashboard or, if configured appropriately, can be displayed publicly on the Entrada login page.  Users are able to mark notices as read to make them disappear from the dashboard.
+Notices created will be displayed to users in the Elentra ME Message Center on their dashboard or, if configured appropriately, can be displayed publicly on the Elentra login page.  Users are able to mark notices as read to make them disappear from the dashboard.
 
 #How to post a notice
 * Navigate to Admin>Manage Notices
 * Click Add New Notice
 * Select the appropriate audience type from the dropdown menu.  Depending on what you choose, an additional popup window will allow you to specify a cohort, course list, etc. Check off the groups/names required and click Close.
 * Copy and paste or enter the notice text.
-* Set the time release options.  This will dictate when the notice becomes visible to users and how long it will remain on the Entrada ME Dashboard.  After the end date, users will no longer be able to view the notice.
+* Set the time release options.  This will dictate when the notice becomes visible to users and how long it will remain on the Elentra ME Dashboard.  After the end date, users will no longer be able to view the notice.
 * Click Save.
 
 #How to edit an existing notice

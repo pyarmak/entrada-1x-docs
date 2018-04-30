@@ -14,10 +14,10 @@ At this point you can import a CSV file or manually add new events.
 **Import CSV File**  
 
 * You will need to have a file prepared with your schedule information.  This could include date, start time, faculty, audience, location, duration (in minutes) attendance required, etc.  For a detailed list of event information please see below.  
-* Depending on the events you're scheduling it may be useful to download an existing schedule from elsewhere in Entrada, modify it, and upload it as your new schedule.  
+* Depending on the events you're scheduling it may be useful to download an existing schedule from elsewhere in Elentra, modify it, and upload it as your new schedule.  
 * Click on Import CSV File.  
 * Drag and drop or browse your computer to find the required file and then click Import.  
-* Use the drag and drop tools to match the information in your CSV with the relevant fields in Entrada.  Suggested matches will display in red. Click 'Import'.
+* Use the drag and drop tools to match the information in your CSV with the relevant fields in Elentra.  Suggested matches will display in red. Click 'Import'.
 
 **Manually Add New Event**  
 
@@ -27,6 +27,9 @@ At this point you can import a CSV file or manually add new events.
 **Recurring Event**: More detail is available in the Recurring Events help section.  
 **Time Release Options**: This controls when the event will be visible to users in the system.  
 * Click Save.  
+
+**Draft Schedule Permissions**
+If you would like to give additional users access to a draft schedule, you'll need to add them as authors to the draft. Return to Admin>Manage Events, and click 'Manage My Drafts'. Click on the appropriate draft and then click the greyed out Draft Information heading. Add users to Draft Authors by beginning to type a name and clicking on the appropriate name in the displayed options. In stock Elentra you will be able to add staff:admin users to draft schedules but there is a setting for this that can be configured to allow you to add faculty and other staff as draft authors. You'll need a developer to help you change these settings if you'd like to.
 
 Next, **you need to publish or approve your draft;** this will cause the events you created to be imported to the system and make them accessible for adding content.  
 
@@ -66,7 +69,7 @@ Note that if you have exported a schedule there may be some columns that exporte
 * **Audience (Groups)**: If the course to which the event belongs is using the groups function and one or more groups is the audience for this event, provide the group name here.  Group names can be found via Admin>Manage Courses>*select course*>Groups.
 * **Audience (Cohorts)**: If a specific cohort is the audience for this event, enter the cohort here.
 * **Audience (Students)**: If individual students need to be added to the audience, provide the names in this column.
-* **Attendance Required**: If attendance is required for this event and will be taken via the Entrada attendance feature enter a 1.  If the Entrada attendance feature will not be used for this event, enter 0.
+* **Attendance Required**: If attendance is required for this event and will be taken via the Elentra attendance feature enter a 1.  If the Elentra attendance feature will not be used for this event, enter 0.
 * **Teacher Names**: Enter the names of any teachers to be linked to this event.  Separate multiple teacher names with a semicolon.
 * **Teacher Numbers**: Enter the institutional id of any teachers to be linked to this event.  Separate multiple numbers with a semicolon.
 * **Objective Release Dates**: If there are specific release dates for the objectives linked to this event, enter 1.  If not, enter 0.

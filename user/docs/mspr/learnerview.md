@@ -1,5 +1,5 @@
 #How to add MSPR information as a student
-* From any page in Entrada, click on your name badge in the top right corner to open your user profile.
+* From any page in Elentra, click on your name badge in the top right corner to open your user profile.
 * From the Profile card on the sidebar, click 'My MSPR'.  
 * Quickly view all entered items by clicking 'Expand All' below the MSPR header.  You can open individual categories by clicking on the title of or plus sign beside a greyed out section header.
 * Add information by clicking on any of the Add buttons in the appropriate categories.  

@@ -1,5 +1,5 @@
 #People Search
-Entrada includes an internal search tool to allow users to search for other users, and to browse users and departments. Click 'People Search' from the main menu to access this tool.
+Elentra includes an internal search tool to allow users to search for other users, and to browse users and departments. Click 'People Search' from the main menu to access this tool.
 
 #People Search
 Use this tool to search for individual people, and apply group and role filters as desired through the Advanced Search option.

@@ -1,5 +1,5 @@
 #Curriculum Reports  
-There are several curriculum reporting tools available in Entrada.  These can be used to help provide feedback to the people or committees responsible for curriculum planning and review, the see a summary of linkages between curriculum tags, and to get an overview of a course's learning events.
+There are several curriculum reporting tools available in Elentra.  These can be used to help provide feedback to the people or committees responsible for curriculum planning and review, the see a summary of linkages between curriculum tags, and to get an overview of a course's learning events.
 
 To access system reports navigate to Admin>System Reports.  Not all users have access to all reports and some reports are accessible from other locations.  For example, the Curriculum Reports are available to some users from the Curriculum tab, and a modified version of the Learning Event Types report is accessible from the Admin>Manage Courses>Content page in the left sidebar.
 

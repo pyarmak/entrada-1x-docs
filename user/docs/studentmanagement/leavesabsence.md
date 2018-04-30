@@ -1,5 +1,5 @@
 #Student Leaves of Absence
-Entrada can be used to track learner leaves of absence. These need to be logged by a curriculum coordinator and can be done through a user's profile page.
+Elentra can be used to track learner leaves of absence. These need to be logged by a curriculum coordinator and can be done through a user's profile page.
 
 * Navigate to Admin>Manage Users.
 * Search for the appropriate user (the person taking leave) and click on his/her name.

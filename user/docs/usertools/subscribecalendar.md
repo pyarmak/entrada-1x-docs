@@ -6,8 +6,8 @@ Users can subscribe to receive ongoing updates to event dates and times.  There 
 * If CBME is enabled in your organisation, learners can scroll down the page or click 'My Event Calendar' from their dashboard options (by default their dashboard will show their CBME data at the top of the page).  Without CBME enabled learners will land on a dashboard page with their calendar upon logging into the system.
 * Below the calendar, click 'Subscribe to Calendar or Download Calendar'.
 * Click to select All Calendars or Individual Course Calendar.  For the second option, indicate the appropriate course using the dropdown menu.
-* Click 'Subscribe' to get a version of the calendar that will not allow you to edit events but will update automatically to reflect changes made to the schedule in Entrada.  After clicking Subscribe you can click to copy the subscription URL and add it to your calendar tool or click 'Subscribe to Calendar'.  Your computer will likely prompt you to choose an application to open the link.
-* Click 'Download' to get a version of the calendar that you can edit but that will not automatically update based on changes made within Entrada.  (You will be able to re-download the schedule at any time.)
+* Click 'Subscribe' to get a version of the calendar that will not allow you to edit events but will update automatically to reflect changes made to the schedule in Elentra.  After clicking Subscribe you can click to copy the subscription URL and add it to your calendar tool or click 'Subscribe to Calendar'.  Your computer will likely prompt you to choose an application to open the link.
+* Click 'Download' to get a version of the calendar that you can edit but that will not automatically update based on changes made within Elentra.  (You will be able to re-download the schedule at any time.)
 * Click 'Download Calendar'. Your computer will prompt you to choose an application to open the download or you can save the file. If you save the file you can later add it to your preferred calendar tool.
 * Events in the calendar will display any required preparation supplied in the event and will include a link to the learning event.
 

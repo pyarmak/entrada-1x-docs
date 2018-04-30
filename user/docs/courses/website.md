@@ -1,8 +1,19 @@
 #Course Websites (aka Course Communities)
-When you add a new course, you are adding information to the database about that course and users will be able to see a simple course page. However, to make a more robust online course community for learners and faculty you should also create a course website for a course.  This is done using the Communities feature of Entrada.  Using a community template for a course offers a more robust view of a course and its contents and allows for additional features like discussion boards, polls, file sharing, etc.  Often we refer to the community for a course as its course website.
+When you add a new course, you are adding information to the database about that course and users will be able to see a simple course page. However, to make a more robust online course community for learners and faculty you should also create a course website for a course.  This is done using the Communities feature of Elentra.  Using a community template for a course offers a more robust view of a course and its contents and allows for additional features like discussion boards, polls, file sharing, etc.  Often we refer to the community for a course as its course website.
+
+Here is how a course without a website will appear to users:
+
+![Course No Website](/img/courses/course-nowebsite-me1.12.png)  
+
+Here is how a course with a website will appear to users:
+
+![Course Website](/img/courses/coursewebsite-me1.12.png)  
+
+Note that the course website relies on a templated set of pages (e.g., background, calendar, prerequisites, etc.).  The template shown and described below comes with stock Elentra but if your organization requires a different template, or you want different templates for different courses, e.g., clinical and nonclinical, that is customization work that can be done.
 
 #How to create a course website using the communities module
-* You must create a course via Manage Courses before you can create a course community.
+* Note that you must create a course via Manage Courses before you can create a course community.  
+
 * From the main menu, click on the Communities tab.
 * Click 'Create a Community' and then click on 'Courses, etc.' in the Official Communities section.
 * Fill in the required information and under Community Type, select ‘Course Website’ from the dropdown menu.

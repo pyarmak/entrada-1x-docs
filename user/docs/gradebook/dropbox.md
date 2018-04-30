@@ -31,7 +31,7 @@ Once you add a drop box to an assessment, a column will be included on the edit 
 * You can also bulk download all submitted assignments from this same page.  This can be useful if you have faculty who wish to grade hard copies of an assignment.
 
 #How learners can submit an assessment to a drop box
-From their dashboard, learners will see My Entrada in the left sidebar.  
+From their dashboard, learners will see My Elentra in the left sidebar.  
 
 * Click on My Assignments. On the My Assignments screen, learners can see all required assignments and their due dates as well as any grades already assigned.
 * Click on an assignment title and then click Add File.

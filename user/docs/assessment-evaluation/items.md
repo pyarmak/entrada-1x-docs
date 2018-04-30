@@ -12,7 +12,7 @@ If you are creating items for a form to be attached to a gradebook post for the 
 * Click 'Items'.
 * Click 'Add New Item'.
 * Complete the required information, noting that different item types will require different information.  Common item details are below:  
-**Item Type:** This list shows the item types supported by Entrada. Item codes will display when you use a list view of items and    A complete list of item types is provided below.  
+**Item Type:** This list shows the item types supported by Elentra. Item codes will display when you use a list view of items and    A complete list of item types is provided below.  
 **Item Text:** This is what will show up on a form this item is added to.  When you view items in the detail view you'll also see the item text.   
 **Item Code:** This is an optional field.  Item codes do display when you view items in a list and they are searchable.  Some organizations apply their own coding system to their items, but another use case might be if you are importing items from another tool or vendor and they have a coding system you want to match.  
 **Rating Scale:** Rating scales can be configured through the Scales tab within Assessment & Evaluation.  First select a scale type and then select the specific scale.  Selecting a rating scale will prepopulate the response categories for this item.  In some item types you will also be required to add response text (e.g. multiple choice items) and that text will show up on the actual form.  In other question types you may rely on just the response categories.

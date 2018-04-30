@@ -5,7 +5,7 @@ Location Management allows organisations to maintain a list of the sites, buildi
 * Building(s): New Medical Building, Abramsky Hall, Student Athletic Centre
 * Room(s): 201A, 201B, 430, 431, The Caldwell Room  
 
-Building a list of sites and buildings is useful to you if you plan to schedule rotations and/or learning events in Entrada.  Rotations and their corresponding blocks/slots can be assigned to sites, and learning events can be assigned a room.
+Building a list of sites and buildings is useful to you if you plan to schedule rotations and/or learning events in Elentra.  Rotations and their corresponding blocks/slots can be assigned to sites, and learning events can be assigned a room.
 
 #How to access locations
 * Log in as Medtech>Admin or Staff>Admin.

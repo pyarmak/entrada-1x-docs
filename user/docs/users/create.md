@@ -1,7 +1,7 @@
 #Creating User Accounts
-Most users require an account to access Entrada.  While there are some exceptions to this in that you can create a public community and share it with others, add a guest member to a specific community, or add an external assessor to a distribution of an assessment and evaluation form, most users will have accounts.  To create a user account you must include user groups and roles which define user permissions.  Only those with admin roles within Entrada are able to manually create users.
+Most users require an account to access Elentra.  While there are some exceptions to this in that you can create a public community and share it with others, add a guest member to a specific community, or add an external assessor to a distribution of an assessment and evaluation form, most users will have accounts.  To create a user account you must include user groups and roles which define user permissions.  Only those with admin roles within Elentra are able to manually create users.
 
-Although there is a user interface to manually add individual users, it is strongly recommended that your developers or technical team set up a relay of information from a central, authoritative database (e.g., an existing student information system) to feed users into Entrada.
+Although there is a user interface to manually add individual users, it is strongly recommended that your developers or technical team set up a relay of information from a central, authoritative database (e.g., an existing student information system) to feed users into Elentra.
 
 #How to bulk import users
 * Navigate to Admin>Manage Users.
@@ -10,7 +10,7 @@ Although there is a user interface to manually add individual users, it is stron
 * Open the file in your preferred spreadsheet manager and complete the columns.  Required fields are listed first followed by optional fields.  
 **First Name:** Provide the user's given name.  If you have multiple users with the same first and last name we recommend including their middle initial with their first name.  
 **Last Name:** Provides the user's last name.  
-**Username:** This will be the username for your Entrada installation.  
+**Username:** This will be the username for your Elentra installation.  
 **email:** This should be the user's email and must be distinct for each user.  
 **Group:** Group defines the user type in the system. Pick from Alumni, Faculty, Medtech, Resident, Staff, and Student. You can only use additional groups if you have added them to the database.  
 **Role:** Different group types have different role availability as shown in the table below.  Many group and role configurations carry different permissions.  For more detail about user permissions please see the Permissions help section.  Similar to groups, you can only use additional roles if you have added them to the database.  
@@ -43,7 +43,7 @@ Although there is a user interface to manually add individual users, it is stron
 **Account Status:** You can enter active or disabled in this column, you'll be able to change this setting in UI after the user is created.  
 **Access Start:** Unix timestamp (e.g. 1512086400) or date-time format (2017-12-01 12:35) are accepted.  
 **Access Finish:** Unix timestamp (e.g. 1512086400) or date-time format (2017-12-01 12:35) are accepted.  
-**Department:**  To enter a department affiliation for a user you must have department's Entrada id code.  This is information you can request from a developer or you can find it by looking at a url.  To discover the department id for yourself, you must be able to access Admin>System Settings.  When you do, click on the name of the organisation you are working with and then click Departments in the left sidebar. Click on a department name and when the page for that department displays the url will include the department id at the end.  
+**Department:**  To enter a department affiliation for a user you must have department's Elentra id code.  This is information you can request from a developer or you can find it by looking at a url.  To discover the department id for yourself, you must be able to access Admin>System Settings.  When you do, click on the name of the organisation you are working with and then click Departments in the left sidebar. Click on a department name and when the page for that department displays the url will include the department id at the end.  
 **Password:** Passwords can be set using an import but we recommend only importing existing passwords if you exported them from elsewhere.  
 **Salt:** This is a way to make a password more secure.  It is recommended that you use this field only if you've exported a list of users and already have the salt information (and the password).  
 **Prefix:**  Accepted prefixes are Dr., Mr., Mrs., Ms., Prof., Assoc. Prof., and Asst. Prof.  

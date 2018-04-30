@@ -1,7 +1,7 @@
 #Manage Departments
-A list of departments, divisions, faculties, schools or units can be maintained in Entrada and applied in user profiles.  This information is in turn used in some reporting tools (e.g. Faculty Teaching Report By Department).
+A list of departments, divisions, faculties, schools or units can be maintained in Elentra and applied in user profiles.  This information is in turn used in some reporting tools (e.g. Faculty Teaching Report By Department).
 
-As of Entrada ME 1.12, if you import users using a csv you can include a column for department and add multiple departments as needed.
+As of Elentra ME 1.12, if you import users using a csv you can include a column for department and add multiple departments as needed.
 
 #How to manage the list of departments
 * Log in as Medtech>Admin or Staff>Admin.
@@ -19,4 +19,4 @@ The list of departments will display alphabetically.
 ![Deparment List](/img/systemsetup/departmentlist-me1.11.png)
 
 #Linking departments and divisions
-As of Entrada ME 1.12 there is no user interface to link departments and divisions.  There is space in the database to create a relationship between a department and its affiliated divisions and a developer with access to the database can do this work if it is required by your organisation.  In a user profile you can assign someone to multiple departments and divisions in order to show their multiple affiliations.
+As of Elentra ME 1.12 there is no user interface to link departments and divisions.  There is space in the database to create a relationship between a department and its affiliated divisions and a developer with access to the database can do this work if it is required by your organisation.  In a user profile you can assign someone to multiple departments and divisions in order to show their multiple affiliations.

@@ -3,8 +3,8 @@ There are a variety of tools available to help manage student records while they
 
 * User Profile: Store basic information like name and contact information  
 * User Meta Data: Store additional information like vaccination records, background checks, etc.  
-* Incident reports, disciplinary action and formal remediation can also be recorded through Entrada  
-* Medical Student Performance Records: Pull in existing data from Entrada and allow learners to submit additional documentation to forward to residency matching bodies  
+* Incident reports, disciplinary action and formal remediation can also be recorded through Elentra  
+* Medical Student Performance Records: Pull in existing data from Elentra and allow learners to submit additional documentation to forward to residency matching bodies  
 * Observerships: Allow learners to request observerships and have them be approved (or not) by curriculum coordinators
 * Leaves of Absence: Track leaves of absence
 

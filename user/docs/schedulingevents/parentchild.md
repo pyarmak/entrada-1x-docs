@@ -1,6 +1,6 @@
 #Parent Child Feature  
 
-Entrada includes the ability to link multiple repeating events in a parent-child relationship.  This is most often used when small groups of learners will complete the same activities in repeating learning events.  For example, there may be 10 events scheduled for 10 small groups but each event is essentially identical in terms of content, curriculum tags applied, etc.  If you use the parent-child feature some reports will look only to the parent event to collect data and therefore help to report accurately from the perspective of a single learner.
+Elentra includes the ability to link multiple repeating events in a parent-child relationship.  This is most often used when small groups of learners will complete the same activities in repeating learning events.  For example, there may be 10 events scheduled for 10 small groups but each event is essentially identical in terms of content, curriculum tags applied, etc.  If you use the parent-child feature some reports will look only to the parent event to collect data and therefore help to report accurately from the perspective of a single learner.
 
 Note that the parent child relationship is only available for events that are part of the same course.
 
@@ -25,7 +25,7 @@ If you have already created multiple events and want to link them using the pare
 * Click 'Save' at the bottom of the page.
 
 #Impacts of using the parent child relationship
-Not every feature of Entrada reflects the connections made between events using the parent child relationship.
+Not every feature of Elentra reflects the connections made between events using the parent child relationship.
 
 Curriculum Search **does** respect the parent child relationship and only return results for the parent. (In fact, curriculum search won't look at child events so even if a child event has distinct content from the parent, that won't be reflected in the search results.)
 

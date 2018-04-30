@@ -1,11 +1,11 @@
 #Manage Cohorts
-The Manage Cohort tool allows you to create groups of users such as cohorts and class lists.  You can add specific learners to cohorts and set them as the audience for courses and events.  Only users with admin. roles in Entrada can manage cohorts.
+The Manage Cohort tool allows you to create groups of users such as cohorts and class lists.  You can add specific learners to cohorts and set them as the audience for courses and events.  Only users with admin. roles in Elentra can manage cohorts.
 
 # How to add a new cohort
 * Navigate to Admin>Manage Cohort.
 * Click 'Add New Cohort'.
 * Complete the required information, noting the following:  
-**Cohort Name:** Make this clear as it will show up in various contexts throughout Entrada.  Examples include Class of 2021, Class of 2022. etc. Cohorts will sometimes be available as filter options in Entrada.  
+**Cohort Name:** Make this clear as it will show up in various contexts throughout Elentra.  Examples include Class of 2021, Class of 2022. etc. Cohorts will sometimes be available as filter options in Elentra.  
 **Cohort Type:** Define the type of cohort you are creating.
 * Cohort: This is generally a full list of learners moving through a program together for a duration of time.  They may take multiple courses together.  
 * Course list: A course list is a type of cohort. It is generally a list of learners in one specific course for a set duration of time.  

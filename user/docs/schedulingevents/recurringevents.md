@@ -1,5 +1,5 @@
 #Recurring Events
-One feature of Entrada is the ability to schedule recurring events. The advantage of a recurring event is that you can simultaneously edit a variety of event characteristics including title, location, event type, associated faculty, event description, required preparation, objectives, etc. across multiple events.  What you edit and for which events is entirely customizable.
+One feature of Elentra is the ability to schedule recurring events. The advantage of a recurring event is that you can simultaneously edit a variety of event characteristics including title, location, event type, associated faculty, event description, required preparation, objectives, etc. across multiple events.  What you edit and for which events is entirely customizable.
 
 You can create recurring events in different configurations including a custom series or events that repeat daily, weekly, or monthly.
 
