@@ -6,7 +6,7 @@ When a learner submits an observership, a program coordinator can approve their 
 * From the Profile window on the sidebar, click 'My Observerships'.
 * Complete the required information.
 
-#How to approve observerhips as a program coordinator
+#How to approve observerships as a program coordinator
 * Navigate to Admin>Manage Users.
 * Search for the appropriate user and click on his/her name.
 * From the Student Management box on the left sidebar, click 'Observerships'.

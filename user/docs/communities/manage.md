@@ -1,6 +1,10 @@
 #Managing Communities  
 Anyone who is the administrator of a community can use various tools to manage the community and its membership as well as view community statistics.  If you create a community you will automatically be a community administrator.  Note that being a community administrator is completely separate from the user permissions set via the user profile.  Any user type can be made a community administrator.
 
+Medtech:Admin. and Staff:Admin. users in the system can access all communities via Admin>Manage Communities and change community settings and membership from there.  Simply click on the cog beside the appropriate community title and select 'Manage Community Members' or 'Manage Community.'  If an admin user is also the administrator of a community, they'll be able to access a Manage Pages option from this cog as well.
+
+General users will have to access a community from the Communities tab in order to edit its settings or members (assuming they are a community administrator).
+
 #How to add members
 * If you are an administrator of a community, you'll see an Admin Center card in the left or right sidebar.  Click on 'Manage Members' to access a list of all members in the community.
 * Click 'Add Members' from the subtab menu.

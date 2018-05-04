@@ -26,7 +26,7 @@ Before you can create an exam you should create folders in which to store exams.
 * Click ‘Add Exam’ to create a new exam.
 * Provide an Exam Name, select a folder and click ‘Add Exam’.
 * You will be directed to the exam question page where you can add questions to the exam.  
-* If you'd like to add permissions to the newly created exam, you can do so under the Information and Settings tab for the exam.
+* If you'd like to add permissions to the newly created exam, you can do so under the Information and Settings tab for the exam.  Note that an exam will automatically inherit the permission settings of the folder in which it is stored.
 
 #How to add questions to an exam
 * After creating an exam you'll automatically be redirected to the Questions tab.  If you've navigated away from Questions, click on the Questions tab to return.

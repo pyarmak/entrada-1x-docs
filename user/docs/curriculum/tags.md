@@ -67,6 +67,8 @@ While curriculum tag sets and curriculum tags are connected, there are differenc
 * Toggle between a list view and table view of curriculum tags using the small icons beside the Add Tag button.
 * In table view, add additional visible columns to the table by clicking on the grid with a down arrow beside it.  Adding additional columns can allow you to see id, code, title, description, and an overview of existing links between tag sets.
 
+<iframe width="640" height="564" src="https://player.vimeo.com/video/267800298" frameborder="0" allowFullScreen mozallowfullscreen webkitAllowFullScreen></iframe>
+
 #How to edit existing tags
 * Click on the pencil icon available to the right of the tag (you may need to use your mouse to hover over a tag for the menu icons to appear).
 

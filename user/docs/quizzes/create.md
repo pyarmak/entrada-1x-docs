@@ -24,15 +24,17 @@ The quiz module in Elentra only supports MC questions and has limited reporting 
 * When you have added, edited, and rearranged your content, click Save Changes to preserve your work.
 
 #How to attach a quiz to a learning event
-* To attach a quiz to a learning event from the quiz itself, a user must be affiliated with the learning event to be used.
-* Click on the greyed out Learning Events header.
-* Click Attach to Learning Event.
-* Adjust the time frame if needed.
+There are two ways to attach a quiz to a learning event: from the quiz itself or by adding the quiz as a resource to an event.  When working from the quiz itself you can only attach it to an event for which you are also an instructor.  This option is therefor limited to mostly faculty.  Curriculum coordinators or other administrative staff can attach quizzes to learning events from the events themselves.
+
+* To attach a quiz to a learning event from the quiz, a user must be affiliated with the learning event to be used.
+* From the quiz information page, click on the greyed out Learning Events header.
+* Click 'Attach to Learning Event'.
+* Adjust the time frame (This Term, Next Term, etc.) if needed.
 * Click the check box beside the relevant learning event.
-* Click Attach Selected.
-* Complete the required information to set instructions, randomization, time limit, number of attempts, results release, etc. and click Proceed.
+* Click 'Attach Selected'.
+* Complete the required information to set instructions, randomization, time limit, number of attempts, results release, etc. and click 'Proceed'.
 * To delete a quiz from a learning event you must go to the learning event, scroll to the quiz and click the trash can icon.
-* If you required attendance be aware that you'll also have to use the attendance feature in MEdTech.
+* If you required attendance for your quiz be aware that you'll also have to use the attendance feature in MEdTech.
 
 * You can also attach a quiz to a learning event from the learning event.  This can be done by a curriculum coordinator or faculty member with access to the learning event.
 * Navigate to the appropriate learning event (make sure you are in Administrator View).
@@ -60,27 +62,17 @@ This feature allows you to post a quiz to a community or course website which ma
 * Complete the required information to set instructions, randomization, time limit, number of attempts, results release, etc. and click Proceed.
 * If you required attendance be aware that you'll also have to use the attendance feature in MEdTech.
 
-#How to attach a quiz to a gradebook assessment
-To attach a quiz to a gradebook assessment it must first be attached to a learning event.  You will only be able to add a quiz to a gradebook assessment if the gradebook and learning event the quiz is attached to share a curriculum period.  
-
-* Create a gradebook assessment using the instructions in the Gradebook help section.
-* Click the checkbox beside Link existing online quizzes to this assessment.
-* Click Add Quiz.
-* Begin to type the quiz name and select it from the displayed list.
-* Click Add.
-
-#How to view quiz results
-* After a quiz has been completed, a new button will appear beside it in the learning event to which is it attached.  This will only be visible to curriculum coordinators and faculty associated with the quiz.
-* Click the View Results button to see quiz results for an individual or an entire class.
-
-#How to import quiz grades to a gradebook
-* Navigate to the appropriate course gradebook and click on the title of the assessment you want to import grades for.
-* Click 'Import/Export' and select Import from attached quiz.
-
-
 #How to copy an existing quiz
 Copying an existing, in-use quiz allows you to edit the questions as needed.  
 
 * Navigate to Admin>Manage Quizzes.
 * Open an existing quiz by clicking on it's name.
 * Click Copy Quiz.
+
+#How to view quiz results
+* After a quiz has been completed, a new button will appear beside it in the learning event or community to which is it attached.  On learning events this will only be visible to curriculum coordinators and faculty associated with the quiz.  In communities this will be available community administrators.
+* Click 'View Results' or the little chart icon to see quiz results for an individual or an entire class or community.  
+* You can also download a csv from this page.
+
+#How to attach a quiz to a gradebook assessment
+To attach a quiz to a gradebook assessment it must first be attached to a learning event.  You will only be able to add a quiz to a gradebook assessment if the gradebook and learning event the quiz is attached to share a curriculum period.  

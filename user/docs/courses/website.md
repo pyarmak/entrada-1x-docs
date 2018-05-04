@@ -21,6 +21,10 @@ Note that the course website relies on a templated set of pages (e.g., backgroun
 * Under Community Courses, select the appropriate course to link this community to.  You can connect multiple courses to one website and they will share a student-facing web presence.  If you do this, some pages will display information from both courses (e.g. Learning Objectives, MCCs) whereas some pages will only show information from one course (e.g. the course description and course director's message populate from the first course).
 * Set the appropriate access permission and registration options and click 'Create'.
 
+* **If you get an error saying you must specify a Community Type but don't have the option to do so on the screen**, this is a known problem.  You are likely working in a second organisation (e.g., you're working in postgraduate medicine and the first organisation in your installation was undergraduate medicine).  When a second organisation is created through the user interface, community types are not automatically copied into the new organisation.  A developer can copy the community types for you and you'll be able to use communities properly.
+
+
+
 #How to populate additional sections of the course website
 * Once a course community or website is created, users who are designated as Community Administrators can manage the pages just like any other community.  When viewing a course website, switch to Administrator view if necessary, and then look for the Admin Center box on the sidebar.  Click Manage Pages to adjust content, reorder pages, or add a new page.  For quick editing access, click the Edit Page button from any community page at any point.
 
@@ -40,9 +44,11 @@ Note that course communities are associated with all enrolment periods tied to t
 * Expectations of Faculty: You can add customized text to this page. Click 'Save' when done.
 
 #How to manage community, community members, and community reports
-Except for Community Reports, these tools function just like they do in any other community so please see the Communities help section for more detail.  
+When you build a course website and associate it with a course, individuals listed on the course contacts page (e.g., course director, curriculum coordinator, associated faculty) will automatically be made administrators of the course website.  As admins. they will be able to edit page content, add additional pages, etc.  Managing additional members is similar to other communities so please see the Communities help section for more detail.
 
-**Community Reports** is a tool that allows you to review which community members have viewed pages, taken specific action, etc.
+Managing a course website in terms of permission settings, statistics and details is also like other communities so please see the Communities help section for more detail.
+
+**Community Reports** is a tool unique to course websites that allows you to review which community members have viewed pages, taken specific actions, etc.
 
 * From the Admin Center, click 'Community Reports'.
 * Click on 'Select Filter' and select the appropriate filter (member, module type, page, action).

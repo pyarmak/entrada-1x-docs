@@ -16,7 +16,7 @@ This is an optional feature that can or cannot be used in Elentra; by default it
 To effectively use the MeSH keywords feature a developer will need to import a connection to the the MeSH database to your installation of Elentra.  To hide the keywords feature entirely, a developer will need to delete some tables from your installation.
 
 **Course Objectives:**  
-If you are using the Unit/Weeks feature of Elentra, assigning curriculum tags functions slightly differently; please see below in the Course Tags section.
+If you are using the Unit/Weeks feature of Elentra, assigning curriculum tags functions slightly differently; please see below in the Course Tags section.  If you don't see any option to add Course Objectives or Curriculum Objectives it may be because there are no tag sets built for your organisation.  Go to Admin>Manage Curriculum to build tag sets (for more information see ![here](https://docs.entrada.org/learn/curriculum/tags/)).
 
 ![Assign Objectives](/img/courses/assigningcourseobjectives-me1.12.png)  
 
