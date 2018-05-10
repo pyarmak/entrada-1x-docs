@@ -91,7 +91,8 @@ pages:
   - Leave Tracking: 'clinicalexperience/leavetracking.md'
 - 'Assessment and Evaluation':
   - 'Getting Started with A&E': 'assessment-evaluation/index.md'
-  - 'Settings': 'assessment-evaluation/settings.md'
+  - 'System Settings': 'assessment-evaluation/settings.md'
+  - 'Scales': 'assessment-evaluation/scales.md'
   - 'Items': 'assessment-evaluation/items.md'
   - 'Forms': 'assessment-evaluation/forms.md'
   - 'Form Templates': 'assessment-evaluation/formtemplates.md'
@@ -118,7 +119,7 @@ pages:
   - 'Enterging Grades': 'gradebook/entergrades.md'
   - 'Create A Dropbox': 'gradebook/dropbox.md'
   - 'Reporting Gradebook Results': 'gradebook/reporting.md'
-  - 'Student View': 'gradebook/studentview.md'  
+  - 'Student View': 'gradebook/studentview.md'
 - 'Quizzes':
   - 'Getting Started with Quizzes': 'quizzes/index.md'
   - 'Creating and Managing Quizzes': 'quizzes/create.md'
