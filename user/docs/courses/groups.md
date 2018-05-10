@@ -1,5 +1,7 @@
 #Course Groups Tab  
-Once there are learners enrolled in a course/program, you can create groups of learners within a course.  Course groups are useful for assigning small groups of learners to specific learning events (e.g., repeating clinical skills sessions where small groups of learners all do the same thing), and can also be used to link tutors to assigned learners.  Linking tutors and groups of learners allows faculty to review specific students’ logged encounters, or act as academic advisors (especially relevant if you are using the competency-based medical education module of Entrada).  Tutors linked to groups will also be able to access any community shared resources restricted to that group.
+Once there are learners enrolled in a course/program, you can create groups of learners within a course.  Course groups are useful for assigning small groups of learners to specific learning events (e.g., repeating clinical skills sessions where small groups of learners all do the same thing), and can also be used to link tutors to assigned learners.  Linking tutors and groups of learners allows faculty to review specific students’ logged encounters, or act as academic advisors (especially relevant if you are using the competency-based medical education module of Elentra).  Tutors linked to groups will also be able to access any community shared resources restricted to that group.
+
+![Course Groups](/img/courses/groups-me1.12.png)  
 
 #How to create groups through the user interface
 * Navigate to Admin>Manage Courses.
@@ -67,3 +69,6 @@ Note that groups are specific to a course enrolment and at present apply only to
 # How to view all groups and members in a course at once  
 * You can export a csv of groups within a course.  When you do this you'll have the option to export a csv or a printable csv.  The printable csv provides group names, tutor names and learner names but leaves out users' institutional numbers.
 * There is currently no tool to view all the groups one learner is assigned to across an organisation.
+
+# Viewing a user's group membership
+Please note that there is currently no user interface to see a list of all groups a user is part of.  (Users can see all the communities they are a part of from the Communities tab and My Communities card.)

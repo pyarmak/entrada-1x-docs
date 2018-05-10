@@ -67,7 +67,7 @@ Once a schedule is created it can be copied and modified for future use.
 * Select an existing schedule from the dropdown menu (note that your options will be limited to the courses you have access to).  
 * Click 'Copy'.  
 * The copied rotations will display in a list.  
-* Note that when you copy an existing rotation, CBME objectives associated with the rotation are not currently copied.  At present you will need to define the likelihood and priority settings for the EPAs associated with each rotation when you copy a rotation schedule.  (This applies only to users with the CBME module enabled in their installation of Entrada.)
+* Note that when you copy an existing rotation, CBME objectives associated with the rotation are not currently copied.  At present you will need to define the likelihood and priority settings for the EPAs associated with each rotation when you copy a rotation schedule.  (This applies only to users with the CBME module enabled in their installation of Elentra.)
 
 #How to export a rotation
 * Navigate to any rotation schedule.  

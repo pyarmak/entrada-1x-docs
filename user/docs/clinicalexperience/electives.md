@@ -1,6 +1,6 @@
 #Electives  
 
-Learners in a phase of their education focussed on clinical learning may have the opportunity to request elective opportunities.  Entrada can help with the management of electives by giving students access to an elective form to complete and submit, and providing an easy-to-use elective approval process for staff.
+Learners in a phase of their education focussed on clinical learning may have the opportunity to request elective opportunities.  Elentra can help with the management of electives by giving students access to an elective form to complete and submit, and providing an easy-to-use elective approval process for staff.
 
 #How to request an elective as a learner  
 * Click the Clerkship tab and select 'Schedules' from the dropdown menu (note that in ME 1.11 and below only learners in the third year of their program will have access to the Clerkship tab).

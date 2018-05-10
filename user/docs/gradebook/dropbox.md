@@ -2,10 +2,9 @@
 By creating an assignment drop box in the gradebook you can allow learners to upload assessments, and allow faculty to view and mark those assessments within the system.  If a form is attached to an assessment faculty can use the form and view the assessment simultaneously.
 
 #How to add a drop box to an assessment
-* Navigate to a course gradebook; create a new assessment if needed.
-* From the Gradebook overview page for a course, ensure you are in the correct curriculum period.
-* Search for the assessment if required.
-* Click Add Drop Box under the Assignment column for the required assessment.
+* Navigate to a course gradebook and ensure you are in the correct curriculum period.  
+* Search for or create a new assessment.
+* Click 'Add Drop Box' under the Assignment column for the assessment.
 * Complete the required information, noting the following:  
 **Assignment Drop Box**
 * Set submission options.
@@ -13,14 +12,14 @@ By creating an assignment drop box in the gradebook you can allow learners to up
   * Adding a dashboard notice will automatically generate a dashboard notice including assessment due date and a link to the drop box and display it to the learners responsible for the assessment.  If you select a dashboard notice, the default release is immediately.  To modify the release date, click  “Release notice on a custom defined date” and set the release date (this section applies to the dashboard notice only, not the availability of the drop box).
   * Allow learners to upload new revisions will allow students to replace an existing file with a newer one.
   * Allow graders to see the name of the learner they are grading can be unchecked if you wish graders to work without knowing learners' identities.
-* Submission due date (this will often match the previously set assessment due date).  
+* Submission due date.  If you have set an assessment due date, the submission due date for the drop box will match it.  If you change the assessment due date, the assignment submission due date will automatically be adjusted.  Please note that they system **does** allow learners to upload files after the submission due date so that late work can be submitted without additional hassle to administrative staff.  If you wish to track late submissions, it is recommended that you make that selection on the edit assessment screen.
 **Time Release Options**
 Set the time release for a viewable start and finish which will control when the drop box will be visible to users.  The default setting causes the drop box to be immediately visible to learners and does not set a finish date.
 * Click “Save” at bottom right.
 
-Once you add a drop box to an assessment, a column will be included on the edit assessment page showing the date and time learners submitted their assessments.
+Once you add a drop box to an assessment, a column will be included on the edit assessment page showing the date and time learners submitted their assignments.
 
-#How to bulk upload and download assessments to and from the drop box
+#How to bulk upload and download assignments to and from the drop box
 * Navigate to a course gradebook.
 * Ensure you are in the correct curriculum period.
 * Search for the assessment if required.
@@ -30,17 +29,17 @@ Once you add a drop box to an assessment, a column will be included on the edit 
 
 * You can also bulk download all submitted assignments from this same page.  This can be useful if you have faculty who wish to grade hard copies of an assignment.
 
-#How learners can submit an assessment to a drop box
-From their dashboard, learners will see My Entrada in the left sidebar.  
+#How learners can submit an assignment to a drop box
+From their dashboard, learners will see My Elentra in the left sidebar.  
 
-* Click on My Assignments. On the My Assignments screen, learners can see all required assignments and their due dates as well as any grades already assigned.
-* Click on an assignment title and then click Add File.
+* Click 'My Assignments'. On the My Assignments screen, learners can see all required assignments and their due dates as well as any grades already assigned.
+* Click on an assignment title and then click 'Add File'.
 * In the popup window that opens, drag and drop or browse for a file to upload.
 * Provide a file title and comment (optional).
-* Click Upload.  The uploaded file will display on the Assignment Submissions list.
+* Click 'Upload'.  The uploaded file will display on the Assignment Submissions list.
 * Depending on how the drop box was set up learners may be able to upload additional files or revised files.
 
-* Learners can also add comments to the assignment submission page by clicking on Add Assignment Comment.
+* Learners can also add comments to the assignment submission page by clicking 'Add Assignment Comment'.
 
 #How faculty can grade drop box assessments
 Make sure that faculty have been added to an assessment as a grader for them to use this process.  

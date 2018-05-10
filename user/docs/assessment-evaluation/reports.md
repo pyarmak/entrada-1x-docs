@@ -20,7 +20,7 @@ Some additional fields will become available depending on the report so addition
 * Note that once generated, most reports are available to download by clicking 'Download PDF'.
 
 **Evaluations**  
-Rotation Evaluations (Aggregated) - For use in clinical experiences courses with rotations built and scheduled through Entrada, this will allow you to report on forms completed through a distribution based on a rotation.  Obviously the exact format of the report will depend on the form it is reporting on.  
+Rotation Evaluations (Aggregated) - For use in clinical experiences courses with rotations built and scheduled through Elentra, this will allow you to report on forms completed through a distribution based on a rotation.  Obviously the exact format of the report will depend on the form it is reporting on.  
 * Select a course, date range, rotation, curriculum period and form.    
 * Set the report parameters regarding displaying comments and averages.    
 * Click 'Generate Report'.    

@@ -10,12 +10,12 @@ While curriculum tag sets and curriculum tags are connected, there are differenc
 * Complete the required information noting the following:  
 **Tag Set Details:**
 * Title and shortname are required for the tag set.  The title is displayed to users when using curriculum tags to label things and when using curriculum search tools.  
-* Standardization: This field was developed for the Competency-Based Medical Education tools in Entrada and identifies a tag set that is standard across multiple courses/programs.  It is applicable to the "Stages" tag set that is required in CBME, but can be ignored when creating other tag sets.
+* Standardization: This field was developed for the Competency-Based Medical Education tools in Elentra and identifies a tag set that is standard across multiple courses/programs.  It is applicable to the "Stages" tag set that is required in CBME, but can be ignored when creating other tag sets.
 * Applicable to: Usually curriculum tag sets are applicable to all courses, however you can adjust the setting, if needed.  This will control which courses are able to use this tag set to tag learning events and gradebook assessments.  (If you are using context-based linkages to tag curriculum that feature will allow access to all curriculum tag sets including those set to be applicable to only some courses.)  
 **Tag Options:**  
 * This defines the information and requirements for any tags added to this set.  You can control whether there will be a space to record code, title, and description for each tag and whether any of those fields is required.  You must have a minimum of one required tag option.  If you later download a sample csv in order to import tags to this set the csv will include columns for the required fields configured here.
 * Hierarchical levels: Here you can set how many hierarchies will be allowed within the tag set (for example you might have a set of objectives that has 3 levels in its structure like Competency, Program Objectives, and Curricular Objectives). If you use multiple levels, provide labels for each.
-* Be aware that in many Entrada features when users apply curriculum tags to events or items, they will have to click through the hierarchy to find the appropriate tag.  Some features also allow users to select the top or second tier of the hierarchy and automatically apply all tags below to the course.  
+* Be aware that in many Elentra features when users apply curriculum tags to events or items, they will have to click through the hierarchy to find the appropriate tag.  Some features also allow users to select the top or second tier of the hierarchy and automatically apply all tags below to the course.  
 **Tag Display Options:** Here you can specify how tags within this set should be displayed in short or long display mode. Some reports will rely on the different display methods and apply your specifications. To change the display order of the components, type in the %d, %t or %c codes as you wish them to appear. A sample of what the short and long display methods will look like will show on the right.  
 **Mappable Curriculum Tag Sets:** One feature of curriculum tags is the ability to map tags from one set to another to create a map of how your curriculum tags overlap.  In this section you can define how the tags in the set you are creating can be mapped to other tag sets.  Click the down arrow beside 'Browse All Tag Sets' and check off the sets you want to be able to map to, noting there is a select all feature available.  To delete any unwanted tag sets from this list click on the small grey ‘x’ beside the tag set name in the 'Selected Tag Set' panel.
 
@@ -67,6 +67,8 @@ While curriculum tag sets and curriculum tags are connected, there are differenc
 * Toggle between a list view and table view of curriculum tags using the small icons beside the Add Tag button.
 * In table view, add additional visible columns to the table by clicking on the grid with a down arrow beside it.  Adding additional columns can allow you to see id, code, title, description, and an overview of existing links between tag sets.
 
+<iframe width="640" height="564" src="https://player.vimeo.com/video/267800298" frameborder="0" allowFullScreen mozallowfullscreen webkitAllowFullScreen></iframe>
+
 #How to edit existing tags
 * Click on the pencil icon available to the right of the tag (you may need to use your mouse to hover over a tag for the menu icons to appear).
 
@@ -78,7 +80,7 @@ If settings in a curriculum tag set are configured to allow the tags in the set 
 * Click off the popup window in order to see the mapping relationship you've added.
 * To delete a link click the small x beside the mapped tag.
 * Click 'Save'.  
-* Note that you can link tags via courses, units, and learning events if you are using an Entrada setting that allows context-based linkages.  See more information about this in the Curriculum>Context Based Linkages help section.
+* Note that you can link tags via courses, units, and learning events if you are using an Elentra setting that allows context-based linkages.  See more information about this in the Curriculum>Context Based Linkages help section.
 
 #How to view tag history
 * Click on any tag to access its details, mapping, admin notes and history.

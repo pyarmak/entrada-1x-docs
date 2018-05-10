@@ -1,5 +1,5 @@
 #How Users Can Control Their Profile Preferences
-Users can view information about themselves (some they can edit, some they can't) through their My Entrada ME Profile.
+Users can view information about themselves (some they can edit, some they can't) through their My Elentra ME Profile.
 
 #How to access a user profile  
 Any user type should see their own name at the top of the page.  

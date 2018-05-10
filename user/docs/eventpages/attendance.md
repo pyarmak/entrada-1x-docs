@@ -7,7 +7,7 @@ On the Attendance tab of an event page you can record attendance for an event. Y
 
 #Kiosk mode
 
-Kiosk mode allows learners to swipe their school ids to complete the attendance record for the event.  To use kiosk mode your organisation must set up another tool and link it to Entrada to record attendance.
+Kiosk mode allows learners to swipe their school ids to complete the attendance record for the event.  To use kiosk mode your organisation must set up another tool and link it to Elentra to record attendance.
 
 Once attendance kiosk mode has been configured it is easy to use.  
 

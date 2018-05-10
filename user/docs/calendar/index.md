@@ -1,4 +1,4 @@
-#Entrada Calendar
+#Elentra Calendar
 
 #What users see
 On the learner dashboard, learners have a calendar view of upcoming events that include them in the audience.  

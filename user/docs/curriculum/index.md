@@ -1,7 +1,7 @@
 #Curriculum Management  
-The tools within Manage Curriculum are used to build the structure on which many of Entrada's features rely.
+The tools within Manage Curriculum are used to build the structure on which many of Elentra's features rely.
 
-The structure of curriculum management within Entrada includes:  
+The structure of curriculum management within Elentra includes:  
 
 * Organisations (e.g. undergraduate medicine, nursing, pharmacy)  
 * Curriculum Layouts (i.e., divisions of time used to organise units of instruction, e.g., terms, semesters, years, etc.)

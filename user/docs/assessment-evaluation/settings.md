@@ -1,6 +1,6 @@
 #Assessment and Evaluation Settings (Rating Scales)
 
-To effectively use the various assessment tools in Entrada some initial setup is required.  Organisations can define assessment characteristics (within existing assessment types), grading scales and response categories for assessment and evaluation forms.
+To effectively use the various assessment tools in Elentra some initial setup is required.  Organisations can define assessment characteristics (within existing assessment types), grading scales and response categories for assessment and evaluation forms.
 
 Some of these options are only configurable through the System Settings menu.  For information about configuring Assessment Response Categories (required to build scales), please see the System Setup help section.
 

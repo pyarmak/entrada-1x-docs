@@ -1,5 +1,5 @@
 #Getting Started with Polls
-Entrada includes a build in polling tool that allows you to solicit feedback from system users.  You can customize the audience of a poll to get the specific information you may need.  There is also polling functionality in the Communities Module. For more information about using polls in communities please see the Communities help section.
+Elentra includes a build in polling tool that allows you to solicit feedback from system users.  You can customize the audience of a poll to get the specific information you may need.  There is also polling functionality in the Communities Module. For more information about using polls in communities please see the Communities help section.
 
 #How to create a poll
 * Navigate to Admin>Manage Polls

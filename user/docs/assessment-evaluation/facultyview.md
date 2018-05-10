@@ -40,7 +40,7 @@ Faculty who are listed as course/program directors have access to view the asses
 * From the Tasks Completed on Faculty tab the course/program director can also view Reports for this Faculty.
 
 **My Learners**  
-The My Learners tab will allow faculty to access a variety of information for learners associated with them.  This list of available options will vary depending on which modules are in use in Entrada but could include CBME Dashboard, Assessments, and Log Book.
+The My Learners tab will allow faculty to access a variety of information for learners associated with them.  This list of available options will vary depending on which modules are in use in Elentra but could include CBME Dashboard, Assessments, and Log Book.
 
 * Download a list of all learners associated with a faculty by clicking 'Download Enrolment'.  A pdf title "learners-for-*faculty-name*" will download and list all learners, including their primary email and learner level.
 * Search for an individual by beginning to type his/her name in the search learners area; the learner cards displayed will automatically display to reflect the searched name.  

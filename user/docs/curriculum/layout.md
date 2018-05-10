@@ -7,7 +7,7 @@ Within each curriculum layout, curriculum periods are added.  A curriculum perio
 * Term 1 Class of 2020, Sept. 2016-Dec. 2016
 * Term 1 Class of 2019, Sept. 2015-Dec. 2015  
 
-One curriculum layout can have multiple curriculum periods.  Curriculum periods are required when creating the audience and enrolment for courses/programs and multiple features and reports in Entrada rely on curriculum periods to filter information.
+One curriculum layout can have multiple curriculum periods.  Curriculum periods are required when creating the audience and enrolment for courses/programs and multiple features and reports in Elentra rely on curriculum periods to filter information.
 
 #How to create curriculum layouts
 * Navigate to Admin>Manage Curriculum.
@@ -15,20 +15,26 @@ One curriculum layout can have multiple curriculum periods.  Curriculum periods 
 * Click 'Add Layout'.
 * Complete the required information, noting the following:  
 **Curriculum Level:** This field collects data but is not used elsewhere in the system. There is currently no user interface to change these levels.  
-* Click 'Save' or immediately add curriculum periods and then save your work.
-
-#How to reorder the appearance of curriculum layouts on the screen
-* Click on and drag a curriculum layout row to the appropriate place in the list and then click 'Save Ordering'.
-
-# How to delete a curriculum layout  
-* Click the checkbox beside the layout you wish to delete.  
-* Click 'Delete Selected'.  
+* Click 'Save' or immediately add curriculum periods and then save your work.  
 
 #How to create curriculum periods  
 * From the Curriculum Layout page, click on an existing curriculum layout.
 * Click 'Add Curriculum Period'.
 * In the line added below, adjust the start and end date for the curriculum period, add a title (e.g. the relevant cohort), and leave the final column as active.
 * Scroll up if necessary and click 'Save'.
+
+<div style="padding:88% 0 0 0;position:relative;"><iframe src="https://player.vimeo.com/video/267270049" allowFullScreen frameborder="0" mozallowfullscreen webkitAllowFullScreen style="position:absolute;top:0;left:0;width:100%;height:100%;"></iframe></div><script src="https://player.vimeo.com/api/player.js"></script>
+
+&nbsp;
+#How to reorder the appearance of curriculum layouts on the screen
+* Click on and drag a curriculum layout row to the appropriate place in the list and then click 'Save Ordering'.
+
+<div style="padding:88% 0 0 0;position:relative;"><iframe src="https://player.vimeo.com/video/267270041" allowFullScreen frameborder="0" mozallowfullscreen webkitAllowFullScreen style="position:absolute;top:0;left:0;width:100%;height:100%;"></iframe></div><script src="https://player.vimeo.com/api/player.js"></script>
+
+&nbsp;
+# How to delete a curriculum layout  
+* Click the checkbox beside the layout you wish to delete.  
+* Click 'Delete Selected'.  
 
 #How to delete curriculum periods  
 * From the Curriculum Layout page, click on an existing curriculum layout.

@@ -30,8 +30,8 @@ After you've added questions to an exam and set your setting preferences you mus
 * Submission Deadline: This is an optional feature.  If you set this, exams must be submitted by this time.
 * Time Frame: This determines where the exam will display in the resources section of a learning event page. Select from none, pre, during and post.
 * Time Limit: This allows you to limit the length of time a learner has to complete the exam (e.g. 60 minutes).  Enabling this feature will also make a Time Left counter appear to learners during an exam.  
-* Auto Submit: If using a time limit, you can also use the auto submit feature so the exam is automatically submitted when the time expires.  
-* Hide Exam From Learners: If you hide the exam you’ll be able to post it but learners won’t be able to see the post and so won't see the exam in their My Entrada task counter.  
+* Auto Submit: If using a time limit, you can also use the auto-submit feature so the exam is automatically submitted when the time expires, assuming the learner is still active in the exam.  The auto-submit tools works only when a learner is still active on the exam screen to effectively cut them off when the time limit is reached.  If a user logs out without submitting their exam, auto-submit will not submit it for them.
+* Hide Exam From Learners: If you hide the exam you’ll be able to post it but learners won’t be able to see the post and so won't see the exam in their My Elentra task counter.  
 * Required: Click the box to make this exam required.
 * Attempts: Adjust this if you’d like students to be able to complete the exam more than once.
 * Backtrack: Enable this if you want learners to be able to view questions already completed.
@@ -60,7 +60,7 @@ Max Attempts: Click this and enter a modified number of exam attempts for the le
 * Release Score: Click this to return scores to leaners after the submit an exam.  Enable ‘Release Feedback’ if you want learners to access the information stored in the rationale section of the exam items when they get their scores; you can further modify whether to release rationale for all question or just incorrect questions.  If you have included short answer or essay questions in an exam and you expect faculty to provide narrative feedback which you wish students to view, you must set the exam to release feedback for ALL questions for learners to be able to see the narrative comments from the grader.
 * Set the release start and end dates to delay feedback if required.  This might be useful if two sections of a class are completing the exam at different times and you don't want any learners to see their results until all learners have completed the exam.
 * Re-Attempt Threshold: Set a minimum score to merit completeness, then set an allowable number of attempts to attain the minimum score.  For example you can specific that a learner must achieve 80% on this exam and has two attempts to do so.  If the learner scores 50% on their first attempt the system will automatically let them take the exam once more.
-* Attach GradeBook: Select an existing gradebook entry to attach the exam to (the list will prepopulate based on the course selected in step 1).  The results of this action are that once graded, the grades from this exam will automatically populate the gradebook entry.  
+* Attach GradeBook: Select an existing gradebook entry to attach the exam to (the list will prepopulate based on the course and event selected in earlier steps and the contents of the gradebook for the relevant curriculum period).  The results of this action are that once graded, the grades from this exam will automatically populate the gradebook entry.  
 
 **Review:**  
 

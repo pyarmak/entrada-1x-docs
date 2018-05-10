@@ -1,7 +1,7 @@
 #Creating User Accounts
-Most users require an account to access Entrada.  While there are some exceptions to this in that you can create a public community and share it with others, add a guest member to a specific community, or add an external assessor to a distribution of an assessment and evaluation form, most users will have accounts.  To create a user account you must include user groups and roles which define user permissions.  Only those with admin roles within Entrada are able to manually create users.
+Most users require an account to access Elentra.  While there are some exceptions to this in that you can create a public community and share it with others, add a guest member to a specific community, or add an external assessor to a distribution of an assessment and evaluation form, most users will have accounts.  To create a user account you must include user groups and roles which define user permissions.  Only those with admin roles within Elentra are able to manually create users.
 
-Although there is a user interface to manually add individual users, it is strongly recommended that your developers or technical team set up a relay of information from a central, authoritative database (e.g., an existing student information system) to feed users into Entrada.
+Although there is a user interface to manually add individual users, it is strongly recommended that your developers or technical team set up a relay of information from a central, authoritative database (e.g., an existing student information system) to feed users into Elentra.  If you are not doing this and wish to bulk import users via a csv file, please see below.
 
 #How to bulk import users
 * Navigate to Admin>Manage Users.
@@ -10,7 +10,7 @@ Although there is a user interface to manually add individual users, it is stron
 * Open the file in your preferred spreadsheet manager and complete the columns.  Required fields are listed first followed by optional fields.  
 **First Name:** Provide the user's given name.  If you have multiple users with the same first and last name we recommend including their middle initial with their first name.  
 **Last Name:** Provides the user's last name.  
-**Username:** This will be the username for your Entrada installation.  
+**Username:** This will be the username for your Elentra installation.  
 **email:** This should be the user's email and must be distinct for each user.  
 **Group:** Group defines the user type in the system. Pick from Alumni, Faculty, Medtech, Resident, Staff, and Student. You can only use additional groups if you have added them to the database.  
 **Role:** Different group types have different role availability as shown in the table below.  Many group and role configurations carry different permissions.  For more detail about user permissions please see the Permissions help section.  Similar to groups, you can only use additional roles if you have added them to the database.  
@@ -33,7 +33,7 @@ Although there is a user interface to manually add individual users, it is stron
 | Student      | Year       |  
 
 **Organisation:** This should be a numeric id and reflect which organisation a user should be added to if there are multiple organisations on an installation (e.g., undergraduate medicine and postgraduate medicine). When logged in as a Medtech>Admin you can find the organisation id by navigating to Admin>System Settings and clicking on the organisation.  When the page for that organisation opens the url will include the org id at the end. You can also ask a developer what the organisation ids for your installation are.  
-**Gender:** Gender is a required field in your upload but you can leave the cells blank if you don't want to define uesrs' genders.  If you do want to provide gender enter M or F.  A blank cell will display as Gender:Unknown in the user interface.
+**Gender:** Gender is a required field in your upload but you can leave the cells blank if you don't want to define users' genders.  If you do want to provide gender enter M or F.  A blank cell will display as Gender:Unknown in the user interface.
 
 * Optional fields:  
 **Institution Number:** The user's university id (e.g., staff or student number).  
@@ -43,7 +43,7 @@ Although there is a user interface to manually add individual users, it is stron
 **Account Status:** You can enter active or disabled in this column, you'll be able to change this setting in UI after the user is created.  
 **Access Start:** Unix timestamp (e.g. 1512086400) or date-time format (2017-12-01 12:35) are accepted.  
 **Access Finish:** Unix timestamp (e.g. 1512086400) or date-time format (2017-12-01 12:35) are accepted.  
-**Department:**  To enter a department affiliation for a user you must have department's Entrada id code.  This is information you can request from a developer or you can find it by looking at a url.  To discover the department id for yourself, you must be able to access Admin>System Settings.  When you do, click on the name of the organisation you are working with and then click Departments in the left sidebar. Click on a department name and when the page for that department displays the url will include the department id at the end.  
+**Department:**  To enter a department affiliation for a user you must have department's Elentra id code.  This is information you can request from a developer or you can find it by looking at a url.  To discover the department id for yourself, you must be able to access Admin>System Settings.  When you do, click on the name of the organisation you are working with and then click Departments in the left sidebar. Click on a department name and when the page for that department displays the url will include the department id at the end.  
 **Password:** Passwords can be set using an import but we recommend only importing existing passwords if you exported them from elsewhere.  
 **Salt:** This is a way to make a password more secure.  It is recommended that you use this field only if you've exported a list of users and already have the salt information (and the password).  
 **Prefix:**  Accepted prefixes are Dr., Mr., Mrs., Ms., Prof., Assoc. Prof., and Asst. Prof.  
@@ -51,8 +51,8 @@ Although there is a user interface to manually add individual users, it is stron
 **Telephone, Fax, City, Address, Postal Code, Country, Province:** Provide contact information as desired.  
 
 * Every column header included in your file must be completed.  If there is a column header with no information present delete that column before you upload the file.  
-* It is recommended that you use different files for different groups (e.g. faculty and learners) as they may not required the same fields and partially complete columns will result in errors.  
 * If you are importing a significant number of users we recommend limiting your file size to 1000 users or less.
+* It is recommended that you use different files for different groups (e.g. faculty and learners) as they may not required the same fields and partially complete columns will result in errors.  If you have blank cells please fill them with NULL.
 
 * After completing the spreadsheet, you can browse to find the file or drag and drop it in place.  You will be prompted to match the information included in your CSV against the mapped fields available.  Fields that display highlighted with green are required.
 * At this stage, you can scroll through the imported users to check their data.  In the top right, click on the small arrows beside the Row counter.  You'll see a summary of the information being uploaded for each user.

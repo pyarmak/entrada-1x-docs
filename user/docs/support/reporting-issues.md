@@ -1,6 +1,6 @@
 # Reporting Issues
 
-If you discover a bug or issue with Entrada we would strongly encourage you to report the problem as a Bug using our
+If you discover a bug or issue with Elentra we would strongly encourage you to report the problem as a Bug using our
 GitHub Issue tracker: [https://github.com/EntradaProject/entrada-1x-me/issues](https://github.com/EntradaProject/entrada-1x-me/issues)
 
 If you get a 404 error message when following the link and don't have a GitHub login to access the issue tracker, please send an email to
@@ -8,7 +8,7 @@ Alice Rush-Rhodes at arush@queensu.ca
 
 ## Security Reporting
 
-We take the security of the Entrada Platform very seriously. If you believe that you have discovered a security vulnerability please contact us immediately:
+We take the security of the Elentra Platform very seriously. If you believe that you have discovered a security vulnerability please contact us immediately:
 
 | Name              | E-Mail Address                                  | Telephone Number      |
 | ----------------- | ----------------------------------------------- | --------------------- |

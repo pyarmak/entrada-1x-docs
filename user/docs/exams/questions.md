@@ -18,8 +18,8 @@ Exam items include the questions, prompts, etc. that are included on an exam.  I
 * Hide the list of question folders by clicking on the eye icon beside the Add New Folder button.
 * Click on a folder to view its subfolders.
 
-#The types of questions supported by Entrada
-Entrada currently supports a variety of question types: Multiple Choice (vertical and horizontal – use ‘multiple responses’ to allow for multiple correct answers), short answer, essay, matching, text, and fill in the blank. Different question types have different templates for their layout.
+#The types of questions supported by Elentra
+Elentra currently supports a variety of question types: Multiple Choice (vertical and horizontal – use ‘multiple responses’ to allow for multiple correct answers), short answer, essay, matching, text, and fill in the blank. Different question types have different templates for their layout.
 
 A ‘text’ question can be used to provide instructions.
 
@@ -43,7 +43,7 @@ To insert media into a question stem, click the film strip icon and paste the em
 * Question Description: Add a descriptive title.  This will display in the list view of exam items and is helpful when scanning a list of items within a folder.  
 * Rationale: Add a question rationale. Rationale is shown to learners when they get feedback on their exam and can explain a question answer or provide additional detail.  
 * Correct Text: This option will display **only when creating essay and short answer questions.** It is a space to provide sample answers or list what should be included in an answer.  This text is **not** visible to learners and is intended to provide information to graders.  When a grader corrects a free response question, they will see the correct text on the screen to help them grade the response.  If you use this question type and have faculty provide narrative feedback when they grade the questions, you must set the exam to release feedback for ALL questions for learners to be able to see the narrative comments from the grader.
-* Question Code: This optional code field can be completed according to the guidelines set by your institution. (Every question will also automatically be given a unique identifier within Entrada and that unique id displays when viewing a list of questions within a folder.)  
+* Question Code: This optional code field can be completed according to the guidelines set by your institution. (Every question will also automatically be given a unique identifier within Elentra and that unique id displays when viewing a list of questions within a folder.)  
 * Parent Folder: If you were already in a folder when you clicked 'Add A New Question' this will automatically list that folder.  If you were not already in a folder, it is mandatory to assign your question to a specific folder.  Click 'Select Parent Folder', click on a folder name, and click 'Done'.  
 
 **Question Answers:**

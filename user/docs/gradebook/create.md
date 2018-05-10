@@ -1,4 +1,4 @@
-#Creating a Gradebook and Gradebook Entries
+#Creating a Gradebook and Gradebook Assessments
 Gradebooks automatically exist for specific courses and curriculum periods, however they must be populated with assessments. Once you have existing assessments, you can copy and apply them to new curriculum periods.
 
 #How to create a new gradebook assessment
@@ -10,8 +10,8 @@ Gradebooks automatically exist for specific courses and curriculum periods, howe
 **Assessment Details:**  
 * Assessment Weighting-If your course has a number of mandatory assessments that require satisfactory completion and result in a Pass/Fail grade, you can leave this as 0.  After inputting all the assessments for a course, the total weight should be 100% (unless you have only required assessments that result in a pass/fail course grade).
 * Notify if grade is below-This feature triggers an automatic email to the selected audience if students score below the designated threshold.
-* Link existing online quizzes-If you need to create a quiz navigate to Admin>Manage Quizzes.  More details about this can be found in the Quizzes help section.
-* Link existing online exams-If you need to create an exam navigate to Admin>Manage Exams.
+* Link existing online quizzes- See details on the Gradebook>Attach Quiz page.  More details about creating quizzes can be found in the Quizzes help section.
+* Link existing online exams- See details on the Gradebook>Attach Exam page.  More details about creating exams can be found in the Exam help section.  
 * Characteristic-This is assessment type (test, paper, oral exam, etc.).  You can customize this list by navigating to Admin>Manage Settings>Assessment Types.  When doing so you can map your institution’s assessment types to Medbiquitous assessment types or your institution can use only the Medbiquitous assessment types.
 * Selecting certain characteristics will open additional fields:
   * Track Late Submissions-This adds a late submission column that allows you to identify students who have submitted assessments late with a checkmark. This will be visible in the course gradebook.
@@ -70,7 +70,6 @@ Assessment Objectives allows you to map learning objectives from the Curriculum 
 
 By default, when you save your work the system will redirect you to the Grade assessment page where you can input student marks.  To select a different destination after saving use the dropdown menu immediately to the left of the blue Save button.
 
-
 #How to copy and modify an existing gradebook
 Before you start, ensure that the period (e.g., Sept. 1, 2017 – Dec. 31, 2017) you want to create a new gradebook for exists and has an audience (e.g., a cohort). Navigate to Admin>Manage Course>Setup to review and adjust this as needed. If a required period is unavailable this can be modified from Admin>Manage Settings>Curriculum Layout.
 
@@ -80,7 +79,6 @@ Before you start, ensure that the period (e.g., Sept. 1, 2017 – Dec. 31, 2017)
 * Select the assignments you want to copy by ticking the small box beside the assessment title.  
 * When prompted, select the new target audience (which is defined by a period so that’s what you’ll see as your options) and press Copy Assessments.  
 * NOTE: When you copy assessments, they will maintain the same date parameters, so make sure that you adjust the dates.  Other things like who is notified if grade doesn’t meet threshold, learners assigned to groups, etc. will also have to be updated.  
-
 
 #How to manage existing assessments in a gradebook
 **Collections** - The collections tool allows you to group multiple assessments together in a course gradebook assessment list allowing for quick review of learner performance (e.g., all quizzes will show up beside each other).  

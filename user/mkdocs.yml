@@ -55,7 +55,8 @@ pages:
   - 'Subscribing to Community Notifications': 'communities/subscribecnotifications.md'
 - 'Courses':
   - 'Getting Started with Courses': 'courses/index.md'
-  - 'Creating and Managing Courses': 'courses/create.md'
+  - 'Creating Courses': 'courses/create.md'
+  - 'Course Setup Tab': 'courses/setup.md'
   - 'Course Content': 'courses/content.md'
   - 'Course Enrolment': 'courses/enrolment.md'
   - 'Course Website': 'courses/website.md'
@@ -106,14 +107,18 @@ pages:
   - 'Create and Manage Exams': 'exams/create.md'
   - 'Information and Settings': 'exams/informationandsettings.md'
   - 'Post an Exam': 'exams/post.md'
+  - 'RPNow': 'exams/rpnow.md'
   - 'Reporting Exams Results': 'exams/reports.md'
   - 'History': 'exams/history.md'
 - 'Gradebook':
   - 'Getting Started with Gradebook': 'gradebook/index.md'
   - 'Create Gradebook Assessments': 'gradebook/create.md'
+  - 'Attach a Quiz': 'gradebook/attachquiz.md'
+  - 'Attach an Exam': 'gradebook/attachexam.md'
   - 'Enterging Grades': 'gradebook/entergrades.md'
   - 'Create A Dropbox': 'gradebook/dropbox.md'
   - 'Reporting Gradebook Results': 'gradebook/reporting.md'
+  - 'Student View': 'gradebook/studentview.md'  
 - 'Quizzes':
   - 'Getting Started with Quizzes': 'quizzes/index.md'
   - 'Creating and Managing Quizzes': 'quizzes/create.md'
@@ -169,5 +174,8 @@ pages:
 - 'Rich Text Content':
   - 'Using Rich Text Content Editor': 'richtexteditor/index.md'
   - 'Embedding Media': 'richtexteditor/embedmedia.md'
+- 'Awards':
+  - 'Getting Started with Awards': 'awards/index.md'
+  - 'Creating and Managing Awards': 'awards/create.md'
 - 'About':
   - 'License': 'about/license.md'

@@ -1,6 +1,6 @@
 #How to manage the grading scale  
 
-The grading scale is not a required feature of Entrada and does not currently link with other modules.  Eventually, this could be used to configure display options and to show students their grades using the grade scale instead of a raw score.  For example, if a learner scores 14/20 they would see the corresponding grading scale grade (e.g. 70% or 2.7).
+The grading scale is not a required feature of Elentra and does not currently link with other modules.  Eventually, this could be used to configure display options and to show students their grades using the grade scale instead of a raw score.  For example, if a learner scores 14/20 they would see the corresponding grading scale grade (e.g. 70% or 2.7).
 
 * Navigate to Admin>System Settings.
 * Click the name of the organisation for which you want to manage the grading scale.

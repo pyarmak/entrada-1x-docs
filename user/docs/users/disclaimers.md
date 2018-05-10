@@ -1,5 +1,5 @@
 #User Disclaimers
-A user disclaimer can set up to appear on the start page or your Entrada installation or when users try to access specific courses or communities.  This tool is only available to users with admin roles.
+A user disclaimer can set up to appear on the start page or your Elentra installation or when users try to access specific courses or communities.  This tool is only available to users with admin roles.
 
 #How to set a user disclaimer
 * Navigate to Admin>System Settings.

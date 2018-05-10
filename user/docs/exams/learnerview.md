@@ -1,8 +1,8 @@
 #Exam Module From a Learner Perspective
-When learners access Entrada they can easily see required assignments and exams via the My Entrada section of the left sidebar.  A small badge will display the number of exams and assignments learners need to complete.
+When learners access Elentra they can easily see required assignments and exams via the My Elentra section of the left sidebar.  A small badge will display the number of exams and assignments learners need to complete.
 
 #How learners can access an exam
-* Click on the My Exams quick link from the My Entrada section of the left sidebar.
+* Click on the My Exams quick link from the My Elentra section of the left sidebar.
 * Click on an exam name under the Not Submitted Exams header.
 * Review the exam information and instructions (if any) and click 'Start New Attempt'.
 * Starting an exam will vary depending on security settings and may require a password or other security steps.
@@ -38,7 +38,7 @@ Progress is automatically saved as learners move through the exam.  A greyed out
 
 #How learners can view exam feedback
 After an exam, learners will only be able to view feedback if it has been released to learners (controlled via an exam post).
-* Click on the My Exams quick link from the My Entrada section of the left sidebar.
+* Click on the My Exams quick link from the My Elentra section of the left sidebar.
 * Click on Submitted under the number of submitted exams.
 * Click on the name of an exam.
 * Click on Feedback in the far right column of the Exam Activity chart.

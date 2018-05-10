@@ -12,4 +12,4 @@ Note that the Manage Incident feature might also be useful in this context and m
 * Currently, learners can't view their own disciplinary actions.
 * To delete an existing action click the red minus icon beside the relevant action.
 
-By default learners can not see their own discipline records through Entrada and such records are only accessible by users with admin roles.
+By default learners can not see their own discipline records through Elentra and such records are only accessible by users with admin roles.
