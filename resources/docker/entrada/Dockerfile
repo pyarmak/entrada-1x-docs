@@ -8,6 +8,9 @@ LABEL maintainer="Matt Simpson <simpson@queensu.ca>"
 # Set your specific Timezone
 ENV TZ="America/Toronto"
 
+# Set ruby version
+ENV RUBY_VERSION 2.2.6
+
 # Sets Timezone in container.
 RUN ln -snf /usr/share/zoneinfo/$TZ /etc/localtime
 
@@ -15,13 +18,13 @@ RUN ln -snf /usr/share/zoneinfo/$TZ /etc/localtime
 RUN echo "NETWORKING=yes" > /etc/sysconfig/network
 
 # Sets CentOS root password.
-RUN echo root:password | chpasswd && yum install -y passwd
+RUN echo root:password | chpasswd && yum install -y passwd && yum clean all
 
 # Install Inline with Upstream Stable (IUS), which also enables EPEL.
-RUN yum -y install https://centos7.iuscommunity.org/ius-release.rpm
+RUN yum -y install https://centos7.iuscommunity.org/ius-release.rpm && yum clean all
 
 # Install Python and Supervisor.
-RUN yum -y install python-setuptools
+RUN yum -y install python-setuptools && yum clean all
 RUN mkdir -p /var/log/supervisor
 RUN easy_install supervisor
 
@@ -64,7 +67,8 @@ RUN yum -y install git \
                 php71u-opcache \
                 php71u-json \
                 mariadb101u \
-                mariadb101u-server
+                mariadb101u-server && \
+                yum clean all
 
 # Install wkhtmltopdf from the binary package because the yum package provided by EPEL is broken.
 RUN curl -SL https://github.com/wkhtmltopdf/wkhtmltopdf/releases/download/0.12.4/wkhtmltox-0.12.4_linux-generic-amd64.tar.xz | tar -xJC /root && cp /root/wkhtmltox/bin/* /usr/bin
@@ -97,11 +101,29 @@ RUN echo "IncludeOptional vhosts.d/*.conf" >> /etc/httpd/conf/httpd.conf
 #RUN yum -y install phpmyadmin
 #COPY apache/phpmyadmin.conf /etc/httpd/conf.d/phpmyadmin.conf
 
+# Install build dependencies for ruby
+RUN yum -y groupinstall "Development Tools" && yum clean all
+RUN yum -y install openssl-devel && yum clean all
+
+# Install ruby
+RUN wget https://cache.ruby-lang.org/pub/ruby/2.2/ruby-$RUBY_VERSION.tar.gz && \
+	tar zxvf ruby-$RUBY_VERSION.tar.gz && \
+	cd ruby-$RUBY_VERSION && \
+	./configure && \
+	make && \
+	make install && \
+	cd .. && \
+	rm -rf ruby-*
+
+# Remove build dependencies
+RUN yum -y group remove "Development Tools"
+RUN yum -y remove openssl-devel
+
 # Install Capistrano for deployment recipes.
-RUN gem install capistrano -v 2.15.9
-RUN gem install colorize
-RUN gem install sshkit
-RUN gem install gnm-caplock
+RUN gem install capistrano -v 2.15.9 --no-ri --no-rdoc
+RUN gem install colorize --no-ri --no-rdoc
+RUN gem install sshkit --no-ri --no-rdoc
+RUN gem install gnm-caplock --no-ri --no-rdoc
 
 EXPOSE 80
 EXPOSE 443
