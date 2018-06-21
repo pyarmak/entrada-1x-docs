@@ -80,7 +80,7 @@ RUN sed -i 's@memory_limit = 128M@memory_limit = 512M@g' /etc/php.ini
 # Enable Xdebug's remote_debugging.
 # Important Note: Windows users must change docker.for.mac.host.internal to docker.for.win.host.internal
 RUN sed -i 's@;xdebug.remote_enable = 0@xdebug.remote_enable = 1@g' /etc/php.d/15-xdebug.ini
-RUN sed -i 's@;xdebug.remote_host = localhost@xdebug.remote_host = docker.for.mac.host.internal@g' /etc/php.d/15-xdebug.ini
+RUN sed -i 's@;xdebug.remote_host = localhost@xdebug.remote_host = host.docker.internal@g' /etc/php.d/15-xdebug.ini
 
 # Set the container volumes.
 VOLUME /var/lib/mysql
